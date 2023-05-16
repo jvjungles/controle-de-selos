@@ -56,5 +56,7 @@ O frontend da aplicação desenvolvida com Angular e o backend foi simulado pela
 
 ## Manual de execução
 
-N/A.
+
+*adicionar manual de execução
+
 
