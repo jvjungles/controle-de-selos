@@ -55,12 +55,6 @@ O frontend da aplicação desenvolvida com Angular e o backend foi simulado pela
 - [ ] Build e deploy da aplicação.
 
 ## Manual de execução
-- Clonar o repositório com `git clone`
-- Fazer checkout no branch `develop` que contém as modificações mais recentes
-- Abrir o projeto no editor Visual Studio Code (VS Code)
-- Abrir um terminal pelo VSCode e executar a API Fake (JSON Server) via o seguinte comando: 
-  - Comando: `npm run json-server --watch db.json --routes routes.json`
-  - O comando deve ser aplicado no diretório raiz do projeto, ou seja, que contém o arquivo `db.json` e `routes.json`.
-- Abrir um novo terminal pelo VSCode e então executar o projeto Angular
-  - Comando: `ng serve`
+
+N/A.
 
