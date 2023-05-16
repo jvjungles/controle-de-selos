@@ -23,7 +23,7 @@ Apresenta uma interface gráfica intuitiva e fácil de usar, com as seguintes fu
 	
 Permite aos usuários visualizar todos os álbuns e selos existentes e atualizar suas informações a qualquer momento. Além disso, os usuários podem facilmente excluir um álbum ou selo que não precisam mais.
 
-O frontend da aplicação foi desenvolvido com Angular e o backend foi simulado pela implementação de uma API Fake, usando o JSON Server.
+O frontend da aplicação desenvolvida com Angular e o backend foi simulado pela implementação de API Fake, usando o JSON Server.
 
 ## Endereço de Deploy - GitHub Pages
 
