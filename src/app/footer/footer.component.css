@@ -213,7 +213,7 @@ footer {
     bottom: 0;
     width: 100%;
     background-color: #f8f8f8;
-    padding: 20px;  
+    padding: 15px;  
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -221,7 +221,7 @@ footer {
     justify-content: center; 
     background-color: #395f83;
     color: white;
-    font-weight: 600;
+    font-weight: 300;
 }
 
 footer a {
