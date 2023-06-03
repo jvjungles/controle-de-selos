@@ -97,7 +97,7 @@
     }
   
     .card-item {
-      width: calc(53% - 6px); /* A largura é definida como metade do container, subtraindo o espaçamento entre os cards */
+      width: calc(43% - 16px); /* A largura é definida como metade do container, subtraindo o espaçamento entre os cards */
       margin: 8px;
     }
   
