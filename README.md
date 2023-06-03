@@ -32,7 +32,7 @@ O frontend da aplicação desenvolvida com Angular e o backend foi simulado pela
 
 ## Protótipo
 
-*add url do prototipo
+https://www.figma.com/proto/XarePPgeODdsLiyjL1r02e/controle-de-selos?type=design&node-id=115-3&scaling=min-zoom&page-id=0%3A1&starting-point-node-id=115%3A3
 
 ## Checklist
 
