@@ -6,10 +6,10 @@ import { MatSlideToggleModule } from '@angular/material/slide-toggle';
 
 import { AppComponent } from './app.component';
 import { TopBarComponent } from './top-bar/top-bar.component';
-import { AlbumListComponent } from './album-list/album-list.component';
 import { FooterComponent } from './footer/footer.component';
 import { MatCardModule } from '@angular/material/card';
-
+import { AlbumListComponent } from './album-list/album-list.component';
+import { AlbumPageComponent } from './album-page/album-page.component';
 
 @NgModule({
   imports: [
@@ -19,13 +19,15 @@ import { MatCardModule } from '@angular/material/card';
     MatCardModule,
     RouterModule.forRoot([
       { path: '', component: AlbumListComponent },
+      { path: 'album-page', component: AlbumPageComponent },
     ])
   ],
   declarations: [
     AppComponent,
-    TopBarComponent,
+    TopBarComponent,    
+    FooterComponent,
     AlbumListComponent,
-    FooterComponent
+    AlbumPageComponent
   ],
   bootstrap: [
     AppComponent

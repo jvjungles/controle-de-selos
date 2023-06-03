@@ -1,19 +1,19 @@
 <div>
   <b>ALBUNS:</b>
 </div>
-
 <div class="card-container">
     <mat-card *ngFor="let album of albuns" class="clickable-card card-item" (click)="onCardClick(album)">
-      <mat-card-content>
-        <h3>{{ album.name }}</h3>
-        <p>{{ album.description }}</p>
-      </mat-card-content>
-      <mat-card-actions>
-        
-      </mat-card-actions>
-    </mat-card>
-</div>
+      
+      <mat-card-header>
+        <br> 
+        <mat-card-title>{{ album.name }}</mat-card-title>
+        <mat-card-subtitle>{{ album.description }}</mat-card-subtitle>
+        <br> 
+      </mat-card-header>
 
-<div>
-  <br><br><br><br><br><br>  
+      <mat-card-content>
+        <h3>Selos: {{ album.qtdeSelos }}</h3>
+      </mat-card-content>
+          
+    </mat-card>
 </div>

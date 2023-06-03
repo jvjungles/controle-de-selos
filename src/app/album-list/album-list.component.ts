@@ -1,5 +1,6 @@
 import { Component } from '@angular/core';
 import { albuns } from '../albuns';
+import { Router } from '@angular/router';
 
 @Component({
   selector: 'app-album-list',
@@ -7,22 +8,18 @@ import { albuns } from '../albuns';
   styleUrls: ['./album-list.component.css']
 })
 export class AlbumListComponent {
+
+  constructor(private router: Router) {}
+
   albuns = [...albuns];
 
   share() {
     window.alert('The album has been shared!');
   }
+
   onCardClick(album: any) {
     console.log('Card clicked:', album);
-    alert('\n' +
-          'id: ' +  
-          album.id + 
-          '\n' + 
-          'Album: ' +
-          album.name + 
-          '\n' + 
-          'Descrição: ' +
-          album.description);
-
+    this.router.navigate(['/album-page', album]);
   }
+  
 }

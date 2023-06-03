@@ -1,0 +1,24 @@
+<div>
+    <div>
+        <b>ALBUM: {{ album?.name }}</b>
+    </div>
+</div>
+<div>
+    <b>Selos:</b>
+  </div>
+  <div class="card-container">
+      <mat-card *ngFor="let selo of selosDoAlbun" class="clickable-card card-item" (click)="onCardClick(selo)">
+        
+        <mat-card-header>
+          <br> 
+          <mat-card-title>{{ selo.name }}</mat-card-title>
+          <mat-card-subtitle>{{ selo.description }}</mat-card-subtitle>
+          <br> 
+        </mat-card-header>
+  
+        <mat-card-content>
+         
+        </mat-card-content>
+            
+      </mat-card>
+  </div>
