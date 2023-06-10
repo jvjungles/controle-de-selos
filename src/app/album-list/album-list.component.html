@@ -12,11 +12,11 @@
   <div class="card-container">
     <mat-card *ngFor="let album of albuns" class="clickable-card card-item" (click)="onCardClick(album)">
       <mat-card-header>
-        <mat-card-title>{{ album.name }}</mat-card-title>
-        <mat-card-subtitle>{{ album.description }}</mat-card-subtitle>
+        <mat-card-title>{{ album?.name }}</mat-card-title>
+        <mat-card-subtitle>{{ album?.description }}</mat-card-subtitle>
       </mat-card-header>
       <mat-card-content>
-        <h3>Selos: {{ album.qtdeSelos }}</h3>
+        <h3>Selos: {{ album?.qtdeSelos }}</h3>
       </mat-card-content>
     </mat-card>
   </div>
@@ -25,3 +25,7 @@
 <ng-template #noAlbums>
   <p>Nenhum álbum disponível.</p>
 </ng-template>
+
+<div class="header">
+  <br><br><br><br><br><br>
+</div>

@@ -17,6 +17,8 @@ export class AlbumPageComponent {
   album: Album | undefined;
   selos = [...selos];
   selosDoAlbun: Selo[] = [];
+  showModal = false;
+  showSeloModal = false;
 
   ngOnInit() {
     this.route.params.subscribe(params => {
@@ -33,6 +35,26 @@ export class AlbumPageComponent {
 
   onCardClick(selo: any) {
     console.log('Card clicked:', selo);
+  }
+
+  openSeloModal() {
+    console.log('app-selo-list - openModal');
+    this.showSeloModal = true;
+  }
+
+  closeSeloModal() {
+    console.log('app-selo-list - closeModal');
+    this.showSeloModal = false;
+  }
+
+  openModal() {
+    console.log('app-album-list - openModal');
+    this.showModal = true;
+  }
+
+  closeModal() {
+    console.log('app-album-list - closeModal');
+    this.showModal = false;
   }
 }
 

@@ -1,8 +1,6 @@
 import { Component } from '@angular/core';
 import { albuns } from '../albuns';
 import { Router } from '@angular/router';
-import { AlbumAddModalComponent } from '../album-add-modal/album-add-modal.component';
-
 
 @Component({
   selector: 'app-album-list',
@@ -13,7 +11,7 @@ export class AlbumListComponent {
 
   constructor(private router: Router) {}
 
-  albuns = [...albuns];
+  albuns: any[] = [...albuns];
   showModal = false;
 
   share() {

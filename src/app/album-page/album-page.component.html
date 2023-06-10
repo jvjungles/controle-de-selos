@@ -1,24 +1,45 @@
 <div>
-    <div>
+    <div class="header">
         <b>ALBUM: {{ album?.name }}</b>
+        <button title="Editar Álbum" class="add-button" (click)="openModal()">/</button>
     </div>
+    <app-album-add-modal
+      [showModal]="showModal"
+      (closeModalEvent)="closeModal()">
+    </app-album-add-modal>
+    <app-selo-add-modal
+      [showSeloModal]="showSeloModal"
+      (closeModalEvent)="closeSeloModal()">
+    </app-selo-add-modal>
+    <br>
 </div>
+
 <div>
+  <div class="header">
     <b>Selos:</b>
+    <button title="Adicionar Selo" class="add-button" (click)="openSeloModal()">+</button>        
   </div>
-  <div class="card-container">
-      <mat-card *ngFor="let selo of selosDoAlbun" class="clickable-card card-item" (click)="onCardClick(selo)">
-        
+  <ng-container *ngIf="selosDoAlbun.length > 0; else noSelos">
+    <div class="card-container">
+      <mat-card *ngFor="let selo of selosDoAlbun" class="clickable-card card-item" (click)="onCardClick(selo)">        
         <mat-card-header>
           <br> 
-          <mat-card-title>{{ selo.name }}</mat-card-title>
-          <mat-card-subtitle>{{ selo.description }}</mat-card-subtitle>
+          <mat-card-title>{{ selo?.name }}</mat-card-title>
+          <mat-card-subtitle>{{ selo?.description }}</mat-card-subtitle>
           <br> 
-        </mat-card-header>
-  
-        <mat-card-content>
-         
-        </mat-card-content>
-            
+        </mat-card-header>  
+        <mat-card-content>        
+        </mat-card-content>            
       </mat-card>
-  </div>
+    </div>
+  </ng-container>
+  <ng-template #noSelos>
+    <p>Nenhum Selo disponível.</p>
+  </ng-template>  
+</div>
+
+<div class="header">
+  <br><br><br><br><br><br>
+</div>
+
+  

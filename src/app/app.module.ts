@@ -12,6 +12,7 @@ import { MatCardModule } from '@angular/material/card';
 import { AlbumListComponent } from './album-list/album-list.component';
 import { AlbumPageComponent } from './album-page/album-page.component';
 import { AlbumAddModalComponent } from './album-add-modal/album-add-modal.component';
+import { SeloAddModalComponent } from './selo-add-modal/selo-add-modal.component';
 
 @NgModule({
   imports: [
@@ -31,7 +32,8 @@ import { AlbumAddModalComponent } from './album-add-modal/album-add-modal.compon
     FooterComponent,
     AlbumListComponent,
     AlbumPageComponent,
-    AlbumAddModalComponent
+    AlbumAddModalComponent,
+    SeloAddModalComponent
   ],
   bootstrap: [
     AppComponent
