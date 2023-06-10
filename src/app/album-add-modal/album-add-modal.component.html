@@ -1,7 +1,17 @@
 <div class="modal-overlay" [class.show]="showModal">
   <div class="modal-content">
-    <h1>modal</h1>
-    <!-- Conteúdo da modal -->
-    <button class="close-button" (click)="closeModal()">Fechar</button>
+    <h1>Novo Álbum</h1>
+    <div class="input-container">
+      <label for="nome">Nome:</label>
+      <input class="custom-text" type="text" id="nome" [(ngModel)]="nome" />
+    </div>
+    <div class="input-container">
+      <label for="descricao">Descrição:</label>
+      <textarea class="custom-textarea" id="descricao" [(ngModel)]="descricao"></textarea>
+    </div>
+    <div class="button-container">
+      <button class="close-button" (click)="closeModal()">Fechar</button>
+      <button class="save-button" (click)="saveModal()">Salvar</button>
+    </div>
   </div>
 </div>

@@ -3,6 +3,7 @@ import { BrowserModule } from '@angular/platform-browser';
 import { RouterModule } from '@angular/router';
 import { ReactiveFormsModule } from '@angular/forms';
 import { MatSlideToggleModule } from '@angular/material/slide-toggle';
+import { FormsModule } from '@angular/forms';
 
 import { AppComponent } from './app.component';
 import { TopBarComponent } from './top-bar/top-bar.component';
@@ -17,6 +18,7 @@ import { AlbumAddModalComponent } from './album-add-modal/album-add-modal.compon
     BrowserModule,
     ReactiveFormsModule,
     MatSlideToggleModule,
+    FormsModule,
     MatCardModule,
     RouterModule.forRoot([
       { path: '', component: AlbumListComponent },

@@ -20,10 +20,31 @@
   display: flex;
 }
 
+.button-container {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 20px;
+}
+
 .close-button {
   float: right;
   background-color: #395f83;
   color: white;
+}
+
+.save-button {
+  float: right;
+  background-color: #395f83;
+  color: white;
+}
+
+.custom-text {
+  width: 210px;
+}
+
+.custom-textarea {
+  width: 210px;
+  height: 150px;
 }
  
   
