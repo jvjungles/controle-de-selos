@@ -7,6 +7,7 @@
     flex-wrap: wrap;
     justify-content: center;
     margin-top: 16px;
+    overflow: auto;
   }
   
   .card {
@@ -24,10 +25,12 @@
     align-items: center;
     transition: all 0.2s ease-in-out;
     line-height: 24px;
+    overflow: auto;
   }
   
   .card-container .card:not(:last-child) {
     margin-right: 0;
+    overflow: auto;
   }
   
   .card.card-small {
@@ -42,10 +45,12 @@
   .card-container .card:not(.highlight-card):hover {
     transform: translateY(-3px);
     box-shadow: 0 4px 17px rgba(0, 0, 0, 0.35);
+    overflow: auto;
   }
   
   .card-container .card:not(.highlight-card):hover .material-icons path {
     fill: rgb(105, 103, 103);
+    overflow: auto;
   }
   
   .card.highlight-card {
@@ -99,5 +104,6 @@
     .card-item {
       width: calc(43% - 16px); /* A largura é definida como metade do container, subtraindo o espaçamento entre os cards */
       margin: 8px;
+      overflow: auto;
     }
   

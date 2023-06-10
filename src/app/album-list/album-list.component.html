@@ -1,19 +1,27 @@
-<div>
+<div class="header">
   <b>ALBUNS:</b>
+  <button title="Adicionar Álbum" class="add-button" (click)="openModal()">+</button>
 </div>
-<div class="card-container">
+
+<app-album-add-modal
+  [showModal]="showModal"
+  (closeModalEvent)="closeModal()">
+</app-album-add-modal>
+
+<ng-container *ngIf="albuns.length > 0; else noAlbums">
+  <div class="card-container">
     <mat-card *ngFor="let album of albuns" class="clickable-card card-item" (click)="onCardClick(album)">
-      
       <mat-card-header>
-        <br> 
         <mat-card-title>{{ album.name }}</mat-card-title>
         <mat-card-subtitle>{{ album.description }}</mat-card-subtitle>
-        <br> 
       </mat-card-header>
-
       <mat-card-content>
         <h3>Selos: {{ album.qtdeSelos }}</h3>
       </mat-card-content>
-          
     </mat-card>
-</div>
+  </div>
+</ng-container>
+
+<ng-template #noAlbums>
+  <p>Nenhum álbum disponível.</p>
+</ng-template>

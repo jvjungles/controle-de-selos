@@ -10,6 +10,7 @@ import { FooterComponent } from './footer/footer.component';
 import { MatCardModule } from '@angular/material/card';
 import { AlbumListComponent } from './album-list/album-list.component';
 import { AlbumPageComponent } from './album-page/album-page.component';
+import { AlbumAddModalComponent } from './album-add-modal/album-add-modal.component';
 
 @NgModule({
   imports: [
@@ -27,7 +28,8 @@ import { AlbumPageComponent } from './album-page/album-page.component';
     TopBarComponent,    
     FooterComponent,
     AlbumListComponent,
-    AlbumPageComponent
+    AlbumPageComponent,
+    AlbumAddModalComponent
   ],
   bootstrap: [
     AppComponent

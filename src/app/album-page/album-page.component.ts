@@ -33,7 +33,6 @@ export class AlbumPageComponent {
 
   onCardClick(selo: any) {
     console.log('Card clicked:', selo);
-    //this.router.navigate(['/album-page', album]);
   }
 }
 
