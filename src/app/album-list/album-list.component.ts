@@ -13,6 +13,7 @@ export class AlbumListComponent {
 
   albuns: any[] = [...albuns];
   showModal = false;
+  albumTitle: string = '';
 
   share() {
     window.alert('The album has been shared!');
@@ -25,6 +26,7 @@ export class AlbumListComponent {
 
   openModal() {
     console.log('app-album-list - openModal');
+    this.albumTitle = 'Novo';
     this.showModal = true;
   }
 

@@ -1,6 +1,6 @@
 <div class="modal-overlay" [class.show]="showModal">
   <div class="modal-content">
-    <h1>Novo Álbum</h1>
+    <h1>{{ albumTitle }} Álbum</h1>
     <div class="input-container">
       <label for="nome">Nome:</label>
       <input class="custom-text" type="text" id="nome" [(ngModel)]="nome" />

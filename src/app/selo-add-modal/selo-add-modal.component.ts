@@ -7,6 +7,7 @@ import { Component, Input, Output, EventEmitter } from '@angular/core';
 })
 export class SeloAddModalComponent {
   @Input() showSeloModal: boolean = false;
+  @Input() seloTitle: String = '';
   @Output() closeModalEvent = new EventEmitter<void>(); 
   nome: string = '';
   descricao: string = '';

@@ -9,6 +9,7 @@ import { FormsModule } from '@angular/forms';
 
 export class AlbumAddModalComponent {
   @Input() showModal: boolean = false;
+  @Input() albumTitle: String = '';
   @Output() closeModalEvent = new EventEmitter<void>(); 
   nome: string = '';
   descricao: string = '';

@@ -1,14 +1,16 @@
 <div>
     <div class="header">
-        <b>ALBUM: {{ album?.name }}</b>
+        <b>ALBUM: {{ album?.name }}&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</b>
         <button title="Editar Álbum" class="add-button" (click)="openModal()">/</button>
     </div>
     <app-album-add-modal
       [showModal]="showModal"
+      [albumTitle]="albumTitle"
       (closeModalEvent)="closeModal()">
     </app-album-add-modal>
     <app-selo-add-modal
       [showSeloModal]="showSeloModal"
+      [seloTitle]="seloTitle"
       (closeModalEvent)="closeSeloModal()">
     </app-selo-add-modal>
     <br>
@@ -34,7 +36,7 @@
     </div>
   </ng-container>
   <ng-template #noSelos>
-    <p>Nenhum Selo disponível.</p>
+    <p class="text-center">Nenhum Selo disponível.</p>
   </ng-template>  
 </div>
 

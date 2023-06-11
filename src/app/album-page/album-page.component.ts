@@ -2,8 +2,8 @@ import { Component } from '@angular/core';
 import { ActivatedRoute } from '@angular/router';
 import { albuns } from '../model/albuns';
 import { Album } from '../model/albuns';
-import { selos } from '../selos';
-import { Selo } from '../selos';
+import { selos } from '../model/selos';
+import { Selo } from '../model/selos';
 
 @Component({
   selector: 'app-album-page',
@@ -19,6 +19,8 @@ export class AlbumPageComponent {
   selosDoAlbun: Selo[] = [];
   showModal = false;
   showSeloModal = false;
+  albumTitle: string = '';
+  seloTitle: string = '';
 
   ngOnInit() {
     this.route.params.subscribe(params => {
@@ -35,10 +37,13 @@ export class AlbumPageComponent {
 
   onCardClick(selo: any) {
     console.log('Card clicked:', selo);
+    this.seloTitle = 'Editar';
+    this.showSeloModal = true;
   }
 
   openSeloModal() {
     console.log('app-selo-list - openModal');
+    this.seloTitle = 'Novo';
     this.showSeloModal = true;
   }
 
@@ -49,6 +54,7 @@ export class AlbumPageComponent {
 
   openModal() {
     console.log('app-album-list - openModal');
+    this.albumTitle = 'Editar';
     this.showModal = true;
   }
 
