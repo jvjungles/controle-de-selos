@@ -1,5 +1,5 @@
 import { Component } from '@angular/core';
-import { albuns } from '../albuns';
+import { albuns } from '../model/albuns';
 import { Router } from '@angular/router';
 
 @Component({

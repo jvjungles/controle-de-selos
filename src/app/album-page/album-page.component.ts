@@ -1,7 +1,7 @@
 import { Component } from '@angular/core';
 import { ActivatedRoute } from '@angular/router';
-import { albuns } from '../albuns';
-import { Album } from '../albuns';
+import { albuns } from '../model/albuns';
+import { Album } from '../model/albuns';
 import { selos } from '../selos';
 import { Selo } from '../selos';
 

@@ -8,9 +8,9 @@ export interface Album {
 export const albuns = [
   {
     id: 1,
-    name: 'Album Beneficente',
-    description: 'Album beneficente descrição',
-    qtdeSelos: 100
+    name: 'Raros',
+    description: 'Album de Selos Raros',
+    qtdeSelos: 3
   },
   {
     id: 2,

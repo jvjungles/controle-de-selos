@@ -8,21 +8,21 @@ export interface Selo {
 export const selos = [
   {
     id: 1,
-    name: 'Selo 01',
-    description: 'Selo 01 descrição',
-    albunId: 2
+    name: 'One Cent Magenta',
+    description: 'Selo da Guiana de 1 Cent',
+    albunId: 1
   },
   {
     id: 2,
     name: 'Selo 02',
     description: 'Selo 02 descrição',
-    albunId: 5
+    albunId: 1
   },
   {
     id: 3,
     name: 'Selo 03',
     description: 'Selo 03 descrição',
-    albunId: 5
+    albunId: 1
   },
   {
     id: 4,
