@@ -1,0 +1,30 @@
+{
+    "selos": [
+      {
+        "id": 1,
+        "name": "One Cent Magenta",
+        "description": "Selo da Guiana de 1 Cent",
+        "albunid": 1
+      },
+      {
+        "id": 2,
+        "name": "Selo 02",
+        "description": "Selo 02 descrição",
+        "albunid": 1
+      }
+    ],
+    "albuns": [
+        {
+            "id": 1,
+            "name": "Raros",
+            "description": "Album de Selos Raros",
+            "qtdeSelos": 3
+          },
+          {
+            "id": 2,
+            "name": "Album Comemorativo",
+            "description": "Album comemorativo descrição",
+            "qtdeSelos": 9
+          }
+      ]
+  }

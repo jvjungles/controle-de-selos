@@ -9,9 +9,9 @@
   (closeModalEvent)="closeModal()">
 </app-album-add-modal>
 
-<ng-container *ngIf="albuns.length > 0; else noAlbums">
+<ng-container *ngIf="albuns2.length > 0; else noAlbums">
   <div class="card-container">
-    <mat-card *ngFor="let album of albuns" class="clickable-card card-item" (click)="onCardClick(album)">
+    <mat-card *ngFor="let album of albuns2" class="clickable-card card-item" (click)="onCardClick(album)">
       <mat-card-header>
         <mat-card-title>{{ album?.name }}</mat-card-title>
         <mat-card-subtitle>{{ album?.description }}</mat-card-subtitle>
