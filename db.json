@@ -1,5 +1,63 @@
 {
-    "selos": [
+  "albuns": [
+    {
+        "id": 1,
+        "name": "Raros",
+        "description": "Album de Selos Raros",
+        "qtdeSelos": 3
+      },
+      {
+        "id": 2,
+        "name": "Comemorativo",
+        "description": "Album Album de Selos Comemorativo",
+        "qtdeSelos": 8
+      },{
+        "id": 3,
+        "name": "Especial",
+        "description": "Album Album de Selos Especiais",
+        "qtdeSelos": 0
+      },
+      {
+        "id": 4,
+        "name": "Ordinario",
+        "description": "Album Album de Selos Ordinarios",
+        "qtdeSelos": 0
+      },{
+        "id": 5,
+        "name": "Promocional",
+        "description": "Album Album de Selos Promocionais",
+        "qtdeSelos": 11
+      },
+      {
+        "id": 6,
+        "name": "Chines",
+        "description": "Album de Selos da China",
+        "qtdeSelos": 0
+      },{
+        "id": 7,
+        "name": "Beneficente",
+        "description": "Album Album de Selos Beneficentes",
+        "qtdeSelos": 0
+      },
+      {
+        "id": 8,
+        "name": "Brasil",
+        "description": "Album de Selos do Brasil",
+        "qtdeSelos": 0
+      },{
+        "id": 9,
+        "name": "Antiguidade",
+        "description": "Album Album de Selos da Antiguidade",
+        "qtdeSelos": 0
+      },
+      {
+        "id": 10,
+        "name": "Guerra",
+        "description": "Album Album de Selos de Guerra",
+        "qtdeSelos": 0
+      }
+  ],
+  "selos": [
       {
         "id": 1,
         "name": "One Cent Magenta",
@@ -11,20 +69,114 @@
         "name": "Selo 02",
         "description": "Selo 02 descrição",
         "albunid": 1
+      },
+      {
+        "id": 3,
+        "name": "Selo 03",
+        "description": "Selo 03 descrição",
+        "albunid": 1
+      },
+      {
+        "id": 4,
+        "name": "Selo 04",
+        "description": "Selo 04 descrição",
+        "albunid": 2
+      },
+      {
+        "id": 5,
+        "name": "Selo 05",
+        "description": "Selo 05 descrição",
+        "albunid": 2
+      },
+      {
+        "id": 6,
+        "name": "Selo 06",
+        "description": "Selo 06 descrição",
+        "albunid": 2
+      },
+      {
+        "id": 7,
+        "name": "Selo 07",
+        "description": "Selo 07 descrição",
+        "albunid": 2
+      },
+      {
+        "id": 8,
+        "name": "Selo 08",
+        "description": "Selo 08 descrição",
+        "albunid": 2
+      },
+      {
+        "id": 9,
+        "name": "Selo 09",
+        "description": "Selo 09 descrição",
+        "albunid": 2
+      },
+      {
+        "id": 10,
+        "name": "Selo 10",
+        "description": "Selo 10 descrição",
+        "albunid": 2
+      },
+      {
+        "id": 11,
+        "name": "Selo 11",
+        "description": "Selo 11 descrição",
+        "albunid": 2
+      },
+      {
+        "id": 12,
+        "name": "Selo 12",
+        "description": "Selo 12 descrição",
+        "albunid": 5
+      },
+      {
+        "id": 13,
+        "name": "Selo 13",
+        "description": "Selo 13 descrição",
+        "albunid": 5
+      },
+      {
+        "id": 14,
+        "name": "Selo 14",
+        "description": "Selo 14 descrição",
+        "albunid": 5
+      },
+      {
+        "id": 15,
+        "name": "Selo 15",
+        "description": "Selo 15 descrição",
+        "albunid": 5
+      },
+      {
+        "id": 16,
+        "name": "Selo 16",
+        "description": "Selo 17 descrição",
+        "albunid": 5
+      },
+      {
+        "id": 17,
+        "name": "Selo 17",
+        "description": "Selo 17 descrição",
+        "albunid": 5
+      },
+      {
+        "id": 18,
+        "name": "Selo 18",
+        "description": "Selo 18 descrição",
+        "albunid": 5
+      },
+      {
+        "id": 19,
+        "name": "Selo 19",
+        "description": "Selo 19 descrição",
+        "albunid": 5
+      },
+      {
+        "id": 20,
+        "name": "Selo 20",
+        "description": "Selo 20 descrição",
+        "albunid": 5
       }
-    ],
-    "albuns": [
-        {
-            "id": 1,
-            "name": "Raros",
-            "description": "Album de Selos Raros",
-            "qtdeSelos": 3
-          },
-          {
-            "id": 2,
-            "name": "Album Comemorativo",
-            "description": "Album comemorativo descrição",
-            "qtdeSelos": 9
-          }
-      ]
+    ]    
   }

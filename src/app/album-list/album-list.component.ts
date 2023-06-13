@@ -1,7 +1,6 @@
 import { Component } from '@angular/core';
-import { albuns } from '../model/albuns';
 import { Router } from '@angular/router';
-import { AlbumService } from './album.service';
+import { AlbumService } from '../services/album.service';
 
 
 @Component({
@@ -13,20 +12,16 @@ export class AlbumListComponent {
 
   constructor(private router: Router, private albumService: AlbumService) {}
 
-  albuns: any[] = [...albuns];
-  albuns2: any[] = [];
+  albuns: any[] = [];
   showModal = false;
   albumTitle: string = '';
 
   ngOnInit() {
     this.albumService.listalbuns().subscribe(albums => {
-      // Faça algo com os álbuns retornados, por exemplo, atribuir à propriedade do componente:
-      console.log('albuns2:', albums);
-      this.albuns2 = albums;
-      console.log('albuns2:', this.albuns2);
+      this.albuns = albums;
+      console.log('albuns2:', this.albuns);
     });    
-  }
-  
+  }  
 
   share() {
     window.alert('The album has been shared!');

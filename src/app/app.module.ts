@@ -15,7 +15,7 @@ import { AlbumPageComponent } from './album-page/album-page.component';
 import { AlbumAddModalComponent } from './album-add-modal/album-add-modal.component';
 import { SeloAddModalComponent } from './selo-add-modal/selo-add-modal.component';
 
-import { AlbumService } from './album-list/album.service';
+import { AlbumService } from './services/album.service';
 
 @NgModule({
   imports: [
