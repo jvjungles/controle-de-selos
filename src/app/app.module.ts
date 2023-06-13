@@ -7,13 +7,13 @@ import { FormsModule } from '@angular/forms';
 import { HttpClientModule } from '@angular/common/http';
 
 import { AppComponent } from './app.component';
-import { TopBarComponent } from './top-bar/top-bar.component';
-import { FooterComponent } from './footer/footer.component';
+import { TopBarComponent } from './components/top-bar/top-bar.component';
+import { FooterComponent } from './components/footer/footer.component';
 import { MatCardModule } from '@angular/material/card';
-import { AlbumListComponent } from './album-list/album-list.component';
-import { AlbumPageComponent } from './album-page/album-page.component';
-import { AlbumAddModalComponent } from './album-add-modal/album-add-modal.component';
-import { SeloAddModalComponent } from './selo-add-modal/selo-add-modal.component';
+import { AlbumListComponent } from './components/album-list/album-list.component';
+import { AlbumPageComponent } from './components/album-page/album-page.component';
+import { AlbumAddModalComponent } from './components/album-add-modal/album-add-modal.component';
+import { SeloAddModalComponent } from './components/selo-add-modal/selo-add-modal.component';
 
 import { AlbumService } from './services/album.service';
 

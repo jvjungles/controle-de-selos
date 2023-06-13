@@ -1,9 +1,9 @@
 import { Component } from '@angular/core';
 import { ActivatedRoute } from '@angular/router';
-import { albuns } from '../model/albuns';
-import { Album } from '../model/albuns';
-import { selos } from '../model/selos';
-import { Selo } from '../model/selos';
+import { albuns } from '../../model/albuns';
+import { Album } from '../../model/albuns';
+import { selos } from '../../model/selos';
+import { Selo } from '../../model/selos';
 
 @Component({
   selector: 'app-album-page',

@@ -1,6 +1,6 @@
 import { Component } from '@angular/core';
 import { Router } from '@angular/router';
-import { AlbumService } from '../services/album.service';
+import { AlbumService } from '../../services/album.service';
 
 
 @Component({
