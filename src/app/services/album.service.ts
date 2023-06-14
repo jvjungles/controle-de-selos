@@ -16,4 +16,12 @@ export class AlbumService {
   listalbuns(): Observable<Album[]> {
     return this.httpClient.get<Album[]>(`${this.URL}`);
   }  
+
+  getById(id: number): Observable<Album> {
+    return this.httpClient.get<Album>(`${this.URL}/${id}`);
+  }
+
+  save(album: Album): Observable<Album> {
+    return this.httpClient.post<Album>(this.URL, album, this.httpOptions);
+  }
 }

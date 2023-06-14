@@ -17,10 +17,7 @@ export class AlbumListComponent {
   albumTitle: string = '';
 
   ngOnInit() {
-    this.albumService.listalbuns().subscribe(albums => {
-      this.albuns = albums;
-      console.log('albuns2:', this.albuns);
-    });    
+    this.findAlbumList();   
   }  
 
   share() {
@@ -40,7 +37,15 @@ export class AlbumListComponent {
 
   closeModal() {
     console.log('app-album-list - closeModal');
+    this.findAlbumList();
     this.showModal = false;
   }
+
+  findAlbumList() {
+    this.albumService.listalbuns().subscribe(albums => {
+      this.albuns = albums;
+      console.log('albuns:', this.albuns);
+    });    
+  } 
   
 }
