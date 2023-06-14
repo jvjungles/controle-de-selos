@@ -53,11 +53,15 @@ export class AlbumPageComponent {
   openModal() {
     console.log('app-album-list - openModal');
     this.albumTitle = 'Editar';
+    this.findSeloList();
+    this.albumid = this.album?.id || -1;
+    console.log('this.albumid' + this.albumid);
     this.showModal = true;
   }
 
   closeModal() {
     console.log('app-album-list - closeModal');
+    this.findSeloList();
     this.showModal = false;
   }
 
