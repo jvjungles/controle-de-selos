@@ -1,4 +1,4 @@
-import { Selo } from '../model/selos';
+import { Selo } from './selo';
 
 export class Album {
   public id?: number;

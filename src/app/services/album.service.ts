@@ -1,7 +1,7 @@
 import { HttpClient, HttpHeaders } from '@angular/common/http';
 import { Observable, of } from 'rxjs';
 import { Injectable } from '@angular/core';
-import { Album } from '../model/albuns';
+import { Album } from '../model/album';
 
 @Injectable()
 export class AlbumService {
@@ -23,5 +23,13 @@ export class AlbumService {
 
   save(album: Album): Observable<Album> {
     return this.httpClient.post<Album>(this.URL, album, this.httpOptions);
+  }
+
+  update(album: Album): Observable<Album> {
+    return this.httpClient.put<Album>(
+      `${this.URL}/${album.id}`,
+      album,
+      this.httpOptions
+    );
   }
 }

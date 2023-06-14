@@ -3,13 +3,50 @@
     {
       "name": "01",
       "description": "01",
-      "selos": [],
+      "selos": [
+        {
+          "id": 1,
+          "name": "01",
+          "description": "01"
+        },
+        {
+          "id": 2,
+          "name": "02",
+          "description": "02"
+        },
+        {
+          "id": 3,
+          "name": "03",
+          "description": "03"
+        }
+      ],
       "id": 1
     },
     {
       "name": "02",
       "description": "02",
-      "selos": [],
+      "selos": [
+        {
+          "id": 1,
+          "name": "wedsf",
+          "description": "sdfsdd"
+        },
+        {
+          "id": 2,
+          "name": "afsfas",
+          "description": "sdfsdasfasfasd"
+        },
+        {
+          "id": 3,
+          "name": "00303",
+          "description": "03"
+        },
+        {
+          "id": 4,
+          "name": "04",
+          "description": "0304"
+        }
+      ],
       "id": 2
     },
     {
@@ -60,6 +97,5 @@
       "selos": [],
       "id": 10
     }
-  ],
-  "selos": []
+  ]
 }

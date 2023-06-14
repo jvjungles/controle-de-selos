@@ -1,7 +1,7 @@
 import { Component, Input, Output, EventEmitter } from '@angular/core';
 import { FormsModule } from '@angular/forms';
 import { AlbumService } from '../../services/album.service';
-import { Album } from '../../model/albuns';
+import { Album } from '../../model/album';
 
 @Component({
   selector: 'app-album-add-modal',
@@ -15,7 +15,8 @@ export class AlbumAddModalComponent {
 
   @Input() showModal: boolean = false;
   @Input() albumTitle: String = '';
-  @Output() closeModalEvent = new EventEmitter<void>(); 
+  @Output() closeModalEvent = new EventEmitter<void>();
+   
   nome: string = '';
   descricao: string = '';
   album: Album | undefined;

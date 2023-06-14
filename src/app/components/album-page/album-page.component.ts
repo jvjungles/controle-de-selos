@@ -1,7 +1,7 @@
 import { Component } from '@angular/core';
 import { ActivatedRoute } from '@angular/router';
-import { Album } from '../../model/albuns';
-import { Selo } from '../../model/selos';
+import { Album } from '../../model/album';
+import { Selo } from '../../model/selo';
 import { AlbumService } from '../../services/album.service';
 
 @Component({
@@ -19,11 +19,12 @@ export class AlbumPageComponent {
   showModal = false;
   showSeloModal = false;
   albumTitle: string = '';
+  albumid: number = -1;
   seloTitle: string = '';
 
   ngOnInit() {
     this.route.params.subscribe(params => {
-      this.service.getById(0).subscribe(album => {
+      this.service.getById(+params['id']).subscribe(album => {
         this.album = album;
         console.log('Album Object:', album);
       });
@@ -39,11 +40,13 @@ export class AlbumPageComponent {
   openSeloModal() {
     console.log('app-selo-list - openModal');
     this.seloTitle = 'Novo';
+    this.albumid = this.album?.id || -1;
     this.showSeloModal = true;
   }
 
   closeSeloModal() {
     console.log('app-selo-list - closeModal');
+    this.findSeloList();
     this.showSeloModal = false;
   }
 
@@ -57,5 +60,13 @@ export class AlbumPageComponent {
     console.log('app-album-list - closeModal');
     this.showModal = false;
   }
+
+  findSeloList() {
+    this.service.getById(this.album?.id || -1).subscribe(album => {
+        this.album = album;
+        console.log('Album Object:', album);
+      });   
+  } 
+  
 }
 

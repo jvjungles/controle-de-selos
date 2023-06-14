@@ -11,6 +11,7 @@
     <app-selo-add-modal
       [showSeloModal]="showSeloModal"
       [seloTitle]="seloTitle"
+      [albumid]="albumid"
       (closeModalEvent)="closeSeloModal()">
     </app-selo-add-modal>
     <br>
@@ -21,9 +22,9 @@
     <b>Selos:</b>
     <button title="Adicionar Selo" class="add-button" (click)="openSeloModal()">+</button>        
   </div>
-  <ng-container *ngIf="selosDoAlbun.length > 0; else noSelos">
+  <ng-container *ngIf="album && album.selos && album.selos.length > 0; else noSelos">
     <div class="card-container">
-      <mat-card *ngFor="let selo of selosDoAlbun" class="clickable-card card-item" (click)="onCardClick(selo)">        
+      <mat-card *ngFor="let selo of album?.selos" class="clickable-card card-item" (click)="onCardClick(selo)">        
         <mat-card-header>
           <br> 
           <mat-card-title>{{ selo?.name }}</mat-card-title>
