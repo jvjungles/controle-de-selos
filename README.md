@@ -66,7 +66,9 @@ json-server v0.17.3
 
 npm install
 
-npm start
+npm start 
+
 or
+ 
 npm run json:server  
 ng serve  
