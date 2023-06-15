@@ -1,6 +1,7 @@
 import { Component } from '@angular/core';
-import { albuns } from '../model/albuns';
 import { Router } from '@angular/router';
+import { AlbumService } from '../../services/album.service';
+
 
 @Component({
   selector: 'app-album-list',
@@ -9,11 +10,15 @@ import { Router } from '@angular/router';
 })
 export class AlbumListComponent {
 
-  constructor(private router: Router) {}
+  constructor(private router: Router, private albumService: AlbumService) {}
 
-  albuns: any[] = [...albuns];
+  albuns: any[] = [];
   showModal = false;
   albumTitle: string = '';
+
+  ngOnInit() {
+    this.findAlbumList();   
+  }  
 
   share() {
     window.alert('The album has been shared!');
@@ -32,7 +37,15 @@ export class AlbumListComponent {
 
   closeModal() {
     console.log('app-album-list - closeModal');
+    this.findAlbumList();
     this.showModal = false;
   }
+
+  findAlbumList() {
+    this.albumService.listalbuns().subscribe(albums => {
+      this.albuns = albums;
+      console.log('albuns:', this.albuns);
+    });    
+  } 
   
 }

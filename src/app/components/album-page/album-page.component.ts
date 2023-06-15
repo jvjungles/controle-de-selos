@@ -1,37 +1,33 @@
 import { Component } from '@angular/core';
 import { ActivatedRoute } from '@angular/router';
-import { albuns } from '../model/albuns';
-import { Album } from '../model/albuns';
-import { selos } from '../model/selos';
-import { Selo } from '../model/selos';
+import { Album } from '../../model/album';
+import { Selo } from '../../model/selo';
+import { AlbumService } from '../../services/album.service';
 
 @Component({
   selector: 'app-album-page',
   templateUrl: './album-page.component.html',
-  styleUrls: ['./album-page.component.css']
+  styleUrls: ['./album-page.component.css'],
+  providers: [AlbumService],
 })
 export class AlbumPageComponent {
 
-  constructor(private route: ActivatedRoute) { }
+  constructor(private route: ActivatedRoute, private service: AlbumService) { }
 
   album: Album | undefined;
-  selos = [...selos];
   selosDoAlbun: Selo[] = [];
   showModal = false;
   showSeloModal = false;
   albumTitle: string = '';
+  albumid: number = -1;
   seloTitle: string = '';
 
   ngOnInit() {
     this.route.params.subscribe(params => {
-      const album: Album | undefined = albuns.find((album: Album) => album.id === +params['id']);
-      this.album = album;
-
-      const selosDoAlbun: Selo[] = selos.filter((selo: Selo) => selo.albunId === +params['id']);
-      this.selosDoAlbun = selosDoAlbun;
-
-      console.log('Album Object:', album);
-      console.log('Selos:', selosDoAlbun);
+      this.service.getById(+params['id']).subscribe(album => {
+        this.album = album;
+        console.log('Album Object:', album);
+      });
     });
   }
 
@@ -44,23 +40,37 @@ export class AlbumPageComponent {
   openSeloModal() {
     console.log('app-selo-list - openModal');
     this.seloTitle = 'Novo';
+    this.albumid = this.album?.id || -1;
     this.showSeloModal = true;
   }
 
   closeSeloModal() {
     console.log('app-selo-list - closeModal');
+    this.findSeloList();
     this.showSeloModal = false;
   }
 
   openModal() {
     console.log('app-album-list - openModal');
     this.albumTitle = 'Editar';
+    this.findSeloList();
+    this.albumid = this.album?.id || -1;
+    console.log('this.albumid' + this.albumid);
     this.showModal = true;
   }
 
   closeModal() {
     console.log('app-album-list - closeModal');
+    this.findSeloList();
     this.showModal = false;
   }
+
+  findSeloList() {
+    this.service.getById(this.album?.id || -1).subscribe(album => {
+        this.album = album;
+        console.log('Album Object:', album);
+      });   
+  } 
+  
 }
 
