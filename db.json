@@ -43,6 +43,21 @@
           "id": 8,
           "name": "Selo 01",
           "description": "DESCRIÇÃO selo 01"
+        },
+        {
+          "id": 9,
+          "name": "",
+          "description": ""
+        },
+        {
+          "id": 10,
+          "name": "",
+          "description": ""
+        },
+        {
+          "id": 11,
+          "name": "",
+          "description": ""
         }
       ],
       "id": 1
@@ -108,8 +123,24 @@
     },
     {
       "name": "04",
-      "description": "04",
-      "selos": [],
+      "description": "DESCRIÇÃO 04",
+      "selos": [
+        {
+          "id": 1,
+          "name": "010101",
+          "description": "010101"
+        },
+        {
+          "id": 2,
+          "name": "010101",
+          "description": "010101"
+        },
+        {
+          "id": 3,
+          "name": "010101",
+          "description": "010101"
+        }
+      ],
       "id": 4
     },
     {
