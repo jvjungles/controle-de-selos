@@ -1,0 +1,47 @@
+<div class="modal-overlay modal-auto-height" [class.show]="showSeloModal">
+  <div class="modal-content">
+    <h1>{{ seloTitle }} Selo</h1>
+    <div class="input-container">
+      <label for="tipo">Tipo:</label>
+      <select class="custom-text" id="tipo" [(ngModel)]="tipo">
+        <option value="Beneficente">Beneficente</option>
+        <option value="Comemorativo">Comemorativo</option>
+        <option value="Especial">Especial</option>
+        <option value="Ordinario">Ordinário</option>
+        <option value="Promocional">Promocional</option>
+        <option value="Outros">Outros</option>
+      </select>
+    </div>
+    <div class="input-container">
+      <label for="nome">Nome:</label>
+      <input class="custom-text" type="text" id="nome" [(ngModel)]="nome" />
+    </div>
+    <div class="input-container">
+      <label for="descricao">Descrição:</label>
+      <textarea class="custom-textarea" id="descricao" [(ngModel)]="descricao"></textarea>
+    </div>
+    <div class="input-container">
+      <label for="anoFabricacao">Ano de Fabricação:</label>
+      <input class="custom-text" type="number" id="anoFabricacao" [(ngModel)]="anoFabricacao" />
+    </div>
+    <div class="input-container">
+      <label for="pais">País:</label>
+      <input class="custom-text" type="text" id="pais" [(ngModel)]="pais" />
+    </div>
+    <div class="input-container">
+      <label>Carimbo:
+        <input type="checkbox" id="carimbo" [(ngModel)]="carimbo" />
+      </label>
+    </div>        
+    <div class="input-container">
+      <label>Filigrama:
+      <label class="radio-label"><input type="radio" name="filigrama" value="Sim" [(ngModel)]="filigrama"> Sim</label>
+      <label class="radio-label"><input type="radio" name="filigrama" value="Não" [(ngModel)]="filigrama"> Não</label>
+    </label>
+    </div>    
+    <div class="button-container">
+      <button class="close-button" (click)="closeModal()">Fechar</button>
+      <button class="save-button" (click)="saveModal()">Salvar</button>
+    </div>
+  </div>
+</div>
