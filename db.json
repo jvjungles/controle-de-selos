@@ -1,8 +1,8 @@
 {
   "albuns": [
     {
-      "name": "01",
-      "description": "DESCRIÇÃO 01",
+      "name": "Raros",
+      "description": "Album de Selos Raros",
       "selos": [
         {
           "id": 1,
@@ -161,7 +161,7 @@
     },
     {
       "name": "05",
-      "description": "05",
+      "description": "DESCRIÇÃO 05",
       "selos": [
         {
           "id": 1,
@@ -198,7 +198,7 @@
     },
     {
       "name": "666",
-      "description": "666",
+      "description": "DESCRIÇÃO 666",
       "selos": [
         {
           "id": 1,

@@ -10,6 +10,7 @@ import { AppComponent } from './app.component';
 import { TopBarComponent } from './components/top-bar/top-bar.component';
 import { FooterComponent } from './components/footer/footer.component';
 import { MatCardModule } from '@angular/material/card';
+import { MatTooltipModule } from '@angular/material/tooltip';
 import { AlbumListComponent } from './components/album-list/album-list.component';
 import { AlbumPageComponent } from './components/album-page/album-page.component';
 import { AlbumAddModalComponent } from './components/album-add-modal/album-add-modal.component';
@@ -24,6 +25,7 @@ import { AlbumService } from './services/album.service';
     MatSlideToggleModule,
     FormsModule,
     MatCardModule,
+    MatTooltipModule,
     HttpClientModule,
     RouterModule.forRoot([
       { path: '', component: AlbumListComponent },
