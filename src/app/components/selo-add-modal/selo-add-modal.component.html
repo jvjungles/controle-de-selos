@@ -39,9 +39,10 @@
       <label class="radio-label"><input type="radio" name="filigrama" value="Não" *ngIf="selo" [(ngModel)]="selo.filigram"> Não</label>
     </label>
     </div>    
-    <div class="button-container">
-      <button class="close-button" (click)="closeModal()">Fechar</button>
+    <div class="button-container">      
       <button class="save-button" (click)="saveModal()">Salvar</button>
+      <button class="excluir-button" *ngIf="seloTitle === 'Editar'" (click)="excluir()">Excluir</button>
+      <button class="close-button" (click)="closeModal()">Fechar</button>
     </div>
   </div>
 </div>

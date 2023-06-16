@@ -45,6 +45,12 @@
     background-color: #395f83;
     color: white;
   }
+
+  .excluir-button {
+    float: right;
+    background-color: #681a34;
+    color: white;
+  }
   
   .custom-text {
     width: 210px;

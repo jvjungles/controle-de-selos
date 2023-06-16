@@ -47,24 +47,6 @@
           "description": "DESCRIÇÃO selo 01"
         },
         {
-          "id": 9,
-          "name": "",
-          "description": ""
-        },
-        {
-          "id": 10,
-          "name": "",
-          "description": ""
-        },
-        {
-          "id": 11,
-          "name": "",
-          "description": ""
-        },
-        {
-          "id": 12
-        },
-        {
           "id": 13,
           "name": "999999",
           "description": "99999"
@@ -79,28 +61,26 @@
         {
           "id": 1,
           "name": "wedsf",
-          "description": "sdfsdd"
+          "description": "sdfsdd",
+          "type": "Promocional"
         },
         {
           "id": 2,
           "name": "afsfas",
-          "description": "sdfsdasfasfasd"
+          "description": "sdfsdasfasfasd",
+          "type": "Especial"
         },
         {
           "id": 3,
           "name": "00303",
-          "description": "03"
+          "description": "03",
+          "type": "Outros"
         },
         {
           "id": 4,
           "name": "04",
-          "description": "0304"
-        },
-        {
-          "id": 5
-        },
-        {
-          "id": 6
+          "description": "0304",
+          "type": "Beneficente"
         }
       ],
       "id": 2
@@ -163,21 +143,6 @@
       "name": "05",
       "description": "DESCRIÇÃO 05",
       "selos": [
-        {
-          "id": 1,
-          "name": "",
-          "description": ""
-        },
-        {
-          "id": 2,
-          "name": "",
-          "description": ""
-        },
-        {
-          "id": 3,
-          "name": "",
-          "description": "w"
-        },
         {
           "id": 4,
           "name": "",
@@ -260,9 +225,6 @@
           "filigram": "Não"
         },
         {
-          "id": 7
-        },
-        {
           "id": 8,
           "name": "ssdsdsds",
           "description": "diyuiyuiyuisasas",
@@ -271,9 +233,6 @@
           "country": "yuiyuiyui",
           "stamp": true,
           "filigram": "Não"
-        },
-        {
-          "id": 9
         },
         {
           "id": 10,
@@ -286,18 +245,6 @@
           "filigram": "Sim"
         },
         {
-          "id": 11
-        },
-        {
-          "id": 12
-        },
-        {
-          "id": 13
-        },
-        {
-          "id": 14
-        },
-        {
           "id": 15,
           "name": "ADASFSDFSDFD",
           "description": "nvbnbvnvbnv",
@@ -306,12 +253,6 @@
           "country": "vbnbvnvbnv",
           "stamp": true,
           "filigram": "Sim"
-        },
-        {
-          "id": 16
-        },
-        {
-          "id": 17
         }
       ],
       "id": 6
@@ -337,14 +278,7 @@
     {
       "name": "07",
       "description": "07",
-      "selos": [
-        {
-          "id": 1
-        },
-        {
-          "id": 2
-        }
-      ],
+      "selos": [],
       "id": 13
     },
     {
@@ -362,13 +296,24 @@
           "filigram": "Sim"
         },
         {
-          "id": 2
+          "id": 3,
+          "name": "asdsada",
+          "description": "sdasdasd",
+          "type": "Ordinario",
+          "year": 2323,
+          "country": "asdasd",
+          "stamp": true,
+          "filigram": "Não"
         },
         {
-          "id": 3
-        },
-        {
-          "id": 4
+          "id": 4,
+          "name": "asdasdas",
+          "description": "dasdas",
+          "type": "Especial",
+          "year": 3,
+          "country": "asdasdas",
+          "stamp": true,
+          "filigram": "Sim"
         }
       ],
       "id": 14

@@ -91,5 +91,32 @@ export class SeloAddModalComponent {
 
       console.log('Album Object:', album);
     });    
-  }  
+  } 
+  
+  excluir() {
+    console.log('app-selo-add-modal - excluir' + this.albumid);
+    console.log('app-selo-add-modal - excluir' + this.selo?.id);
+
+    this.service.getById(this.albumid).subscribe(album => {
+      this.album = album;
+          
+      if (!this.album.selos) {
+        this.album.selos = [];
+      }
+
+      console.log('this.selo?.id:', this.selo?.id);      
+      const index = this.album.selos.findIndex(item => item.id === this.selo?.id);
+      if (index !== -1) {
+        this.album.selos.splice(index, 1);
+      }
+
+      this.service.update(album).subscribe(savedAlbum => {
+        console.log('Álbum update:', savedAlbum);
+        this.showSeloModal = false;
+        this.closeModalEvent.emit(); 
+      });
+
+      console.log('Album Object:', album);
+    });
+  }
 }
