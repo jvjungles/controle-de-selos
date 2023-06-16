@@ -15,36 +15,27 @@ export class SeloAddModalComponent {
   @Input() showSeloModal: boolean = false;
   @Input() seloTitle: String = '';
   @Input() albumid: number = -1;
+  @Input() selo: Selo | undefined;  
   @Output() closeModalEvent = new EventEmitter<void>(); 
-
-  nome: string = '';
-  descricao: string = '';
-  tipo: string = '';
-  anoFabricacao: number = 0;
-  pais: string = '';
-  carimbo: boolean = false;
-  filigrama: string = '';
-
+  
   album: Album | undefined;
-  selo: Selo | undefined;
-
+  
   closeModal() {
     console.log('app-selo-add-modal - closeModal');
+    console.log('app-selo-add-modal - closeModal' + this.selo);
     this.showSeloModal = false;
     this.closeModalEvent.emit(); 
   }
 
   saveModal() {
     console.log('app-selo-add-modal - saveModal');
-    console.log('Nome:', this.nome);
-    console.log('Descrição:', this.descricao);
-    console.log('Tipo:', this.tipo);
-    console.log('Ano de Fabricação:', this.anoFabricacao);
-    console.log('País:', this.pais);
-    console.log('Carimbo:', this.carimbo);
-    console.log('Filigrama:', this.filigrama);
-
-      
+    console.log('Nome:', this.selo?.name);
+    console.log('Descrição:', this.selo?.description);
+    console.log('Tipo:', this.selo?.type);
+    console.log('Ano de Fabricação:', this.selo?.year);
+    console.log('País:', this.selo?.country);
+    console.log('Carimbo:', this.selo?.stamp);
+    console.log('Filigrama:', this.selo?.filigram);      
 
     this.service.getById(this.albumid).subscribe(album => {
       this.album = album;
@@ -53,20 +44,42 @@ export class SeloAddModalComponent {
         this.album.selos = [];
       }
 
+      console.log('this.selo?.id:', this.selo?.id);      
 
-      const maiorId = this.album?.selos?.reduce((maxId, selo) => (selo.id && selo.id > maxId) ? selo.id : maxId, 0);
+      if (this.selo?.id) {
 
-      console.log('Maior ID de Selo:', maiorId);
+        const index = this.album.selos.findIndex(item => item.id === this.selo?.id);
 
-      const selo: Selo = {
-        id: maiorId+1,
-        name: this.nome,
-        description: this.descricao,
-      };
+        console.log('index:', index);
 
-      console.log('selo:', selo);  
+        if (this.album.selos.findIndex(item => item.id === this.selo?.id) !== -1) {
+          this.album.selos[index].name = this.selo?.name;
+          this.album.selos[index].description = this.selo?.description;
+          this.album.selos[index].type = this.selo?.type;
+          this.album.selos[index].year = this.selo?.year;
+          this.album.selos[index].country = this.selo?.country;
+          this.album.selos[index].stamp = this.selo?.stamp;
+          this.album.selos[index].filigram = this.selo?.filigram;
+        }
 
-      this.album.selos.push(selo);
+      } else {
+        const maiorId = this.album?.selos?.reduce((maxId, selo) => (selo.id && selo.id > maxId) ? selo.id : maxId, 0);
+        
+        console.log('Maior ID de Selo:', maiorId);
+        
+        const selo: Selo = {
+          id: maiorId + 1,
+          name: this.selo?.name,
+          description: this.selo?.description,
+          type: this.selo?.type,
+          year: this.selo?.year,
+          country: this.selo?.country,
+          stamp: this.selo?.stamp,
+          filigram: this.selo?.filigram
+        };
+        console.log('selo:', selo);
+        this.album.selos.push(selo);
+      }
 
       this.service.update(album).subscribe(savedAlbum => {
         console.log('Álbum update:', savedAlbum);

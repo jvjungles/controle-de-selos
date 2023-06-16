@@ -14,6 +14,7 @@ export class AlbumPageComponent {
 
   constructor(private route: ActivatedRoute, private router: Router, private service: AlbumService) { }
 
+  selo: Selo = {};
   album: Album | undefined;
   selosDoAlbun: Selo[] = [];
   showModal = false;
@@ -31,10 +32,11 @@ export class AlbumPageComponent {
     });
   }
 
-  onCardClick(selo: any) {
+  onCardClick(selo: Selo) {
     console.log('Card clicked:', selo);
     this.seloTitle = 'Editar';
     this.showSeloModal = true;
+    this.selo = selo;
   }
 
   openSeloModal() {
@@ -73,8 +75,7 @@ export class AlbumPageComponent {
   } 
 
   excluir() {
-    console.log('excluir' + this.album?.id || -1);   
-
+    console.log('excluir' + this.album?.id || -1);
     this.service.delete(this.album?.id || -1).subscribe(() => {
       console.log('Álbum excluído com sucesso');
       this.router.navigate(['/']);

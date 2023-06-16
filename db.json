@@ -85,6 +85,9 @@
           "id": 4,
           "name": "04",
           "description": "0304"
+        },
+        {
+          "id": 5
         }
       ],
       "id": 2
@@ -146,20 +149,156 @@
     {
       "name": "05",
       "description": "05",
-      "selos": [],
+      "selos": [
+        {
+          "id": 1,
+          "name": "",
+          "description": ""
+        },
+        {
+          "id": 2,
+          "name": "",
+          "description": ""
+        },
+        {
+          "id": 3,
+          "name": "",
+          "description": "w"
+        },
+        {
+          "id": 4,
+          "name": "",
+          "description": "333"
+        },
+        {
+          "id": 5,
+          "name": "fela da putaaaaaa",
+          "description": "carai"
+        },
+        {
+          "id": 6,
+          "name": "fela da putaaaaaa22222",
+          "description": "carai"
+        }
+      ],
       "id": 5
     },
     {
-      "name": "066",
-      "description": "",
-      "selos": [],
+      "name": "666",
+      "description": "666",
+      "selos": [
+        {
+          "id": 1,
+          "name": "Novo Selo",
+          "description": "Novo Selo desc",
+          "type": "Promocional",
+          "year": 3,
+          "country": "pais",
+          "stamp": true
+        },
+        {
+          "id": 2,
+          "name": "asdaswdas",
+          "description": "diyuiyuiyui",
+          "type": "Ordinario",
+          "year": 5,
+          "country": "yuiyuiyui",
+          "stamp": true,
+          "filigram": "Não"
+        },
+        {
+          "id": 3,
+          "name": "ASasASa",
+          "description": "sASasASasAS",
+          "type": "Promocional",
+          "year": 7,
+          "country": "SAasASas",
+          "stamp": true,
+          "filigram": "Sim"
+        },
+        {
+          "id": 4,
+          "name": "ASasASa",
+          "description": "sASasASasAS",
+          "type": "Promocional",
+          "year": 7,
+          "country": "SAasASas",
+          "stamp": false,
+          "filigram": "Sim"
+        },
+        {
+          "id": 5,
+          "name": "ASasASa",
+          "description": "sASasASasAS",
+          "type": "Promocional",
+          "year": 7,
+          "country": "SAasASas",
+          "stamp": true,
+          "filigram": "Sim"
+        },
+        {
+          "id": 6,
+          "name": "asdaswdas",
+          "description": "diyuiyuiyui",
+          "type": "Ordinario",
+          "year": 5,
+          "country": "yuiyuiyui",
+          "stamp": true,
+          "filigram": "Não"
+        },
+        {
+          "id": 7
+        },
+        {
+          "id": 8,
+          "name": "asdaswdas",
+          "description": "diyuiyuiyuisasas",
+          "type": "Ordinario",
+          "year": 5,
+          "country": "yuiyuiyui",
+          "stamp": true,
+          "filigram": "Não"
+        },
+        {
+          "id": 9
+        },
+        {
+          "id": 10,
+          "name": "ASasASa",
+          "description": "aaaaaa",
+          "type": "Promocional",
+          "year": 7,
+          "country": "SAasASas",
+          "stamp": true,
+          "filigram": "Sim"
+        },
+        {
+          "id": 11
+        },
+        {
+          "id": 12
+        },
+        {
+          "id": 13
+        },
+        {
+          "id": 14
+        },
+        {
+          "id": 15,
+          "name": "ADASFSDFSDFD",
+          "description": "nvbnbvnvbnv",
+          "type": "Especial",
+          "year": 8,
+          "country": "vbnbvnvbnv",
+          "stamp": true,
+          "filigram": "Sim"
+        },
+        {
+          "id": 16
+        }
+      ],
       "id": 6
-    },
-    {
-      "name": "07",
-      "description": "07",
-      "selos": [],
-      "id": 7
     },
     {
       "name": "as",
@@ -180,16 +319,17 @@
       "id": 10
     },
     {
-      "name": "123",
-      "description": "123",
-      "selos": [],
-      "id": 11
-    },
-    {
-      "name": "sasasasas",
-      "description": "asasasas",
-      "selos": [],
-      "id": 12
+      "name": "07",
+      "description": "07",
+      "selos": [
+        {
+          "id": 1
+        },
+        {
+          "id": 2
+        }
+      ],
+      "id": 13
     }
   ]
 }

@@ -3,7 +3,7 @@
     <h1>{{ seloTitle }} Selo</h1>
     <div class="input-container">
       <label for="tipo">Tipo:</label>
-      <select class="custom-text" id="tipo" [(ngModel)]="tipo">
+      <select class="custom-text" id="tipo" *ngIf="selo" [(ngModel)]="selo.type">
         <option value="Beneficente">Beneficente</option>
         <option value="Comemorativo">Comemorativo</option>
         <option value="Especial">Especial</option>
@@ -14,29 +14,29 @@
     </div>
     <div class="input-container">
       <label for="nome">Nome:</label>
-      <input class="custom-text" type="text" id="nome" [(ngModel)]="nome" />
+      <input class="custom-text" type="text" id="nome" *ngIf="selo" [(ngModel)]="selo.name" /> 
     </div>
     <div class="input-container">
       <label for="descricao">Descrição:</label>
-      <textarea class="custom-textarea" id="descricao" [(ngModel)]="descricao"></textarea>
+      <textarea class="custom-textarea" id="descricao" *ngIf="selo" [(ngModel)]="selo.description"></textarea>
     </div>
     <div class="input-container">
       <label for="anoFabricacao">Ano de Fabricação:</label>
-      <input class="custom-text" type="number" id="anoFabricacao" [(ngModel)]="anoFabricacao" />
+      <input class="custom-text" type="number" id="anoFabricacao" *ngIf="selo" [(ngModel)]="selo.year" />
     </div>
     <div class="input-container">
       <label for="pais">País:</label>
-      <input class="custom-text" type="text" id="pais" [(ngModel)]="pais" />
+      <input class="custom-text" type="text" id="pais" *ngIf="selo" [(ngModel)]="selo.country" />
     </div>
     <div class="input-container">
       <label>Carimbo:
-        <input type="checkbox" id="carimbo" [(ngModel)]="carimbo" />
+        <input type="checkbox" id="carimbo" *ngIf="selo" [(ngModel)]="selo.stamp" />
       </label>
     </div>        
     <div class="input-container">
       <label>Filigrama:
-      <label class="radio-label"><input type="radio" name="filigrama" value="Sim" [(ngModel)]="filigrama"> Sim</label>
-      <label class="radio-label"><input type="radio" name="filigrama" value="Não" [(ngModel)]="filigrama"> Não</label>
+      <label class="radio-label"><input type="radio" name="filigrama" value="Sim" *ngIf="selo" [(ngModel)]="selo.filigram"> Sim</label>
+      <label class="radio-label"><input type="radio" name="filigrama" value="Não" *ngIf="selo" [(ngModel)]="selo.filigram"> Não</label>
     </label>
     </div>    
     <div class="button-container">
