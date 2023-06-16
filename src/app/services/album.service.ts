@@ -32,4 +32,9 @@ export class AlbumService {
       this.httpOptions
     );
   }
+
+  delete(id: number): Observable<void> {
+    const url = `${this.URL}/${id}`;
+    return this.httpClient.delete<void>(url, this.httpOptions);
+  }  
 }

@@ -142,6 +142,12 @@
     color: white;
   }
 
+  .excluir-button {
+    float: right;
+    background-color: #681a34;
+    color: white;
+  }
+
   .text-center {
     text-align: center;
   }

@@ -1,5 +1,5 @@
 import { Component } from '@angular/core';
-import { ActivatedRoute } from '@angular/router';
+import { ActivatedRoute, Router } from '@angular/router';
 import { Album } from '../../model/album';
 import { Selo } from '../../model/selo';
 import { AlbumService } from '../../services/album.service';
@@ -12,7 +12,7 @@ import { AlbumService } from '../../services/album.service';
 })
 export class AlbumPageComponent {
 
-  constructor(private route: ActivatedRoute, private service: AlbumService) { }
+  constructor(private route: ActivatedRoute, private router: Router, private service: AlbumService) { }
 
   album: Album | undefined;
   selosDoAlbun: Selo[] = [];
@@ -57,7 +57,7 @@ export class AlbumPageComponent {
     this.albumid = this.album?.id || -1;
     console.log('this.albumid' + this.albumid);
     this.showModal = true;
-  }
+  }  
 
   closeModal() {
     console.log('app-album-list - closeModal');
@@ -71,6 +71,15 @@ export class AlbumPageComponent {
         console.log('Album Object:', album);
       });   
   } 
+
+  excluir() {
+    console.log('excluir' + this.album?.id || -1);   
+
+    this.service.delete(this.album?.id || -1).subscribe(() => {
+      console.log('Álbum excluído com sucesso');
+      this.router.navigate(['/']);
+    });
+  }
   
 }
 
