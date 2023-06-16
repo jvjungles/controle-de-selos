@@ -119,4 +119,9 @@ export class SeloAddModalComponent {
       console.log('Album Object:', album);
     });
   }
+
+  isYearValid(): boolean {
+    const pattern = /[0-9]{4}/;
+    return this.selo?.year !== undefined && pattern.test(this.selo.year);
+  }
 }

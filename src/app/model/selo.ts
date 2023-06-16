@@ -2,7 +2,7 @@ export interface Selo {
   id?: number;
   name?: string;
   description?: string;
-  year?: number;
+  year?: string;
   country?: string;
   stamp?: boolean;
   filigram?: string;

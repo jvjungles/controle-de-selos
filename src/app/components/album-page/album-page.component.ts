@@ -15,7 +15,6 @@ export class AlbumPageComponent {
   constructor(private route: ActivatedRoute, private router: Router, private service: AlbumService) { }
 
   selo: Selo = {};
-  selonew: Selo = {};
   album: Album | undefined;
   selosDoAlbun: Selo[] = [];
   showModal = false;
@@ -46,7 +45,7 @@ export class AlbumPageComponent {
     this.seloTitle = 'Novo';
     this.albumid = this.album?.id || -1;
     console.log('this.albumid' + this.albumid);
-    this.selo = this.selonew;
+    this.selo = {};
     this.showSeloModal = true;
   }
 

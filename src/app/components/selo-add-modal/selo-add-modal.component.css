@@ -69,6 +69,10 @@
     margin-bottom: 10px;
   }
   
+  .error-message-small {
+    font-size: 12px;
+    color: red;
+  }
   
   
    

@@ -22,6 +22,7 @@ export class AlbumAddModalComponent {
   nome: string = '';
   descricao: string = '';
   album: Album | undefined;
+  isNomeValid: boolean = false;
 
   ngOnInit() {   
     this.route.params.subscribe(params => {
@@ -38,6 +39,8 @@ export class AlbumAddModalComponent {
 
   closeModal() {
     console.log('app-album-add-modal - closeModal');
+    this.nome = '';
+    this.descricao = '';
     this.showModal = false;
     this.closeModalEvent.emit(); 
   }
@@ -64,6 +67,8 @@ export class AlbumAddModalComponent {
 
     this.service.save(album).subscribe(savedAlbum => {
       console.log('Álbum salvo:', savedAlbum);
+      this.nome = '';
+      this.descricao = '';
       this.showModal = false;
       this.closeModalEvent.emit(); 
     }); 
@@ -83,5 +88,9 @@ export class AlbumAddModalComponent {
       });
       console.log('Album Object:', album);
     });     
+  }
+
+  validateNome() {
+    this.isNomeValid = this.nome.trim().length > 0;
   }
 }

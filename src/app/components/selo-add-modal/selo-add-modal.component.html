@@ -13,8 +13,8 @@
       </select>
     </div>
     <div class="input-container">
-      <label for="nome">Nome:</label>
-      <input class="custom-text" type="text" id="nome" *ngIf="selo" [(ngModel)]="selo.name" /> 
+      <label for="nome">Nome * :</label>
+      <input class="custom-text" type="text" id="nome" *ngIf="selo" [(ngModel)]="selo.name" required />      
     </div>
     <div class="input-container">
       <label for="descricao">Descrição:</label>
@@ -22,8 +22,11 @@
     </div>
     <div class="input-container">
       <label for="anoFabricacao">Ano de Fabricação:</label>
-      <input class="custom-text" type="number" id="anoFabricacao" *ngIf="selo" [(ngModel)]="selo.year" />
+      <input class="custom-text" type="text" id="anoFabricacao" *ngIf="selo" [(ngModel)]="selo.year" required />
     </div>
+    <div class="error-message error-message-small" *ngIf="selo && !isYearValid() && (selo.year || selo.year === '')">
+      Necessario formato YYYY (exemplo: 2023) <br><br><br><br>
+    </div>    
     <div class="input-container">
       <label for="pais">País:</label>
       <input class="custom-text" type="text" id="pais" *ngIf="selo" [(ngModel)]="selo.country" />
@@ -39,9 +42,9 @@
       <label class="radio-label"><input type="radio" name="filigrama" value="Não" *ngIf="selo" [(ngModel)]="selo.filigram"> Não</label>
     </label>
     </div>    
-    <div class="button-container">      
-      <button class="save-button" (click)="saveModal()">Salvar</button>
-      <button class="excluir-button" *ngIf="seloTitle === 'Editar'" (click)="excluir()">Excluir</button>
+    <div class="button-container">
+      <button class="save-button" (click)="saveModal()" [disabled]="!selo?.name">Salvar</button>
+      <button class="excluir-button" *ngIf="seloTitle === 'Editar'" (click)="excluir()" [disabled]="!selo?.name">Excluir</button>
       <button class="close-button" (click)="closeModal()">Fechar</button>
     </div>
   </div>

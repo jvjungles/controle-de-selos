@@ -2,8 +2,8 @@
   <div class="modal-content">
     <h1>{{ albumTitle }} Álbum</h1>
     <div class="input-container">
-      <label for="nome">Nome:</label>
-      <input class="custom-text" type="text" id="nome" [(ngModel)]="nome" />
+      <label for="nome">Nome * :</label>
+      <input class="custom-text" type="text" id="nome" [(ngModel)]="nome" (input)="validateNome()" />      
     </div>
     <div class="input-container">
       <label for="descricao">Descrição:</label>
@@ -11,7 +11,7 @@
     </div>
     <div class="button-container">
       <button class="close-button" (click)="closeModal()">Fechar</button>
-      <button class="save-button" (click)="saveModal()">Salvar</button>
+      <button class="save-button" (click)="saveModal()" [disabled]="!isNomeValid">Salvar</button>
     </div>
   </div>
 </div>
