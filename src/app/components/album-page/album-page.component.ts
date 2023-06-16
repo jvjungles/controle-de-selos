@@ -15,6 +15,7 @@ export class AlbumPageComponent {
   constructor(private route: ActivatedRoute, private router: Router, private service: AlbumService) { }
 
   selo: Selo = {};
+  selonew: Selo = {};
   album: Album | undefined;
   selosDoAlbun: Selo[] = [];
   showModal = false;
@@ -35,6 +36,7 @@ export class AlbumPageComponent {
   onCardClick(selo: Selo) {
     console.log('Card clicked:', selo);
     this.seloTitle = 'Editar';
+    this.albumid = this.album?.id || -1;
     this.showSeloModal = true;
     this.selo = selo;
   }
@@ -43,6 +45,8 @@ export class AlbumPageComponent {
     console.log('app-selo-list - openModal');
     this.seloTitle = 'Novo';
     this.albumid = this.album?.id || -1;
+    console.log('this.albumid' + this.albumid);
+    this.selo = this.selonew;
     this.showSeloModal = true;
   }
 

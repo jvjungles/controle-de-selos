@@ -23,14 +23,16 @@ export class AlbumAddModalComponent {
   descricao: string = '';
   album: Album | undefined;
 
-  ngOnInit() {
+  ngOnInit() {   
     this.route.params.subscribe(params => {
-      this.service.getById(+params['id']).subscribe(album => {
-        this.album = album;
-        this.nome = this.album?.name ?? '';
-        this.descricao = this.album?.description ?? '';
-        console.log('this.route.params.subscribe:', album);
-      });
+      if (!isNaN(+params['id'])) {
+        this.service.getById(+params['id']).subscribe(album => {
+          this.album = album;
+          this.nome = this.album?.name ?? '';
+          this.descricao = this.album?.description ?? '';
+          console.log('this.route.params.subscribe:', album);
+        });
+      }
     });    
   }  
 

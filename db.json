@@ -7,7 +7,9 @@
         {
           "id": 1,
           "name": "01",
-          "description": "01"
+          "description": "01",
+          "type": "Especial",
+          "filigram": "Não"
         },
         {
           "id": 2,
@@ -21,8 +23,8 @@
         },
         {
           "id": 4,
-          "name": "sasasasasas",
-          "description": "asasasasasas"
+          "name": "99999",
+          "description": "333333"
         },
         {
           "id": 5,
@@ -58,6 +60,14 @@
           "id": 11,
           "name": "",
           "description": ""
+        },
+        {
+          "id": 12
+        },
+        {
+          "id": 13,
+          "name": "999999",
+          "description": "99999"
         }
       ],
       "id": 1
@@ -88,6 +98,9 @@
         },
         {
           "id": 5
+        },
+        {
+          "id": 6
         }
       ],
       "id": 2
@@ -238,7 +251,7 @@
         },
         {
           "id": 6,
-          "name": "asdaswdas",
+          "name": "22222",
           "description": "diyuiyuiyui",
           "type": "Ordinario",
           "year": 5,
@@ -251,7 +264,7 @@
         },
         {
           "id": 8,
-          "name": "asdaswdas",
+          "name": "ssdsdsds",
           "description": "diyuiyuiyuisasas",
           "type": "Ordinario",
           "year": 5,
@@ -296,6 +309,9 @@
         },
         {
           "id": 16
+        },
+        {
+          "id": 17
         }
       ],
       "id": 6
@@ -330,6 +346,32 @@
         }
       ],
       "id": 13
+    },
+    {
+      "name": "333",
+      "description": "333",
+      "selos": [
+        {
+          "id": 1,
+          "name": "asas",
+          "description": "asasa",
+          "type": "Especial",
+          "year": 3,
+          "country": "asasa",
+          "stamp": true,
+          "filigram": "Sim"
+        },
+        {
+          "id": 2
+        },
+        {
+          "id": 3
+        },
+        {
+          "id": 4
+        }
+      ],
+      "id": 14
     }
   ]
 }

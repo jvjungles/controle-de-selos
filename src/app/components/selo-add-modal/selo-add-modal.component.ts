@@ -35,7 +35,9 @@ export class SeloAddModalComponent {
     console.log('Ano de Fabricação:', this.selo?.year);
     console.log('País:', this.selo?.country);
     console.log('Carimbo:', this.selo?.stamp);
-    console.log('Filigrama:', this.selo?.filigram);      
+    console.log('Filigrama:', this.selo?.filigram);     
+    
+    console.log('this.albumid:', this.albumid); 
 
     this.service.getById(this.albumid).subscribe(album => {
       this.album = album;
