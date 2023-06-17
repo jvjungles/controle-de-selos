@@ -39,8 +39,10 @@ export class AlbumAddModalComponent {
 
   closeModal() {
     console.log('app-album-add-modal - closeModal');
-    this.nome = '';
-    this.descricao = '';
+    if (this.albumTitle !== 'Editar') {
+      this.nome = '';
+      this.descricao = '';
+    }    
     this.showModal = false;
     this.closeModalEvent.emit(); 
   }

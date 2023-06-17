@@ -5,98 +5,127 @@
       "description": "Album de Selos Raros",
       "selos": [
         {
-          "id": 1,
-          "name": "01",
-          "description": "01",
-          "type": "Especial",
+          "id": 5,
+          "name": "Selo 01",
+          "description": "DESCRIÇÃO selo 01",
+          "type": "Outros",
+          "year": "1988",
+          "country": "Brasil",
+          "stamp": true,
           "filigram": "Não"
         },
         {
-          "id": 2,
-          "name": "02",
-          "description": "02"
-        },
-        {
-          "id": 3,
-          "name": "03",
-          "description": "03"
-        },
-        {
-          "id": 4,
-          "name": "99999",
-          "description": "333333"
-        },
-        {
-          "id": 5,
-          "name": "Selo 01",
-          "description": "DESCRIÇÃO selo 01"
-        },
-        {
           "id": 6,
-          "name": "Selo 01",
-          "description": "DESCRIÇÃO selo 01"
+          "name": "Selo 02",
+          "description": "DESCRIÇÃO selo 02",
+          "type": "Comemorativo",
+          "year": "2020",
+          "country": "Brasil",
+          "stamp": true,
+          "filigram": "Sim"
         },
         {
           "id": 7,
-          "name": "Selo 01",
-          "description": "DESCRIÇÃO selo 01"
+          "name": "Selo 03",
+          "description": "DESCRIÇÃO selo 03",
+          "type": "Comemorativo",
+          "year": "1999",
+          "country": "Brasil",
+          "stamp": true,
+          "filigram": "Não"
         },
         {
           "id": 8,
-          "name": "Selo 01",
-          "description": "DESCRIÇÃO selo 01"
+          "name": "Selo 04",
+          "description": "DESCRIÇÃO selo 04",
+          "type": "Comemorativo",
+          "year": "2020",
+          "country": "Brasil",
+          "stamp": true,
+          "filigram": "Sim"
         },
         {
           "id": 14,
-          "name": "asasas",
-          "year": "aaaaa"
+          "name": "Selo 05",
+          "year": "2020",
+          "description": "DESCRIÇÃO Selo 05",
+          "type": "Comemorativo",
+          "country": "Brasil",
+          "stamp": true,
+          "filigram": "Sim"
         }
       ],
       "id": 1
     },
     {
-      "name": "02",
+      "name": "ALBUM 02",
       "description": "DESCRIÇÃO 02",
       "selos": [
         {
           "id": 1,
-          "name": "wedsf",
-          "description": "sdfsdd",
-          "type": "Promocional"
+          "name": "01",
+          "description": "01",
+          "type": "Promocional",
+          "year": "1988",
+          "country": "Brasil",
+          "stamp": true,
+          "filigram": "Sim"
         },
         {
           "id": 2,
-          "name": "afsfas",
-          "description": "sdfsdasfasfasd",
-          "type": "Especial"
+          "name": "02",
+          "description": "02",
+          "type": "Especial",
+          "year": "1999",
+          "country": "Brasil",
+          "stamp": true,
+          "filigram": "Sim"
         },
         {
           "id": 3,
-          "name": "00303",
+          "name": "03",
           "description": "03",
-          "type": "Outros"
+          "type": "Outros",
+          "year": "2020",
+          "country": "Brasil",
+          "stamp": true,
+          "filigram": "Sim"
         },
         {
           "id": 4,
           "name": "04",
-          "description": "0304",
-          "type": "Beneficente"
+          "description": "04",
+          "type": "Beneficente",
+          "year": "1999",
+          "country": "Brasil",
+          "stamp": true,
+          "filigram": "Sim"
         },
         {
           "id": 5,
-          "name": "asasas",
-          "year": "1988"
+          "name": "05",
+          "year": "1988",
+          "description": "05",
+          "country": "Brasil",
+          "stamp": true,
+          "filigram": "Não",
+          "type": "Comemorativo"
         },
         {
           "id": 6,
-          "name": "asasas",
-          "year": "2020"
+          "name": "06",
+          "year": "2020",
+          "description": "06",
+          "type": "Comemorativo",
+          "country": "Brasil",
+          "stamp": true,
+          "filigram": "Sim"
         }
       ],
       "id": 2
     },
     {
-      "name": "0303",
+      "name": "ALBUM 03",
       "description": "DESCRIÇÃO 03",
       "selos": [
         {
@@ -106,24 +135,37 @@
         },
         {
           "id": 2,
-          "name": "0102",
-          "description": "0102"
+          "name": "02",
+          "description": "02",
+          "year": "1988",
+          "country": "Brasil",
+          "stamp": true,
+          "filigram": "Sim"
         },
         {
           "id": 3,
-          "name": "010203",
-          "description": "010203"
+          "name": "03",
+          "description": "03",
+          "type": "Comemorativo",
+          "year": "2020",
+          "country": "Brasil",
+          "stamp": true,
+          "filigram": "Sim"
         },
         {
           "id": 4,
-          "name": "01020304",
-          "description": "01020304"
+          "name": "04",
+          "description": "04",
+          "year": "1999",
+          "country": "Brasil",
+          "stamp": true,
+          "filigram": "Não"
         }
       ],
       "id": 3
     },
     {
-      "name": "04",
+      "name": "ALBUM 04",
       "description": "DESCRIÇÃO 04",
       "selos": [
         {
@@ -145,29 +187,54 @@
       "id": 4
     },
     {
-      "name": "05",
+      "name": "ALBUM 05",
       "description": "DESCRIÇÃO 05",
       "selos": [
         {
           "id": 4,
-          "name": "",
-          "description": "333"
+          "name": "Selo 04",
+          "description": "04",
+          "type": "Comemorativo",
+          "year": "1988",
+          "country": "Brasil",
+          "stamp": true,
+          "filigram": "Sim"
         },
         {
           "id": 5,
-          "name": "fela da putaaaaaa",
-          "description": "carai"
+          "name": "Selo",
+          "description": "selo",
+          "type": "Beneficente",
+          "year": "1988",
+          "country": "Brasil",
+          "stamp": true,
+          "filigram": "Sim"
         },
         {
           "id": 6,
-          "name": "fela da putaaaaaa22222",
-          "description": "carai"
+          "name": "04",
+          "description": "04",
+          "type": "Ordinario",
+          "year": "1988",
+          "country": "Brasil",
+          "stamp": true,
+          "filigram": "Sim"
+        },
+        {
+          "id": 7,
+          "name": "Especial",
+          "description": "Especial",
+          "type": "Especial",
+          "year": "9999",
+          "country": "Brasil",
+          "stamp": true,
+          "filigram": "Sim"
         }
       ],
       "id": 5
     },
     {
-      "name": "666",
+      "name": "ALBUM 06",
       "description": "DESCRIÇÃO 666",
       "selos": [
         {
@@ -234,7 +301,7 @@
           "name": "ssdsdsds",
           "description": "diyuiyuiyuisasas",
           "type": "Ordinario",
-          "year": 5,
+          "year": "mmmm",
           "country": "yuiyuiyui",
           "stamp": true,
           "filigram": "Não"
@@ -258,54 +325,36 @@
           "country": "vbnbvnvbnv",
           "stamp": true,
           "filigram": "Sim"
-        },
-        {
-          "id": 16
-        },
-        {
-          "id": 17
-        },
-        {
-          "id": 18
-        },
-        {
-          "id": 19
-        },
-        {
-          "id": 20
-        },
-        {
-          "id": 21
         }
       ],
       "id": 6
     },
     {
-      "name": "as",
+      "name": "ALBUM 07",
       "description": "asas",
       "selos": [],
       "id": 8
     },
     {
-      "name": "8989",
+      "name": "ALBUM 08",
       "description": "8989",
       "selos": [],
       "id": 9
     },
     {
-      "name": "fdsgfs",
+      "name": "ALBUM 09",
       "description": "fsdfsdf",
       "selos": [],
       "id": 10
     },
     {
-      "name": "07",
+      "name": "ALBUM 10",
       "description": "07",
       "selos": [],
       "id": 13
     },
     {
-      "name": "3334",
+      "name": "ALBUM 11",
       "description": "333",
       "selos": [
         {
@@ -347,28 +396,22 @@
       "id": 14
     },
     {
-      "name": "",
-      "description": "",
-      "selos": [],
-      "id": 15
-    },
-    {
-      "name": "asasasas",
-      "description": "",
-      "selos": [],
-      "id": 18
-    },
-    {
-      "name": "fsdfsdf",
-      "description": "",
-      "selos": [],
-      "id": 19
-    },
-    {
-      "name": "aAaA",
+      "name": "ALBUM 16",
       "description": "AaAa",
       "selos": [],
       "id": 20
+    },
+    {
+      "name": "ALBUM 17",
+      "description": "asasas",
+      "selos": [],
+      "id": 21
+    },
+    {
+      "name": "ALBUM 18",
+      "description": "asasas",
+      "selos": [],
+      "id": 22
     }
   ]
 }

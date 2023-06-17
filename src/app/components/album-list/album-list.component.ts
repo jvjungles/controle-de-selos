@@ -1,6 +1,7 @@
 import { Component } from '@angular/core';
 import { Router } from '@angular/router';
 import { AlbumService } from '../../services/album.service';
+import { Shared } from '../../util/shared';
 
 
 @Component({
@@ -15,9 +16,11 @@ export class AlbumListComponent {
   albuns: any[] = [];
   showModal = false;
   albumTitle: string = '';
+  albumQtde: number = 0;
 
   ngOnInit() {
-    this.findAlbumList();   
+    this.findAlbumList();  
+    this.albumQtde = +localStorage.getItem('ALBUNS.SIZE')!;   
   }  
 
   share() {
@@ -44,8 +47,9 @@ export class AlbumListComponent {
   findAlbumList() {
     this.albumService.listalbuns().subscribe(albums => {
       this.albuns = albums;
+      Shared.initializeWebStorage(this.albuns); 
       console.log('albuns:', this.albuns);
+      this.albumQtde = +localStorage.getItem('ALBUNS.SIZE')!; 
     });    
-  } 
-  
+  }  
 }
