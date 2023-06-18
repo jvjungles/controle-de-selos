@@ -2,6 +2,8 @@ import { Component, Input, Output, EventEmitter } from '@angular/core';
 import { AlbumService } from '../../services/album.service';
 import { Album } from '../../model/album';
 import { Selo } from '../../model/selo';
+import { MatDialog } from '@angular/material/dialog';
+import { ConfirmationModalComponent } from '../confirmation-modal/confirmation-modal.component';
 
 @Component({
   selector: 'app-selo-add-modal',
@@ -10,7 +12,7 @@ import { Selo } from '../../model/selo';
 })
 export class SeloAddModalComponent {
 
-  constructor(private service: AlbumService) { }
+  constructor(private dialog: MatDialog, private service: AlbumService) { }
 
   @Input() showSeloModal: boolean = false;
   @Input() seloTitle: String = '';
@@ -91,7 +93,19 @@ export class SeloAddModalComponent {
 
       console.log('Album Object:', album);
     });    
-  } 
+  }
+
+  openConfirmationModal(): void {
+    const dialogRef = this.dialog.open(ConfirmationModalComponent, {
+        width: '300px'        
+      });
+    
+      dialogRef.afterClosed().subscribe(result => {
+        if (result) {
+          this.excluir();
+        }
+      });
+    }
   
   excluir() {
     console.log('app-selo-add-modal - excluir' + this.albumid);

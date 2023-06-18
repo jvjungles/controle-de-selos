@@ -58,73 +58,6 @@
       "id": 1
     },
     {
-      "name": "ALBUM 02",
-      "description": "DESCRIÇÃO 02",
-      "selos": [
-        {
-          "id": 1,
-          "name": "01",
-          "description": "01",
-          "type": "Promocional",
-          "year": "1988",
-          "country": "Brasil",
-          "stamp": true,
-          "filigram": "Sim"
-        },
-        {
-          "id": 2,
-          "name": "02",
-          "description": "02",
-          "type": "Especial",
-          "year": "1999",
-          "country": "Brasil",
-          "stamp": true,
-          "filigram": "Sim"
-        },
-        {
-          "id": 3,
-          "name": "03",
-          "description": "03",
-          "type": "Outros",
-          "year": "2020",
-          "country": "Brasil",
-          "stamp": true,
-          "filigram": "Sim"
-        },
-        {
-          "id": 4,
-          "name": "04",
-          "description": "04",
-          "type": "Beneficente",
-          "year": "1999",
-          "country": "Brasil",
-          "stamp": true,
-          "filigram": "Sim"
-        },
-        {
-          "id": 5,
-          "name": "05",
-          "year": "1988",
-          "description": "05",
-          "country": "Brasil",
-          "stamp": true,
-          "filigram": "Não",
-          "type": "Comemorativo"
-        },
-        {
-          "id": 6,
-          "name": "06",
-          "year": "2020",
-          "description": "06",
-          "type": "Comemorativo",
-          "country": "Brasil",
-          "stamp": true,
-          "filigram": "Sim"
-        }
-      ],
-      "id": 2
-    },
-    {
       "name": "ALBUM 03",
       "description": "DESCRIÇÃO 03",
       "selos": [
@@ -295,36 +228,6 @@
           "country": "yuiyuiyui",
           "stamp": true,
           "filigram": "Não"
-        },
-        {
-          "id": 8,
-          "name": "ssdsdsds",
-          "description": "diyuiyuiyuisasas",
-          "type": "Ordinario",
-          "year": "mmmm",
-          "country": "yuiyuiyui",
-          "stamp": true,
-          "filigram": "Não"
-        },
-        {
-          "id": 10,
-          "name": "ASasASa",
-          "description": "aaaaaa",
-          "type": "Promocional",
-          "year": 7,
-          "country": "SAasASas",
-          "stamp": true,
-          "filigram": "Sim"
-        },
-        {
-          "id": 15,
-          "name": "ADASFSDFSDFD",
-          "description": "nvbnbvnvbnv",
-          "type": "Especial",
-          "year": 8,
-          "country": "vbnbvnvbnv",
-          "stamp": true,
-          "filigram": "Sim"
         }
       ],
       "id": 6
@@ -340,78 +243,6 @@
       "description": "8989",
       "selos": [],
       "id": 9
-    },
-    {
-      "name": "ALBUM 09",
-      "description": "fsdfsdf",
-      "selos": [],
-      "id": 10
-    },
-    {
-      "name": "ALBUM 10",
-      "description": "07",
-      "selos": [],
-      "id": 13
-    },
-    {
-      "name": "ALBUM 11",
-      "description": "333",
-      "selos": [
-        {
-          "id": 1,
-          "name": "asas",
-          "description": "asasa",
-          "type": "Especial",
-          "year": 3,
-          "country": "asasa",
-          "stamp": true,
-          "filigram": "Sim"
-        },
-        {
-          "id": 3,
-          "name": "asdsada",
-          "description": "sdasdasd",
-          "type": "Ordinario",
-          "year": 2323,
-          "country": "asdasd",
-          "stamp": true,
-          "filigram": "Não"
-        },
-        {
-          "id": 4,
-          "name": "asdasdas",
-          "description": "dasdas",
-          "type": "Especial",
-          "year": 3,
-          "country": "asdasdas",
-          "stamp": true,
-          "filigram": "Sim"
-        },
-        {
-          "id": 5,
-          "name": "dfdf",
-          "description": "dfdf"
-        }
-      ],
-      "id": 14
-    },
-    {
-      "name": "ALBUM 16",
-      "description": "AaAa",
-      "selos": [],
-      "id": 20
-    },
-    {
-      "name": "ALBUM 17",
-      "description": "asasas",
-      "selos": [],
-      "id": 21
-    },
-    {
-      "name": "ALBUM 18",
-      "description": "asasas",
-      "selos": [],
-      "id": 22
     }
   ]
 }

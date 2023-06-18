@@ -3,6 +3,8 @@ import { ActivatedRoute, Router } from '@angular/router';
 import { Album } from '../../model/album';
 import { Selo } from '../../model/selo';
 import { AlbumService } from '../../services/album.service';
+import { MatDialog } from '@angular/material/dialog';
+import { ConfirmationModalComponent } from '../confirmation-modal/confirmation-modal.component';
 
 @Component({
   selector: 'app-album-page',
@@ -12,7 +14,7 @@ import { AlbumService } from '../../services/album.service';
 })
 export class AlbumPageComponent {
 
-  constructor(private route: ActivatedRoute, private router: Router, private service: AlbumService) { }
+  constructor(private dialog: MatDialog, private route: ActivatedRoute, private router: Router, private service: AlbumService) { }
 
   selo: Selo = {};
   album: Album | undefined;
@@ -21,7 +23,7 @@ export class AlbumPageComponent {
   showSeloModal = false;
   albumTitle: string = '';
   albumid: number = -1;
-  seloTitle: string = '';
+  seloTitle: string = '';  
 
   ngOnInit() {
     this.route.params.subscribe(params => {
@@ -76,14 +78,21 @@ export class AlbumPageComponent {
         console.log('Album Object:', album);
       });   
   } 
-
-  excluir() {
-    console.log('excluir' + this.album?.id || -1);
-    this.service.delete(this.album?.id || -1).subscribe(() => {
-      console.log('Álbum excluído com sucesso');
-      this.router.navigate(['/']);
-    });
-  }
   
+  openConfirmationModal(): void {
+    const dialogRef = this.dialog.open(ConfirmationModalComponent, {
+        width: '300px'        
+      });
+    
+      dialogRef.afterClosed().subscribe(result => {
+        if (result) {
+          console.log('excluir' + (this.album?.id || -1));
+          this.service.delete(this.album?.id || -1).subscribe(() => {
+            console.log('Álbum excluído com sucesso');
+            this.router.navigate(['/']);
+          });
+        }
+      });
+    }
 }
 

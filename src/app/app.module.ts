@@ -5,6 +5,7 @@ import { ReactiveFormsModule } from '@angular/forms';
 import { MatSlideToggleModule } from '@angular/material/slide-toggle';
 import { FormsModule } from '@angular/forms';
 import { HttpClientModule } from '@angular/common/http';
+import { MatDialogModule } from '@angular/material/dialog';
 
 import { AppComponent } from './app.component';
 import { TopBarComponent } from './components/top-bar/top-bar.component';
@@ -17,6 +18,7 @@ import { AlbumAddModalComponent } from './components/album-add-modal/album-add-m
 import { SeloAddModalComponent } from './components/selo-add-modal/selo-add-modal.component';
 
 import { AlbumService } from './services/album.service';
+import { ConfirmationModalComponent } from './components/confirmation-modal/confirmation-modal.component';
 
 @NgModule({
   imports: [
@@ -25,6 +27,7 @@ import { AlbumService } from './services/album.service';
     MatSlideToggleModule,
     FormsModule,
     MatCardModule,
+    MatDialogModule ,
     MatTooltipModule,
     HttpClientModule,
     RouterModule.forRoot([
@@ -39,7 +42,8 @@ import { AlbumService } from './services/album.service';
     AlbumListComponent,
     AlbumPageComponent,
     AlbumAddModalComponent,
-    SeloAddModalComponent
+    SeloAddModalComponent,
+    ConfirmationModalComponent
   ],
   providers: [
     AlbumService

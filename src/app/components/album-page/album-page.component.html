@@ -3,7 +3,7 @@
         <b>ALBUM: {{ album?.name }}&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</b>
         <div class="header">
           <button title="Editar Álbum" class="add-button" (click)="openModal()">/</button>
-          <button title="Excluir Álbum" class="excluir-button" (click)="excluir()">X</button>
+          <button title="Excluir Álbum" class="excluir-button" (click)="openConfirmationModal()">X</button>
         </div>
     </div>
     <app-album-add-modal
