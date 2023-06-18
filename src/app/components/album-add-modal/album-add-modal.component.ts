@@ -36,7 +36,6 @@ export class AlbumAddModalComponent {
   }  
 
   closeModal() { 
-    console.log('this.albumTitle' + this.albumTitle);   
     if (this.albumTitle !== 'Editar') {
       this.nome = '';
       this.descricao = '';
