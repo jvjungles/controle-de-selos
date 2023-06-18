@@ -1,8 +1,8 @@
 import { HttpClient, HttpHeaders } from '@angular/common/http';
-import { Observable, of } from 'rxjs';
 import { Injectable } from '@angular/core';
-import { Album } from '../model/album';
+import { Observable, of } from 'rxjs';
 import { RoutesAPI } from '../util/routes-api';
+import { Album } from '../model/album';
 
 @Injectable()
 export class AlbumService {

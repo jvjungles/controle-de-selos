@@ -6,8 +6,7 @@
       <select class="custom-text" id="tipo" *ngIf="selo" [(ngModel)]="selo.type">
         <option *ngFor="let type of seloTypes" [value]="type.value">{{ type.label }}</option>
       </select>
-    </div>
-    
+    </div>    
     <div class="input-container">
       <label for="nome">Nome * :</label>
       <input class="custom-text" type="text" id="nome" *ngIf="selo" [(ngModel)]="selo.name" required />      

@@ -158,40 +158,9 @@
       "id": 5
     },
     {
-      "name": "Aa",
-      "description": "AaA",
-      "selos": [
-        {
-          "id": 1,
-          "name": "Aa",
-          "description": "Aa",
-          "type": "Outros",
-          "year": "1999",
-          "country": "aA",
-          "stamp": true,
-          "filigram": "Sim"
-        },
-        {
-          "id": 2,
-          "name": "ASAS",
-          "description": "ASASA",
-          "type": "Ordinario",
-          "year": "1999",
-          "country": "ASASAS",
-          "stamp": true,
-          "filigram": "Sim"
-        },
-        {
-          "id": 3,
-          "name": "ASAS",
-          "description": "ASAS",
-          "type": "Comemorativo",
-          "year": "2020",
-          "country": "ASAS",
-          "stamp": true,
-          "filigram": "Sim"
-        }
-      ],
+      "name": "xvxvasasas",
+      "description": "xvxvv",
+      "selos": [],
       "id": 6
     }
   ]
