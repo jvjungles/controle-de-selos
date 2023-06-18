@@ -4,7 +4,7 @@ export class Shared {
   
   // WebStorage
   public static initializeWebStorage(albuns: any[]): void {   
-    console.log('initializeWebStorage:', albuns.length);
+    //console.log('initializeWebStorage:', albuns.length);
     localStorage.setItem('ALBUNS.SIZE', albuns.length.toString());
     localStorage.setItem('ALBUNS', JSON.stringify(albuns));
   }

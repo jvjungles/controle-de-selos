@@ -84,15 +84,6 @@
           "country": "Brasil",
           "stamp": true,
           "filigram": "Sim"
-        },
-        {
-          "id": 4,
-          "name": "04",
-          "description": "04",
-          "year": "1999",
-          "country": "Brasil",
-          "stamp": true,
-          "filigram": "Não"
         }
       ],
       "id": 3
@@ -167,82 +158,41 @@
       "id": 5
     },
     {
-      "name": "ALBUM 06",
-      "description": "DESCRIÇÃO 666",
+      "name": "Aa",
+      "description": "AaA",
       "selos": [
         {
           "id": 1,
-          "name": "Novo Selo",
-          "description": "Novo Selo desc",
-          "type": "Promocional",
-          "year": 3,
-          "country": "pais",
-          "stamp": true
+          "name": "Aa",
+          "description": "Aa",
+          "type": "Outros",
+          "year": "1999",
+          "country": "aA",
+          "stamp": true,
+          "filigram": "Sim"
         },
         {
           "id": 2,
-          "name": "asdaswdas",
-          "description": "diyuiyuiyui",
+          "name": "ASAS",
+          "description": "ASASA",
           "type": "Ordinario",
-          "year": 5,
-          "country": "yuiyuiyui",
+          "year": "1999",
+          "country": "ASASAS",
           "stamp": true,
-          "filigram": "Não"
+          "filigram": "Sim"
         },
         {
           "id": 3,
-          "name": "ASasASa",
-          "description": "sASasASasAS",
-          "type": "Promocional",
-          "year": 7,
-          "country": "SAasASas",
+          "name": "ASAS",
+          "description": "ASAS",
+          "type": "Comemorativo",
+          "year": "2020",
+          "country": "ASAS",
           "stamp": true,
           "filigram": "Sim"
-        },
-        {
-          "id": 4,
-          "name": "ASasASa",
-          "description": "sASasASasAS",
-          "type": "Promocional",
-          "year": 7,
-          "country": "SAasASas",
-          "stamp": false,
-          "filigram": "Sim"
-        },
-        {
-          "id": 5,
-          "name": "ASasASa",
-          "description": "sASasASasAS",
-          "type": "Promocional",
-          "year": 7,
-          "country": "SAasASas",
-          "stamp": true,
-          "filigram": "Sim"
-        },
-        {
-          "id": 6,
-          "name": "22222",
-          "description": "diyuiyuiyui",
-          "type": "Ordinario",
-          "year": 5,
-          "country": "yuiyuiyui",
-          "stamp": true,
-          "filigram": "Não"
         }
       ],
       "id": 6
-    },
-    {
-      "name": "ALBUM 07",
-      "description": "asas",
-      "selos": [],
-      "id": 8
-    },
-    {
-      "name": "ALBUM 08",
-      "description": "8989",
-      "selos": [],
-      "id": 9
     }
   ]
 }

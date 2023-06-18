@@ -4,14 +4,10 @@
     <div class="input-container">
       <label for="tipo">Tipo:</label>
       <select class="custom-text" id="tipo" *ngIf="selo" [(ngModel)]="selo.type">
-        <option value="Beneficente">Beneficente</option>
-        <option value="Comemorativo">Comemorativo</option>
-        <option value="Especial">Especial</option>
-        <option value="Ordinario">Ordinário</option>
-        <option value="Promocional">Promocional</option>
-        <option value="Outros">Outros</option>
+        <option *ngFor="let type of seloTypes" [value]="type.value">{{ type.label }}</option>
       </select>
     </div>
+    
     <div class="input-container">
       <label for="nome">Nome * :</label>
       <input class="custom-text" type="text" id="nome" *ngIf="selo" [(ngModel)]="selo.name" required />      

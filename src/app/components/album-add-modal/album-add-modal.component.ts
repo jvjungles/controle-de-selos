@@ -31,14 +31,14 @@ export class AlbumAddModalComponent {
           this.album = album;
           this.nome = this.album?.name ?? '';
           this.descricao = this.album?.description ?? '';
-          console.log('this.route.params.subscribe:', album);
+          //console.log('this.route.params.subscribe:', album);
         });
       }
     });    
   }  
 
   closeModal() {
-    console.log('app-album-add-modal - closeModal');
+    //console.log('app-album-add-modal - closeModal');
     if (this.albumTitle !== 'Editar') {
       this.nome = '';
       this.descricao = '';
@@ -48,10 +48,10 @@ export class AlbumAddModalComponent {
   }
 
   saveModal() {
-    console.log('app-album-add-modal - saveModal');
-    console.log('Nome:', this.nome);
-    console.log('Descrição:', this.descricao);
-    console.log('albumid:', this.albumid);
+    //console.log('app-album-add-modal - saveModal');
+    //console.log('Nome:', this.nome);
+    //console.log('Descrição:', this.descricao);
+    //console.log('albumid:', this.albumid);
     
     if(this.albumid == -1){
       this.save();
@@ -68,7 +68,7 @@ export class AlbumAddModalComponent {
     };
 
     this.service.save(album).subscribe(savedAlbum => {
-      console.log('Álbum salvo:', savedAlbum);
+      //console.log('Álbum salvo:', savedAlbum);
       this.nome = '';
       this.descricao = '';
       this.showModal = false;
@@ -84,11 +84,11 @@ export class AlbumAddModalComponent {
       this.album.description = this.descricao;
 
       this.service.update(this.album).subscribe(savedAlbum => {
-        console.log('Álbum update:', savedAlbum);
+        //console.log('Álbum update:', savedAlbum);
         this.showModal = false;
         this.closeModalEvent.emit(); 
       });
-      console.log('Album Object:', album);
+      //console.log('Album Object:', album);
     });     
   }
 

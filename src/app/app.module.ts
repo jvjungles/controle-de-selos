@@ -31,8 +31,8 @@ import { ConfirmationModalComponent } from './components/confirmation-modal/conf
     MatTooltipModule,
     HttpClientModule,
     RouterModule.forRoot([
-      { path: '', component: AlbumListComponent },
-      { path: 'album-page', component: AlbumPageComponent },
+      { path: '', component: AlbumListComponent },                // pagina inicial - lista de albuns
+      { path: 'album-page', component: AlbumPageComponent },      // pagina do album - lista de selos
     ])
   ],
   declarations: [
