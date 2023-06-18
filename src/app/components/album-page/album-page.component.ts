@@ -1,10 +1,11 @@
 import { Component } from '@angular/core';
 import { ActivatedRoute, Router } from '@angular/router';
-import { Album } from '../../model/album';
-import { Selo } from '../../model/selo';
-import { AlbumService } from '../../services/album.service';
 import { MatDialog } from '@angular/material/dialog';
 import { ConfirmationModalComponent } from '../confirmation-modal/confirmation-modal.component';
+import { Constants } from '../../util/constants';
+import { AlbumService } from '../../services/album.service';
+import { Album } from '../../model/album';
+import { Selo } from '../../model/selo';
 
 @Component({
   selector: 'app-album-page',
@@ -29,45 +30,37 @@ export class AlbumPageComponent {
     this.route.params.subscribe(params => {
       this.service.getById(+params['id']).subscribe(album => {
         this.album = album;
-        console.log('Album Object:', album);
       });
     });
   }
 
   onCardClick(selo: Selo) {
-    console.log('Card clicked:', selo);
-    this.seloTitle = 'Editar';
+    this.seloTitle = Constants.EDITAR;
     this.albumid = this.album?.id || -1;
     this.showSeloModal = true;
     this.selo = selo;
   }
 
   openSeloModal() {
-    console.log('app-selo-list - openModal');
-    this.seloTitle = 'Novo';
+    this.seloTitle = Constants.NOVO;
     this.albumid = this.album?.id || -1;
-    console.log('this.albumid' + this.albumid);
     this.selo = {};
     this.showSeloModal = true;
   }
 
   closeSeloModal() {
-    console.log('app-selo-list - closeModal');
     this.findSeloList();
     this.showSeloModal = false;
   }
 
   openModal() {
-    console.log('app-album-list - openModal');
-    this.albumTitle = 'Editar';
+    this.albumTitle = Constants.EDITAR;
     this.findSeloList();
     this.albumid = this.album?.id || -1;
-    console.log('this.albumid' + this.albumid);
     this.showModal = true;
   }  
 
   closeModal() {
-    console.log('app-album-list - closeModal');
     this.findSeloList();
     this.showModal = false;
   }
@@ -75,7 +68,6 @@ export class AlbumPageComponent {
   findSeloList() {
     this.service.getById(this.album?.id || -1).subscribe(album => {
         this.album = album;
-        console.log('Album Object:', album);
       });   
   } 
   
@@ -86,9 +78,7 @@ export class AlbumPageComponent {
     
       dialogRef.afterClosed().subscribe(result => {
         if (result) {
-          console.log('excluir' + (this.album?.id || -1));
           this.service.delete(this.album?.id || -1).subscribe(() => {
-            console.log('Álbum excluído com sucesso');
             this.router.navigate(['/']);
           });
         }

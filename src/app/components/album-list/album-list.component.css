@@ -68,8 +68,8 @@
 }
   
   .scrollable-div {
-    height: 300px; /* altura fixa desejada */
-    overflow: auto; /* ou 'scroll' para sempre mostrar a barra de rolagem */
+    height: 300px;
+    overflow: auto;
   }
 
   .clickable-card {
@@ -102,7 +102,7 @@
   }
 
   .card-item {
-    width: calc(33% - 16px); /* A largura é definida como metade do container, subtraindo o espaçamento entre os cards */
+    width: calc(33% - 16px);
     margin: 8px;
     overflow: auto;
   }

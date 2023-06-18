@@ -53,6 +53,79 @@
           "country": "Brasil",
           "stamp": true,
           "filigram": "Sim"
+        },
+        {
+          "id": 15,
+          "name": "Selo 06",
+          "description": "DESCRIÇÃO Selo 06 ",
+          "type": "Especial",
+          "year": "2020",
+          "country": "Brasil",
+          "stamp": false,
+          "filigram": "Não"
+        },
+        {
+          "id": 16,
+          "name": "Selo 07",
+          "description": "DESCRIÇÃO Selo 07",
+          "type": "Comemorativo",
+          "year": "1999",
+          "country": "Brasil",
+          "filigram": "Não"
+        },
+        {
+          "id": 17,
+          "name": "Selo 08",
+          "description": "DESCRIÇÃO Selo 08",
+          "type": "Comemorativo",
+          "year": "1999",
+          "country": "Brasil",
+          "filigram": "Não"
+        },
+        {
+          "id": 18,
+          "name": "Selo 09",
+          "description": "DESCRIÇÃO Selo 09",
+          "type": "Comemorativo",
+          "year": "1999",
+          "country": "Brasil",
+          "filigram": "Não"
+        },
+        {
+          "id": 19,
+          "name": "Selo 10",
+          "description": "DESCRIÇÃO Selo 10",
+          "type": "Comemorativo",
+          "year": "1999",
+          "country": "Brasil",
+          "filigram": "Não"
+        },
+        {
+          "id": 20,
+          "name": "Selo 11",
+          "description": "DESCRIÇÃO Selo 11",
+          "type": "Comemorativo",
+          "year": "1999",
+          "country": "Brasil",
+          "filigram": "Não"
+        },
+        {
+          "id": 21,
+          "name": "Selo 12",
+          "description": "DESCRIÇÃO Selo 12",
+          "type": "Comemorativo",
+          "year": "1999",
+          "country": "Brasil",
+          "filigram": "Não"
+        },
+        {
+          "id": 22,
+          "name": "Selo 13",
+          "description": "DESCRIÇÃO Selo 13",
+          "type": "Comemorativo",
+          "year": "1999",
+          "country": "Brasil",
+          "filigram": "Não"
         }
       ],
       "id": 1
@@ -63,36 +136,32 @@
       "selos": [
         {
           "id": 1,
-          "name": "01",
-          "description": "01"
-        },
-        {
-          "id": 2,
-          "name": "02",
-          "description": "02",
-          "year": "1988",
-          "country": "Brasil",
-          "stamp": true,
+          "name": "Selo 03 - 01",
+          "description": "Selo 03 - 01",
+          "type": "Beneficente",
+          "year": "1923",
+          "country": "Belgica",
           "filigram": "Sim"
         },
         {
+          "id": 2,
+          "name": "Selo 03 - 02",
+          "description": "Selo 03 - 02",
+          "year": "1988",
+          "country": "Brasil",
+          "stamp": true,
+          "filigram": "Sim",
+          "type": "Promocional"
+        },
+        {
           "id": 3,
-          "name": "03",
-          "description": "03",
+          "name": "Selo 03 - 03",
+          "description": "Selo 03 - 03",
           "type": "Comemorativo",
           "year": "2020",
           "country": "Brasil",
           "stamp": true,
           "filigram": "Sim"
-        },
-        {
-          "id": 4,
-          "name": "04",
-          "description": "04",
-          "year": "1999",
-          "country": "Brasil",
-          "stamp": true,
-          "filigram": "Não"
         }
       ],
       "id": 3
@@ -103,18 +172,32 @@
       "selos": [
         {
           "id": 1,
-          "name": "010101",
-          "description": "010101"
+          "name": "Nome do Selo 04 - 01",
+          "description": "Descrição do Selo 04 - 01",
+          "type": "Ordinario",
+          "year": "1999",
+          "country": "Argentina",
+          "stamp": true,
+          "filigram": "Sim"
         },
         {
           "id": 2,
-          "name": "010101",
-          "description": "010101"
+          "name": "Nome do Selo 04 - 02",
+          "description": "Descrição do Selo 04 - 02",
+          "type": "Promocional",
+          "year": "1988",
+          "country": "Argentina",
+          "filigram": "Sim"
         },
         {
           "id": 3,
-          "name": "010101",
-          "description": "010101"
+          "name": "Nome do Selo 04 - 03",
+          "description": "Descrição do Selo 04 - 03",
+          "type": "Outros",
+          "year": "1912",
+          "country": "França",
+          "stamp": true,
+          "filigram": "Sim"
         }
       ],
       "id": 4
@@ -125,8 +208,8 @@
       "selos": [
         {
           "id": 4,
-          "name": "Selo 04",
-          "description": "04",
+          "name": "Comemorativo",
+          "description": "Descrição do Selo Comemorativo",
           "type": "Comemorativo",
           "year": "1988",
           "country": "Brasil",
@@ -145,8 +228,8 @@
         },
         {
           "id": 6,
-          "name": "04",
-          "description": "04",
+          "name": "Ordinario",
+          "description": "Selo Ordinario",
           "type": "Ordinario",
           "year": "1988",
           "country": "Brasil",
@@ -167,82 +250,92 @@
       "id": 5
     },
     {
-      "name": "ALBUM 06",
-      "description": "DESCRIÇÃO 666",
+      "name": "Album 06",
+      "description": "DESCRIÇÃO Album 06",
+      "selos": [],
+      "id": 6
+    },
+    {
+      "name": "Album 07",
+      "description": "DESCRIÇÃO Album 07",
+      "selos": [],
+      "id": 7
+    },
+    {
+      "name": "Comemorativos",
+      "description": "Album de Selos Comemorativos",
       "selos": [
         {
           "id": 1,
-          "name": "Novo Selo",
-          "description": "Novo Selo desc",
-          "type": "Promocional",
-          "year": 3,
-          "country": "pais",
-          "stamp": true
+          "name": "Selos Comemorativo 01",
+          "description": "Descrição de Selos Comemorativo 01",
+          "type": "Comemorativo",
+          "year": "1889",
+          "country": "Espanha",
+          "stamp": false,
+          "filigram": "Sim"
         },
         {
           "id": 2,
-          "name": "asdaswdas",
-          "description": "diyuiyuiyui",
-          "type": "Ordinario",
-          "year": 5,
-          "country": "yuiyuiyui",
+          "name": "Selo Comemorativo 02",
+          "description": "Descrição de Selos Comemorativo 02",
+          "type": "Comemorativo",
+          "year": "1988",
+          "country": "Espanha",
           "stamp": true,
           "filigram": "Não"
         },
         {
           "id": 3,
-          "name": "ASasASa",
-          "description": "sASasASasAS",
-          "type": "Promocional",
-          "year": 7,
-          "country": "SAasASas",
+          "name": "Selo Comemorativo 03",
+          "description": "Descrição de Selos Comemorativo 03",
+          "type": "Comemorativo",
+          "year": "1999",
+          "country": "Espanha",
           "stamp": true,
           "filigram": "Sim"
         },
         {
           "id": 4,
-          "name": "ASasASa",
-          "description": "sASasASasAS",
-          "type": "Promocional",
-          "year": 7,
-          "country": "SAasASas",
-          "stamp": false,
-          "filigram": "Sim"
+          "name": "Selo Comemorativo 04",
+          "description": "Descrição de Selos Comemorativo 04",
+          "type": "Comemorativo",
+          "year": "1956",
+          "country": "Inglaterra",
+          "filigram": "Não"
         },
         {
           "id": 5,
-          "name": "ASasASa",
-          "description": "sASasASasAS",
-          "type": "Promocional",
-          "year": 7,
-          "country": "SAasASas",
+          "name": "Selo Comemorativo 05",
+          "description": "Descrição de Selos Comemorativo 05",
+          "type": "Comemorativo",
+          "year": "1900",
+          "country": "Inglaterra",
           "stamp": true,
           "filigram": "Sim"
         },
         {
           "id": 6,
-          "name": "22222",
-          "description": "diyuiyuiyui",
-          "type": "Ordinario",
-          "year": 5,
-          "country": "yuiyuiyui",
+          "name": "Selo Comemorativo 06",
+          "description": "Descrição de Selos Comemorativo 06",
+          "type": "Comemorativo",
+          "year": "1900",
+          "country": "Inglaterra",
           "stamp": true,
-          "filigram": "Não"
+          "filigram": "Sim"
+        },
+        {
+          "id": 7,
+          "name": "Selo Comemorativo 07",
+          "description": "Descrição de Selos Comemorativo 07",
+          "type": "Comemorativo",
+          "year": "1900",
+          "country": "Inglaterra",
+          "stamp": true,
+          "filigram": "Sim"
         }
       ],
-      "id": 6
-    },
-    {
-      "name": "ALBUM 07",
-      "description": "asas",
-      "selos": [],
       "id": 8
-    },
-    {
-      "name": "ALBUM 08",
-      "description": "8989",
-      "selos": [],
-      "id": 9
     }
   ]
 }

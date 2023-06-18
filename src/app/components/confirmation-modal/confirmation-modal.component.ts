@@ -1,5 +1,6 @@
 import { Component, Input } from '@angular/core';
 import { MatDialogRef } from '@angular/material/dialog';
+import { Constants } from '../../util/constants';
 
 @Component({
   selector: 'app-confirmation-modal',
@@ -7,8 +8,8 @@ import { MatDialogRef } from '@angular/material/dialog';
   styleUrls: ['./confirmation-modal.component.css']
 })
 export class ConfirmationModalComponent {
-  title: string = 'Excluir ';
-  message: string = 'Deseja realmente excluir?';
+  title: string = Constants.CONFIRM_TITLE;
+  message: string = Constants.CONFIRM_MESSAGE;
 
   constructor(public dialogRef: MatDialogRef<ConfirmationModalComponent>) { }
 
