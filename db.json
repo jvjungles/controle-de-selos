@@ -1,243 +1,341 @@
 {
   "albuns": [
     {
-      "name": "01",
-      "description": "DESCRIÇÃO 01",
+      "name": "Raros",
+      "description": "Album de Selos Raros",
       "selos": [
-        {
-          "id": 1,
-          "name": "01",
-          "description": "01"
-        },
-        {
-          "id": 2,
-          "name": "02",
-          "description": "02"
-        },
-        {
-          "id": 3,
-          "name": "03",
-          "description": "03"
-        },
-        {
-          "id": 4,
-          "name": "sasasasasas",
-          "description": "asasasasasas"
-        },
         {
           "id": 5,
           "name": "Selo 01",
-          "description": "DESCRIÇÃO selo 01"
+          "description": "DESCRIÇÃO selo 01",
+          "type": "Outros",
+          "year": "1988",
+          "country": "Brasil",
+          "stamp": true,
+          "filigram": "Não"
         },
         {
           "id": 6,
-          "name": "Selo 01",
-          "description": "DESCRIÇÃO selo 01"
+          "name": "Selo 02",
+          "description": "DESCRIÇÃO selo 02",
+          "type": "Comemorativo",
+          "year": "2020",
+          "country": "Brasil",
+          "stamp": true,
+          "filigram": "Sim"
         },
         {
           "id": 7,
-          "name": "Selo 01",
-          "description": "DESCRIÇÃO selo 01"
+          "name": "Selo 03",
+          "description": "DESCRIÇÃO selo 03",
+          "type": "Comemorativo",
+          "year": "1999",
+          "country": "Brasil",
+          "stamp": true,
+          "filigram": "Não"
         },
         {
           "id": 8,
-          "name": "Selo 01",
-          "description": "DESCRIÇÃO selo 01"
+          "name": "Selo 04",
+          "description": "DESCRIÇÃO selo 04",
+          "type": "Comemorativo",
+          "year": "2020",
+          "country": "Brasil",
+          "stamp": true,
+          "filigram": "Sim"
         },
         {
-          "id": 9,
-          "name": "",
-          "description": ""
+          "id": 14,
+          "name": "Selo 05",
+          "year": "2020",
+          "description": "DESCRIÇÃO Selo 05",
+          "type": "Comemorativo",
+          "country": "Brasil",
+          "stamp": true,
+          "filigram": "Sim"
         },
         {
-          "id": 10,
-          "name": "",
-          "description": ""
+          "id": 15,
+          "name": "Selo 06",
+          "description": "DESCRIÇÃO Selo 06 ",
+          "type": "Especial",
+          "year": "2020",
+          "country": "Brasil",
+          "stamp": false,
+          "filigram": "Não"
         },
         {
-          "id": 11,
-          "name": "",
-          "description": ""
+          "id": 16,
+          "name": "Selo 07",
+          "description": "DESCRIÇÃO Selo 07",
+          "type": "Comemorativo",
+          "year": "1999",
+          "country": "Brasil",
+          "filigram": "Não"
+        },
+        {
+          "id": 17,
+          "name": "Selo 08",
+          "description": "DESCRIÇÃO Selo 08",
+          "type": "Comemorativo",
+          "year": "1999",
+          "country": "Brasil",
+          "filigram": "Não"
+        },
+        {
+          "id": 18,
+          "name": "Selo 09",
+          "description": "DESCRIÇÃO Selo 09",
+          "type": "Comemorativo",
+          "year": "1999",
+          "country": "Brasil",
+          "filigram": "Não"
+        },
+        {
+          "id": 19,
+          "name": "Selo 10",
+          "description": "DESCRIÇÃO Selo 10",
+          "type": "Comemorativo",
+          "year": "1999",
+          "country": "Brasil",
+          "filigram": "Não"
+        },
+        {
+          "id": 20,
+          "name": "Selo 11",
+          "description": "DESCRIÇÃO Selo 11",
+          "type": "Comemorativo",
+          "year": "1999",
+          "country": "Brasil",
+          "filigram": "Não"
+        },
+        {
+          "id": 21,
+          "name": "Selo 12",
+          "description": "DESCRIÇÃO Selo 12",
+          "type": "Comemorativo",
+          "year": "1999",
+          "country": "Brasil",
+          "filigram": "Não"
+        },
+        {
+          "id": 22,
+          "name": "Selo 13",
+          "description": "DESCRIÇÃO Selo 13",
+          "type": "Comemorativo",
+          "year": "1999",
+          "country": "Brasil",
+          "filigram": "Não"
         }
       ],
       "id": 1
     },
     {
-      "name": "02",
-      "description": "DESCRIÇÃO 02",
-      "selos": [
-        {
-          "id": 1,
-          "name": "wedsf",
-          "description": "sdfsdd"
-        },
-        {
-          "id": 2,
-          "name": "afsfas",
-          "description": "sdfsdasfasfasd"
-        },
-        {
-          "id": 3,
-          "name": "00303",
-          "description": "03"
-        },
-        {
-          "id": 4,
-          "name": "04",
-          "description": "0304"
-        }
-      ],
-      "id": 2
-    },
-    {
-      "name": "0303",
+      "name": "ALBUM 03",
       "description": "DESCRIÇÃO 03",
       "selos": [
         {
           "id": 1,
-          "name": "01",
-          "description": "01"
+          "name": "Selo 03 - 01",
+          "description": "Selo 03 - 01",
+          "type": "Beneficente",
+          "year": "1923",
+          "country": "Belgica",
+          "filigram": "Sim"
         },
         {
           "id": 2,
-          "name": "0102",
-          "description": "0102"
+          "name": "Selo 03 - 02",
+          "description": "Selo 03 - 02",
+          "year": "1988",
+          "country": "Brasil",
+          "stamp": true,
+          "filigram": "Sim",
+          "type": "Promocional"
         },
         {
           "id": 3,
-          "name": "010203",
-          "description": "010203"
-        },
-        {
-          "id": 4,
-          "name": "01020304",
-          "description": "01020304"
-        },
-        {
-          "id": 5,
-          "name": "05",
-          "description": "054"
+          "name": "Selo 03 - 03",
+          "description": "Selo 03 - 03",
+          "type": "Comemorativo",
+          "year": "2020",
+          "country": "Brasil",
+          "stamp": true,
+          "filigram": "Sim"
         }
       ],
       "id": 3
     },
     {
-      "name": "04",
+      "name": "ALBUM 04",
       "description": "DESCRIÇÃO 04",
       "selos": [
         {
           "id": 1,
-          "name": "010101",
-          "description": "010101"
+          "name": "Nome do Selo 04 - 01",
+          "description": "Descrição do Selo 04 - 01",
+          "type": "Ordinario",
+          "year": "1999",
+          "country": "Argentina",
+          "stamp": true,
+          "filigram": "Sim"
         },
         {
           "id": 2,
-          "name": "010101",
-          "description": "010101"
+          "name": "Nome do Selo 04 - 02",
+          "description": "Descrição do Selo 04 - 02",
+          "type": "Promocional",
+          "year": "1988",
+          "country": "Argentina",
+          "filigram": "Sim"
         },
         {
           "id": 3,
-          "name": "010101",
-          "description": "010101"
+          "name": "Nome do Selo 04 - 03",
+          "description": "Descrição do Selo 04 - 03",
+          "type": "Outros",
+          "year": "1912",
+          "country": "França",
+          "stamp": true,
+          "filigram": "Sim"
         }
       ],
       "id": 4
     },
     {
-      "name": "05",
-      "description": "05",
-      "selos": [],
+      "name": "ALBUM 05",
+      "description": "DESCRIÇÃO 05",
+      "selos": [
+        {
+          "id": 4,
+          "name": "Comemorativo",
+          "description": "Descrição do Selo Comemorativo",
+          "type": "Comemorativo",
+          "year": "1988",
+          "country": "Brasil",
+          "stamp": true,
+          "filigram": "Sim"
+        },
+        {
+          "id": 5,
+          "name": "Selo",
+          "description": "selo",
+          "type": "Beneficente",
+          "year": "1988",
+          "country": "Brasil",
+          "stamp": true,
+          "filigram": "Sim"
+        },
+        {
+          "id": 6,
+          "name": "Ordinario",
+          "description": "Selo Ordinario",
+          "type": "Ordinario",
+          "year": "1988",
+          "country": "Brasil",
+          "stamp": true,
+          "filigram": "Sim"
+        },
+        {
+          "id": 7,
+          "name": "Especial",
+          "description": "Especial",
+          "type": "Especial",
+          "year": "9999",
+          "country": "Brasil",
+          "stamp": true,
+          "filigram": "Sim"
+        }
+      ],
       "id": 5
     },
     {
-      "name": "066",
-      "description": "",
+      "name": "Album 06",
+      "description": "DESCRIÇÃO Album 06",
       "selos": [],
       "id": 6
     },
     {
-      "name": "07",
-      "description": "07",
+      "name": "Album 07",
+      "description": "DESCRIÇÃO Album 07",
       "selos": [],
       "id": 7
     },
     {
-      "name": "as",
-      "description": "asas",
-      "selos": [],
+      "name": "Comemorativos",
+      "description": "Album de Selos Comemorativos",
+      "selos": [
+        {
+          "id": 1,
+          "name": "Selos Comemorativo 01",
+          "description": "Descrição de Selos Comemorativo 01",
+          "type": "Comemorativo",
+          "year": "1889",
+          "country": "Espanha",
+          "stamp": false,
+          "filigram": "Sim"
+        },
+        {
+          "id": 2,
+          "name": "Selo Comemorativo 02",
+          "description": "Descrição de Selos Comemorativo 02",
+          "type": "Comemorativo",
+          "year": "1988",
+          "country": "Espanha",
+          "stamp": true,
+          "filigram": "Não"
+        },
+        {
+          "id": 3,
+          "name": "Selo Comemorativo 03",
+          "description": "Descrição de Selos Comemorativo 03",
+          "type": "Comemorativo",
+          "year": "1999",
+          "country": "Espanha",
+          "stamp": true,
+          "filigram": "Sim"
+        },
+        {
+          "id": 4,
+          "name": "Selo Comemorativo 04",
+          "description": "Descrição de Selos Comemorativo 04",
+          "type": "Comemorativo",
+          "year": "1956",
+          "country": "Inglaterra",
+          "filigram": "Não"
+        },
+        {
+          "id": 5,
+          "name": "Selo Comemorativo 05",
+          "description": "Descrição de Selos Comemorativo 05",
+          "type": "Comemorativo",
+          "year": "1900",
+          "country": "Inglaterra",
+          "stamp": true,
+          "filigram": "Sim"
+        },
+        {
+          "id": 6,
+          "name": "Selo Comemorativo 06",
+          "description": "Descrição de Selos Comemorativo 06",
+          "type": "Comemorativo",
+          "year": "1900",
+          "country": "Inglaterra",
+          "stamp": true,
+          "filigram": "Sim"
+        },
+        {
+          "id": 7,
+          "name": "Selo Comemorativo 07",
+          "description": "Descrição de Selos Comemorativo 07",
+          "type": "Comemorativo",
+          "year": "1900",
+          "country": "Inglaterra",
+          "stamp": true,
+          "filigram": "Sim"
+        }
+      ],
       "id": 8
-    },
-    {
-      "name": "8989",
-      "description": "8989",
-      "selos": [],
-      "id": 9
-    },
-    {
-      "name": "fdsgfs",
-      "description": "fsdfsdf",
-      "selos": [],
-      "id": 10
-    },
-    {
-      "name": "123",
-      "description": "123",
-      "selos": [],
-      "id": 11
-    },
-    {
-      "name": "sasasasas",
-      "description": "asasasas",
-      "selos": [],
-      "id": 12
-    },
-    {
-      "name": "123",
-      "description": "123",
-      "selos": [],
-      "id": 13
-    },
-    {
-      "name": "787878",
-      "description": "787878",
-      "selos": [],
-      "id": 14
-    },
-    {
-      "name": "56565",
-      "description": "65656",
-      "selos": [],
-      "id": 15
-    },
-    {
-      "name": "02e",
-      "description": "02e",
-      "selos": [],
-      "id": 16
-    },
-    {
-      "name": "02ee",
-      "description": "",
-      "selos": [],
-      "id": 17
-    },
-    {
-      "name": "020202",
-      "description": "020202",
-      "selos": [],
-      "id": 18
-    },
-    {
-      "name": "velho",
-      "description": "velho",
-      "selos": [],
-      "id": 19
-    },
-    {
-      "name": "hjhjhjhj",
-      "description": "hjhjhjhj",
-      "selos": [],
-      "id": 20
     }
   ]
 }

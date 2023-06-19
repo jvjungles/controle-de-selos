@@ -1,11 +1,12 @@
 import { HttpClient, HttpHeaders } from '@angular/common/http';
-import { Observable, of } from 'rxjs';
 import { Injectable } from '@angular/core';
+import { Observable, of } from 'rxjs';
+import { RoutesAPI } from '../util/routes-api';
 import { Album } from '../model/album';
 
 @Injectable()
 export class AlbumService {
-  URL = 'http://localhost:3000/albuns';
+  URL = RoutesAPI.ALBUNS;
 
   httpOptions = {
     headers: new HttpHeaders({ 'Content-Type': 'application/json' }),
@@ -32,4 +33,9 @@ export class AlbumService {
       this.httpOptions
     );
   }
+
+  delete(id: number): Observable<void> {
+    const url = `${this.URL}/${id}`;
+    return this.httpClient.delete<void>(url, this.httpOptions);
+  }  
 }

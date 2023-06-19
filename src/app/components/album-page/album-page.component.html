@@ -1,7 +1,10 @@
 <div>
     <div class="header">
         <b>ALBUM: {{ album?.name }}&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</b>
-        <button title="Editar Álbum" class="add-button" (click)="openModal()">/</button>
+        <div class="header">
+          <button title="Editar Álbum" class="add-button" (click)="openModal()">/</button>
+          <button title="Excluir Álbum" class="excluir-button" (click)="openConfirmationModal()">X</button>
+        </div>
     </div>
     <app-album-add-modal
       [showModal]="showModal"
@@ -12,7 +15,8 @@
     <app-selo-add-modal
       [showSeloModal]="showSeloModal"
       [seloTitle]="seloTitle"
-      [albumid]="albumid"
+      [albumid]="albumid"      
+      [selo]="selo"
       (closeModalEvent)="closeSeloModal()">
     </app-selo-add-modal>
     <br>

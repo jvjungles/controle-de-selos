@@ -1,8 +1,7 @@
 import { Component, Input, Output, EventEmitter } from '@angular/core';
-import { FormsModule } from '@angular/forms';
+import { ActivatedRoute } from '@angular/router';
 import { AlbumService } from '../../services/album.service';
 import { Album } from '../../model/album';
-import { ActivatedRoute } from '@angular/router';
 
 @Component({
   selector: 'app-album-add-modal',
@@ -22,30 +21,31 @@ export class AlbumAddModalComponent {
   nome: string = '';
   descricao: string = '';
   album: Album | undefined;
+  isNomeValid: boolean = false;
 
-  ngOnInit() {
+  ngOnInit() {   
     this.route.params.subscribe(params => {
-      this.service.getById(+params['id']).subscribe(album => {
-        this.album = album;
-        this.nome = this.album?.name ?? '';
-        this.descricao = this.album?.description ?? '';
-        console.log('this.route.params.subscribe:', album);
-      });
+      if (!isNaN(+params['id'])) {
+        this.service.getById(+params['id']).subscribe(album => {
+          this.album = album;
+          this.nome = this.album?.name ?? '';
+          this.descricao = this.album?.description ?? '';
+        });
+      }
     });    
   }  
 
-  closeModal() {
-    console.log('app-album-add-modal - closeModal');
+  closeModal() { 
+    if (this.albumTitle !== 'Editar') {
+      this.nome = '';
+      this.descricao = '';
+    }    
+    this.isNomeValid = false;
     this.showModal = false;
     this.closeModalEvent.emit(); 
   }
 
-  saveModal() {
-    console.log('app-album-add-modal - saveModal');
-    console.log('Nome:', this.nome);
-    console.log('Descrição:', this.descricao);
-    console.log('albumid:', this.albumid);
-    
+  saveModal() {    
     if(this.albumid == -1){
       this.save();
     }else{
@@ -61,7 +61,8 @@ export class AlbumAddModalComponent {
     };
 
     this.service.save(album).subscribe(savedAlbum => {
-      console.log('Álbum salvo:', savedAlbum);
+      this.nome = '';
+      this.descricao = '';
       this.showModal = false;
       this.closeModalEvent.emit(); 
     }); 
@@ -75,11 +76,13 @@ export class AlbumAddModalComponent {
       this.album.description = this.descricao;
 
       this.service.update(this.album).subscribe(savedAlbum => {
-        console.log('Álbum update:', savedAlbum);
         this.showModal = false;
         this.closeModalEvent.emit(); 
       });
-      console.log('Album Object:', album);
     });     
+  }
+
+  validateNome() {
+    this.isNomeValid = this.nome.trim().length > 0;
   }
 }

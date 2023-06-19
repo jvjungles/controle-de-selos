@@ -4,8 +4,8 @@
     left: 0;
     right: 0;
     bottom: 0;
-    background-color: rgba(0, 0, 0, 0.5); /* cor de fundo semitransparente para cobrir a tela */
-    z-index: 9999; /* valor alto de z-index para garantir que a modal fique acima dos demais elementos */
+    background-color: rgba(0, 0, 0, 0.5); 
+    z-index: 33; 
     display: none;
     align-items: center;
     justify-content: center;
@@ -45,6 +45,12 @@
     background-color: #395f83;
     color: white;
   }
+
+  .excluir-button {
+    float: right;
+    background-color: #681a34;
+    color: white;
+  }
   
   .custom-text {
     width: 210px;
@@ -63,6 +69,10 @@
     margin-bottom: 10px;
   }
   
+  .error-message-small {
+    font-size: 12px;
+    color: red;
+  }
   
   
    

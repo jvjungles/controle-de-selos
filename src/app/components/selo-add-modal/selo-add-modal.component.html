@@ -3,45 +3,44 @@
     <h1>{{ seloTitle }} Selo</h1>
     <div class="input-container">
       <label for="tipo">Tipo:</label>
-      <select class="custom-text" id="tipo" [(ngModel)]="tipo">
-        <option value="Beneficente">Beneficente</option>
-        <option value="Comemorativo">Comemorativo</option>
-        <option value="Especial">Especial</option>
-        <option value="Ordinario">Ordinário</option>
-        <option value="Promocional">Promocional</option>
-        <option value="Outros">Outros</option>
+      <select class="custom-text" id="tipo" *ngIf="selo" [(ngModel)]="selo.type">
+        <option *ngFor="let type of seloTypes" [value]="type.value">{{ type.label }}</option>
       </select>
-    </div>
+    </div>    
     <div class="input-container">
-      <label for="nome">Nome:</label>
-      <input class="custom-text" type="text" id="nome" [(ngModel)]="nome" />
+      <label for="nome">Nome * :</label>
+      <input class="custom-text" type="text" id="nome" *ngIf="selo" [(ngModel)]="selo.name" required />      
     </div>
     <div class="input-container">
       <label for="descricao">Descrição:</label>
-      <textarea class="custom-textarea" id="descricao" [(ngModel)]="descricao"></textarea>
+      <textarea class="custom-textarea" id="descricao" *ngIf="selo" [(ngModel)]="selo.description"></textarea>
     </div>
     <div class="input-container">
       <label for="anoFabricacao">Ano de Fabricação:</label>
-      <input class="custom-text" type="number" id="anoFabricacao" [(ngModel)]="anoFabricacao" />
+      <input class="custom-text" type="text" id="anoFabricacao" *ngIf="selo" [(ngModel)]="selo.year" required />
     </div>
+    <div class="error-message error-message-small" *ngIf="selo && !isYearValid() && (selo.year || selo.year === '')">
+      Necessario formato YYYY (exemplo: 2023) <br><br><br><br>
+    </div>    
     <div class="input-container">
       <label for="pais">País:</label>
-      <input class="custom-text" type="text" id="pais" [(ngModel)]="pais" />
+      <input class="custom-text" type="text" id="pais" *ngIf="selo" [(ngModel)]="selo.country" />
     </div>
     <div class="input-container">
       <label>Carimbo:
-        <input type="checkbox" id="carimbo" [(ngModel)]="carimbo" />
+        <input type="checkbox" id="carimbo" *ngIf="selo" [(ngModel)]="selo.stamp" />
       </label>
     </div>        
     <div class="input-container">
       <label>Filigrama:
-      <label class="radio-label"><input type="radio" name="filigrama" value="Sim" [(ngModel)]="filigrama"> Sim</label>
-      <label class="radio-label"><input type="radio" name="filigrama" value="Não" [(ngModel)]="filigrama"> Não</label>
+      <label class="radio-label"><input type="radio" name="filigrama" value="Sim" *ngIf="selo" [(ngModel)]="selo.filigram"> Sim</label>
+      <label class="radio-label"><input type="radio" name="filigrama" value="Não" *ngIf="selo" [(ngModel)]="selo.filigram"> Não</label>
     </label>
     </div>    
     <div class="button-container">
+      <button class="save-button" (click)="saveModal()" [disabled]="!isYearValid() || !selo?.year || !selo?.name">Salvar</button>
+      <button class="excluir-button" *ngIf="seloTitle === 'Editar'" (click)="openConfirmationModal()">Excluir</button>
       <button class="close-button" (click)="closeModal()">Fechar</button>
-      <button class="save-button" (click)="saveModal()">Salvar</button>
     </div>
   </div>
 </div>

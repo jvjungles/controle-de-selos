@@ -1,5 +1,8 @@
 import { Component, Input, Output, EventEmitter } from '@angular/core';
+import { MatDialog } from '@angular/material/dialog';
+import { ConfirmationModalComponent } from '../confirmation-modal/confirmation-modal.component';
 import { AlbumService } from '../../services/album.service';
+import { seloTypes } from '../../model/selotype';
 import { Album } from '../../model/album';
 import { Selo } from '../../model/selo';
 
@@ -10,42 +13,23 @@ import { Selo } from '../../model/selo';
 })
 export class SeloAddModalComponent {
 
-  constructor(private service: AlbumService) { }
+  constructor(private dialog: MatDialog, private service: AlbumService) { }
 
   @Input() showSeloModal: boolean = false;
   @Input() seloTitle: String = '';
   @Input() albumid: number = -1;
+  @Input() selo: Selo | undefined;  
   @Output() closeModalEvent = new EventEmitter<void>(); 
 
-  nome: string = '';
-  descricao: string = '';
-  tipo: string = '';
-  anoFabricacao: number = 0;
-  pais: string = '';
-  carimbo: boolean = false;
-  filigrama: string = '';
-
+  seloTypes = seloTypes;  
   album: Album | undefined;
-  selo: Selo | undefined;
-
+  
   closeModal() {
-    console.log('app-selo-add-modal - closeModal');
     this.showSeloModal = false;
     this.closeModalEvent.emit(); 
   }
 
   saveModal() {
-    console.log('app-selo-add-modal - saveModal');
-    console.log('Nome:', this.nome);
-    console.log('Descrição:', this.descricao);
-    console.log('Tipo:', this.tipo);
-    console.log('Ano de Fabricação:', this.anoFabricacao);
-    console.log('País:', this.pais);
-    console.log('Carimbo:', this.carimbo);
-    console.log('Filigrama:', this.filigrama);
-
-      
-
     this.service.getById(this.albumid).subscribe(album => {
       this.album = album;
           
@@ -53,28 +37,77 @@ export class SeloAddModalComponent {
         this.album.selos = [];
       }
 
+      if (this.selo?.id) {
 
-      const maiorId = this.album?.selos?.reduce((maxId, selo) => (selo.id && selo.id > maxId) ? selo.id : maxId, 0);
+        const index = this.album.selos.findIndex(item => item.id === this.selo?.id);
 
-      console.log('Maior ID de Selo:', maiorId);
+        if (this.album.selos.findIndex(item => item.id === this.selo?.id) !== -1) {
+          this.album.selos[index].name = this.selo?.name;
+          this.album.selos[index].description = this.selo?.description;
+          this.album.selos[index].type = this.selo?.type;
+          this.album.selos[index].year = this.selo?.year;
+          this.album.selos[index].country = this.selo?.country;
+          this.album.selos[index].stamp = this.selo?.stamp;
+          this.album.selos[index].filigram = this.selo?.filigram;
+        }
 
-      const selo: Selo = {
-        id: maiorId+1,
-        name: this.nome,
-        description: this.descricao,
-      };
-
-      console.log('selo:', selo);  
-
-      this.album.selos.push(selo);
+      } else {
+        const maiorId = this.album?.selos?.reduce((maxId, selo) => (selo.id && selo.id > maxId) ? selo.id : maxId, 0);
+        
+        const selo: Selo = {
+          id: maiorId + 1,
+          name: this.selo?.name,
+          description: this.selo?.description,
+          type: this.selo?.type,
+          year: this.selo?.year,
+          country: this.selo?.country,
+          stamp: this.selo?.stamp,
+          filigram: this.selo?.filigram
+        };
+        this.album.selos.push(selo);
+      }
 
       this.service.update(album).subscribe(savedAlbum => {
-        console.log('Álbum update:', savedAlbum);
         this.showSeloModal = false;
         this.closeModalEvent.emit(); 
       });
-
-      console.log('Album Object:', album);
     });    
-  }  
+  }
+
+  openConfirmationModal(): void {
+    const dialogRef = this.dialog.open(ConfirmationModalComponent, {
+        width: '300px'        
+      });
+    
+      dialogRef.afterClosed().subscribe(result => {
+        if (result) {
+          this.excluir();
+        }
+      });
+    }
+  
+  excluir() {
+    this.service.getById(this.albumid).subscribe(album => {
+      this.album = album;
+          
+      if (!this.album.selos) {
+        this.album.selos = [];
+      }
+
+      const index = this.album.selos.findIndex(item => item.id === this.selo?.id);
+      if (index !== -1) {
+        this.album.selos.splice(index, 1);
+      }
+
+      this.service.update(album).subscribe(savedAlbum => {
+        this.showSeloModal = false;
+        this.closeModalEvent.emit(); 
+      });
+    });
+  }
+
+  isYearValid(): boolean {
+    const pattern = /[0-9]{4}/;
+    return this.selo?.year !== undefined && pattern.test(this.selo.year);
+  }
 }

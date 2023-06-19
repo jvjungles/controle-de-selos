@@ -1,6 +1,8 @@
 import { Component } from '@angular/core';
 import { Router } from '@angular/router';
 import { AlbumService } from '../../services/album.service';
+import { Shared } from '../../util/shared';
+import { Constants } from '../../util/constants';
 
 
 @Component({
@@ -15,28 +17,23 @@ export class AlbumListComponent {
   albuns: any[] = [];
   showModal = false;
   albumTitle: string = '';
+  albumQtde: number = 0;
 
   ngOnInit() {
-    this.findAlbumList();   
-  }  
-
-  share() {
-    window.alert('The album has been shared!');
+    this.findAlbumList();  
+    this.albumQtde = +localStorage.getItem(Constants.ALBUNS_SIZE)!;   
   }
 
   onCardClick(album: any) {
-    console.log('Card clicked:', album);
     this.router.navigate(['/album-page', album]);
   }
 
   openModal() {
-    console.log('app-album-list - openModal');
-    this.albumTitle = 'Novo';
+    this.albumTitle = Constants.NOVO;
     this.showModal = true;
   }
 
   closeModal() {
-    console.log('app-album-list - closeModal');
     this.findAlbumList();
     this.showModal = false;
   }
@@ -44,8 +41,8 @@ export class AlbumListComponent {
   findAlbumList() {
     this.albumService.listalbuns().subscribe(albums => {
       this.albuns = albums;
-      console.log('albuns:', this.albuns);
+      Shared.initializeWebStorage(this.albuns); 
+      this.albumQtde = +localStorage.getItem(Constants.ALBUNS_SIZE)!; 
     });    
-  } 
-  
+  }  
 }
