@@ -1,0 +1,19 @@
+.button-container {
+    display: flex;
+    justify-content: center; 
+    align-items: center; 
+    margin-top: 20px;
+  }
+
+  .save-button {
+    float: right;
+    background-color: #395f83;
+    color: white;
+  }
+  
+  h1 {
+    font-family: 'NomeDaFonte', sans-serif;
+    font-size: 20px;
+  }
+  
+  

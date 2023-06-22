@@ -9,9 +9,18 @@ import { Constants } from '../../util/constants';
 })
 export class TopBarComponent {
 
-  constructor(private router: Router) {}
+  constructor(private router: Router) {
+    const userId = localStorage.getItem(Constants.USER);
+    this.nomeUsuario = userId ? String(userId) : '';
+  }
 
+  nomeUsuario: string;
   title: string = Constants.TOP_TITLE;
+
+  ngOnInit() {
+    const userId = localStorage.getItem(Constants.USER);
+    this.nomeUsuario = userId ? String(userId) : '';   
+  }
 
   redirectToHome() {
     this.router.navigate(['/']);

@@ -1,4 +1,16 @@
 {
+  "users": [
+    {
+      "id": "1",
+      "username": "joao.junior.ext",
+      "password": "123456"
+    },
+    {
+      "id": "2",
+      "username": "joana.dark",
+      "password": "abcdef"
+    }
+  ],
   "albuns": [
     {
       "name": "Raros",
@@ -7,7 +19,7 @@
         {
           "id": 5,
           "name": "Selo 01",
-          "description": "DESCRIÇÃO selo 01",
+          "description": "DESCRIÇÃO selo 01 ",
           "type": "Outros",
           "year": "1988",
           "country": "Brasil",
@@ -136,7 +148,7 @@
       "selos": [
         {
           "id": 1,
-          "name": "Selo 03 - 01",
+          "name": "Selo 03 - 01sas",
           "description": "Selo 03 - 01",
           "type": "Beneficente",
           "year": "1923",
@@ -336,6 +348,43 @@
         }
       ],
       "id": 8
+    },
+    {
+      "name": "sas",
+      "description": "asasas",
+      "selos": [
+        {
+          "id": 1,
+          "name": "as",
+          "description": "asasas",
+          "type": "Especial",
+          "year": "1999",
+          "country": "asas",
+          "stamp": true,
+          "filigram": "Sim"
+        },
+        {
+          "id": 2,
+          "name": "assas",
+          "description": "asasas",
+          "type": "Ordinario",
+          "year": "1999",
+          "country": "asasa",
+          "stamp": true,
+          "filigram": "Sim"
+        },
+        {
+          "id": 3,
+          "name": "asasa",
+          "description": "sasas",
+          "type": "Promocional",
+          "year": "1988",
+          "country": "asas",
+          "stamp": true,
+          "filigram": "Sim"
+        }
+      ],
+      "id": 9
     }
   ]
 }

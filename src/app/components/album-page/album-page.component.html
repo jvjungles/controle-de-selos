@@ -33,11 +33,16 @@
         <mat-card-header>
           <br> 
           <mat-card-title>{{ selo?.name }}</mat-card-title>
-          <mat-card-subtitle>{{ selo?.description }}</mat-card-subtitle>
+          <mat-card-subtitle>Descrição: {{ selo?.description }}</mat-card-subtitle>
+          <mat-card-subtitle>&nbsp;</mat-card-subtitle>
+          <mat-card-subtitle>Ano de Fabricação: {{ selo?.year }}</mat-card-subtitle>
+          <mat-card-subtitle>País de Origem: {{ selo?.country }}</mat-card-subtitle>
+          <mat-card-subtitle>Carimbo: {{ selo?.stamp ? 'Sim' : 'Não' }}</mat-card-subtitle>
+          <mat-card-subtitle>Filigrama: {{ selo?.filigram }}</mat-card-subtitle>
           <br> 
         </mat-card-header>  
-        <mat-card-content>        
-        </mat-card-content>            
+        <mat-card-content>                
+        </mat-card-content>
       </mat-card>
     </div>
   </ng-container>
