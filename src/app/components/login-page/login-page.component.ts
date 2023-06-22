@@ -19,7 +19,10 @@ export class LoginPageComponent {
   senhaValida: boolean = true;
 
   ngOnInit() {   
-    console.log("Login init");    
+    console.log("Login init");
+    localStorage.setItem(Constants.USER, '');  
+    localStorage.setItem(Constants.ALBUNS, '');  
+    localStorage.setItem(Constants.ALBUNS_SIZE, '');    
   }  
 
   logar() {   

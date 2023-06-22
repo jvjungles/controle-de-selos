@@ -10,20 +10,28 @@ import { Constants } from '../../util/constants';
 export class TopBarComponent {
 
   constructor(private router: Router) {
-    const userId = localStorage.getItem(Constants.USER);
-    this.nomeUsuario = userId ? String(userId) : '';
+    const user = localStorage.getItem(Constants.USER);
+    this.nomeUsuario = user ? String(user) : '';
   }
 
   nomeUsuario: string;
   title: string = Constants.TOP_TITLE;
 
   ngOnInit() {
-    const userId = localStorage.getItem(Constants.USER);
-    this.nomeUsuario = userId ? String(userId) : '';   
+    this.getNomeUsuario(); 
   }
 
-  redirectToHome() {
-    this.router.navigate(['/']);
+  redirectToHome() {    
+    this.getNomeUsuario();
+    if (this.nomeUsuario === '') {
+      this.router.navigate(['/']);
+    } else {
+      this.router.navigate(['/album-list']);
+    }    
   }
 
+  getNomeUsuario() {
+    this.router.navigate(['/']);const user = localStorage.getItem(Constants.USER);
+    this.nomeUsuario = user ? String(user) : '';
+  }
 }

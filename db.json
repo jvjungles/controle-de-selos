@@ -143,35 +143,35 @@
       "id": 1
     },
     {
-      "name": "ALBUM 03",
-      "description": "DESCRIÇÃO 03",
+      "name": " Selos Ingleses",
+      "description": "Album de Selos Ingleses",
       "selos": [
         {
           "id": 1,
-          "name": "Selo 03 - 01sas",
-          "description": "Selo 03 - 01",
+          "name": "Selo de Londres",
+          "description": "Selo de Londres",
           "type": "Beneficente",
           "year": "1923",
-          "country": "Belgica",
+          "country": "Inglaterra",
           "filigram": "Sim"
         },
         {
           "id": 2,
-          "name": "Selo 03 - 02",
-          "description": "Selo 03 - 02",
+          "name": "Selo de Liverpool",
+          "description": "Selo de Liverpool",
           "year": "1988",
-          "country": "Brasil",
+          "country": "Inglaterra",
           "stamp": true,
           "filigram": "Sim",
           "type": "Promocional"
         },
         {
           "id": 3,
-          "name": "Selo 03 - 03",
-          "description": "Selo 03 - 03",
+          "name": "Selo de Manchester",
+          "description": "Selo de Manchester",
           "type": "Comemorativo",
           "year": "2020",
-          "country": "Brasil",
+          "country": "Inglaterra",
           "stamp": true,
           "filigram": "Sim"
         }

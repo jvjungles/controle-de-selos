@@ -2,8 +2,8 @@
     <div class="header">
         <b>ALBUM: {{ album?.name }}&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</b>
         <div class="header">
-          <button title="Editar Álbum" class="add-button" (click)="openModal()">/</button>
-          <button title="Excluir Álbum" class="excluir-button" (click)="openConfirmationModal()">X</button>
+          <button title="Editar Álbum" class="add-button" (click)="openModal()">Editar</button>
+          <button title="Excluir Álbum" class="excluir-button" (click)="openConfirmationModal()">Excluir</button>
         </div>
     </div>
     <app-album-add-modal
@@ -24,8 +24,8 @@
 
 <div>
   <div class="header">
-    <b>Selos:</b>
-    <button title="Adicionar Selo" class="add-button" (click)="openSeloModal()">+</button>        
+    <b>SELOS:</b>
+    <button title="Adicionar Selo" class="add-button" (click)="openSeloModal()">Adicionar</button>        
   </div>
   <ng-container *ngIf="album && album.selos && album.selos.length > 0; else noSelos">
     <div class="card-container">
@@ -47,10 +47,10 @@
     </div>
   </ng-container>
   <ng-template #noSelos>
+    <br><br>
     <p class="text-center">Nenhum Selo disponível.</p>
   </ng-template>  
 </div>
-
 <div class="header">
   <br><br><br><br><br><br>
 </div>

@@ -1,4 +1,4 @@
-.button-container {
+  .button-container {
     display: flex;
     justify-content: center; 
     align-items: center; 
@@ -10,10 +10,26 @@
     background-color: #395f83;
     color: white;
   }
-  
-  h1 {
-    font-family: 'NomeDaFonte', sans-serif;
-    font-size: 20px;
+
+  .wiki {
+    display: flex;
+    justify-content: center;
+    align-items: center;
   }
+
+  .error-red {
+    color: red;
+  }
+  
+  .text-center {
+    text-align: center;
+  }
+
+  .login-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  
   
   

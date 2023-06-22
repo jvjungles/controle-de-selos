@@ -20,7 +20,6 @@ export class LoginService {
   }  
 
   getByName(usuario: string): Observable<User> {
-    console.log(usuario);
     return this.httpClient.get<User[]>(`${this.URL}?username=${usuario}`).pipe(
       map((users: User[]) => users[0])
     );

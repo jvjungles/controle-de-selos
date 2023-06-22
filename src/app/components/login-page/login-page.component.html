@@ -1,18 +1,36 @@
-<div class="modal-overlay">
-  <div class="modal-content">
-    <h1>Login</h1>
-    <div class="input-container">
+<div>
+  <div class="login-container">
+    <h1></h1>
+    <h1></h1>
+    <div>
       <label for="username">Usuário:</label>
       <input class="custom-text" type="text" id="username" [(ngModel)]="username" />      
     </div>
-    <div class="input-container">
+    <div>
       <label for="password">Senha:</label>
       <input class="custom-text" type="password" id="password" [(ngModel)]="password" />      
     </div>
-    <div *ngIf="!usuarioEncontrado" class="error-message error-message-small">Usuário não encontrado</div>
-    <div *ngIf="!senhaValida" class="error-message error-message-small">Senha inválida</div>
+    <div *ngIf="!usuarioEncontrado" class="error-message error-message-small error-red text-center">Usuário não encontrado</div>
+    <div *ngIf="!senhaValida" class="error-message error-message-small error-red text-center">Senha inválida</div>
     <div class="button-container">
       <button class="save-button" (click)="logar()">Acessar</button>
     </div>    
+  </div>
+  <div class="wiki">
+    <h1><br></h1>
+    <h1><br></h1>
+    <h1><br></h1>
+    <h1>
+      <br>    
+      <div>
+        <a href="https://pt.wikipedia.org/wiki/Filatelia" 
+          style="display: flex; align-items: baseline;">
+          <img width="85" 
+                alt="Filatelia Logo" 
+                src="assets/wikipedia_logo.svg" 
+                title="Wikipedia"/>
+        </a>  
+    </div>
+    </h1>       
   </div>
 </div>
