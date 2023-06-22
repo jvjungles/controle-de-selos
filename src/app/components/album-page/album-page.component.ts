@@ -24,7 +24,8 @@ export class AlbumPageComponent {
   showSeloModal = false;
   albumTitle: string = '';
   albumid: number = -1;
-  seloTitle: string = '';  
+  seloTitle: string = '';
+  nomeUsuario: string = '';  
 
   ngOnInit() {
     this.route.params.subscribe(params => {
@@ -79,10 +80,29 @@ export class AlbumPageComponent {
       dialogRef.afterClosed().subscribe(result => {
         if (result) {
           this.service.delete(this.album?.id || -1).subscribe(() => {
-            this.router.navigate(['/']);
+            this.redirectToHome()
           });
         }
       });
     }
+
+    redirectToHome() {    
+      this.getNomeUsuario();
+      if (this.nomeUsuario === '') {
+        this.router.navigate(['/']);
+      } else {
+        this.router.navigate(['/album-list']);
+      }    
+    }
+  
+    getNomeUsuario() {
+      //this.router.navigate(['/']);
+      const user = localStorage.getItem(Constants.USER);
+      this.nomeUsuario = user ? String(user) : '';
+    }
+
+    back() {
+      this.router.navigate(['/album-list']);
+    } 
 }
 

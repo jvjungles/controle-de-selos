@@ -2,7 +2,7 @@
   "users": [
     {
       "id": "1",
-      "username": "joao.junior.ext",
+      "username": "joao.silva",
       "password": "123456"
     },
     {
@@ -200,16 +200,6 @@
           "year": "1988",
           "country": "Argentina",
           "filigram": "Sim"
-        },
-        {
-          "id": 3,
-          "name": "Nome do Selo 04 - 03",
-          "description": "Descrição do Selo 04 - 03",
-          "type": "Outros",
-          "year": "1912",
-          "country": "França",
-          "stamp": true,
-          "filigram": "Sim"
         }
       ],
       "id": 4
@@ -348,43 +338,6 @@
         }
       ],
       "id": 8
-    },
-    {
-      "name": "sas",
-      "description": "asasas",
-      "selos": [
-        {
-          "id": 1,
-          "name": "as",
-          "description": "asasas",
-          "type": "Especial",
-          "year": "1999",
-          "country": "asas",
-          "stamp": true,
-          "filigram": "Sim"
-        },
-        {
-          "id": 2,
-          "name": "assas",
-          "description": "asasas",
-          "type": "Ordinario",
-          "year": "1999",
-          "country": "asasa",
-          "stamp": true,
-          "filigram": "Sim"
-        },
-        {
-          "id": 3,
-          "name": "asasa",
-          "description": "sasas",
-          "type": "Promocional",
-          "year": "1988",
-          "country": "asas",
-          "stamp": true,
-          "filigram": "Sim"
-        }
-      ],
-      "id": 9
     }
   ]
 }

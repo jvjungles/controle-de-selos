@@ -16,7 +16,7 @@
       <textarea class="custom-textarea" id="descricao" *ngIf="selo" [(ngModel)]="selo.description"></textarea>
     </div>
     <div class="input-container">
-      <label for="anoFabricacao">Ano de Fabricação:</label>
+      <label for="anoFabricacao">Ano de Fabricação * :</label>
       <input class="custom-text" type="text" id="anoFabricacao" *ngIf="selo" [(ngModel)]="selo.year" required />
     </div>
     <div class="error-message error-message-small" *ngIf="selo && !isYearValid() && (selo.year || selo.year === '')">
