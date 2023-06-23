@@ -31,8 +31,8 @@
   }  
 
   .user-name {
-    font-size: 8px; /* Altere o tamanho da fonte conforme necessário */
-    color: white; /* Altere a cor do texto para branco */
+    font-size: 8px; 
+    color: white; 
     position: absolute;
     right: 20px;
     text-align: right;

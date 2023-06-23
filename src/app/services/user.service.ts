@@ -5,6 +5,7 @@ import { User } from '../model/user';
   providedIn: 'root'
 })
 export class UserService {
+  
   private user: User | null = null;
 
   setUser(user: User) {
