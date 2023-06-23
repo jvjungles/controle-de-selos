@@ -96,7 +96,6 @@ export class AlbumPageComponent {
     }
   
     getNomeUsuario() {
-      //this.router.navigate(['/']);
       const user = localStorage.getItem(Constants.USER);
       this.nomeUsuario = user ? String(user) : '';
     }

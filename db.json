@@ -9,6 +9,11 @@
       "id": "2",
       "username": "joana.dark",
       "password": "abcdef"
+    },
+    {
+      "id": "3",
+      "username": "ayrton.senna",
+      "password": "ferrari"
     }
   ],
   "albuns": [
@@ -140,6 +145,7 @@
           "filigram": "Não"
         }
       ],
+      "userId": "1",
       "id": 1
     },
     {
@@ -176,6 +182,7 @@
           "filigram": "Sim"
         }
       ],
+      "userId": "1",
       "id": 3
     },
     {
@@ -202,6 +209,7 @@
           "filigram": "Sim"
         }
       ],
+      "userId": "1",
       "id": 4
     },
     {
@@ -249,18 +257,21 @@
           "filigram": "Sim"
         }
       ],
+      "userId": "1",
       "id": 5
     },
     {
       "name": "Album 06",
       "description": "DESCRIÇÃO Album 06",
       "selos": [],
+      "userId": "1",
       "id": 6
     },
     {
       "name": "Album 07",
       "description": "DESCRIÇÃO Album 07",
       "selos": [],
+      "userId": "1",
       "id": 7
     },
     {
@@ -337,7 +348,107 @@
           "filigram": "Sim"
         }
       ],
+      "userId": "1",
       "id": 8
+    },
+    {
+      "name": "Caros",
+      "description": "Selos mais caros do mundo",
+      "selos": [
+        {
+          "id": 1,
+          "name": "10. O Penny Black",
+          "description": "O Penny Black - 3000 €",
+          "type": "Especial",
+          "year": "1840",
+          "country": "Reino Unido",
+          "stamp": true,
+          "filigram": "Sim"
+        },
+        {
+          "id": 2,
+          "name": "9. Inverted Swan",
+          "description": "9. Inverted Swan - 35 000 €",
+          "type": "Especial",
+          "year": "1855",
+          "country": "Suecia",
+          "stamp": true,
+          "filigram": "Sim"
+        },
+        {
+          "id": 3,
+          "name": "8. Red Mercury",
+          "description": "8. Red Mercury - 37 000 €",
+          "type": "Especial",
+          "year": "1956",
+          "country": "Roma"
+        }
+      ],
+      "userId": "2",
+      "id": 9
+    },
+    {
+      "name": "sasas",
+      "description": "asasasas",
+      "selos": [],
+      "userId": "2",
+      "id": 10
+    },
+    {
+      "name": "bvbvbvb",
+      "description": "vbvbvbvb",
+      "selos": [],
+      "userId": "2",
+      "id": 11
+    },
+    {
+      "name": "dsdsad",
+      "description": "sadasdsadasd",
+      "selos": [],
+      "userId": "2",
+      "id": 12
+    },
+    {
+      "name": "ayrton.senna 01 ",
+      "description": "ayrton.senna 02",
+      "selos": [
+        {
+          "id": 1,
+          "name": "asas",
+          "description": "asasa",
+          "type": "Ordinario",
+          "year": "1999",
+          "country": "asa",
+          "stamp": true,
+          "filigram": "Sim"
+        },
+        {
+          "id": 2,
+          "name": "asasa",
+          "description": "sasas",
+          "type": "Ordinario",
+          "year": "1988",
+          "country": "dsdsds",
+          "stamp": true,
+          "filigram": "Sim"
+        }
+      ],
+      "userId": "3",
+      "id": 13
+    },
+    {
+      "name": "ayrton.senna 02",
+      "description": "ayrton.senna 02",
+      "selos": [],
+      "userId": "3",
+      "id": 14
+    },
+    {
+      "name": "ayrton.senna 03",
+      "description": "ayrton.senna 03",
+      "selos": [],
+      "userId": "3",
+      "id": 15
     }
   ]
 }

@@ -31,7 +31,8 @@ export class TopBarComponent {
   }
 
   getNomeUsuario() {
-    this.router.navigate(['/']);const user = localStorage.getItem(Constants.USER);
+    this.router.navigate(['/']);
+    const user = localStorage.getItem(Constants.USER);
     this.nomeUsuario = user ? String(user) : '';
   }
 }

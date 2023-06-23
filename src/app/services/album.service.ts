@@ -1,8 +1,9 @@
-import { HttpClient, HttpHeaders } from '@angular/common/http';
+import { HttpClient, HttpHeaders, HttpParams } from '@angular/common/http';
 import { Injectable } from '@angular/core';
 import { Observable, of } from 'rxjs';
 import { RoutesAPI } from '../util/routes-api';
 import { Album } from '../model/album';
+import { UserService } from '../services/user.service';
 
 @Injectable()
 export class AlbumService {
@@ -12,11 +13,19 @@ export class AlbumService {
     headers: new HttpHeaders({ 'Content-Type': 'application/json' }),
   };
 
-  constructor(private httpClient: HttpClient) {}
+  constructor(private userService: UserService, private httpClient: HttpClient) {}   
 
   listalbuns(): Observable<Album[]> {
-    return this.httpClient.get<Album[]>(`${this.URL}`);
-  }  
+    const userId = this.userService.getUser()?.id;
+
+    if (userId) {
+      const params = new HttpParams().set('userId', userId.toString());
+
+      return this.httpClient.get<Album[]>(`${this.URL}`, { params });
+    } else {
+      return this.httpClient.get<Album[]>(`${this.URL}`);
+    }
+  }
 
   getById(id: number): Observable<Album> {
     return this.httpClient.get<Album>(`${this.URL}/${id}`);
