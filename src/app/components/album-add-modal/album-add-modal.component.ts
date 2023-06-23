@@ -33,8 +33,6 @@ export class AlbumAddModalComponent {
     } else {
       this.user = null;
     }   
-    console.log(this.user);
-    console.log(this.userService.getUser());
     this.route.params.subscribe(params => {
       if (!isNaN(+params['id'])) {
         this.service.getById(+params['id']).subscribe(album => {
@@ -65,7 +63,6 @@ export class AlbumAddModalComponent {
   }
 
   save() {
-    console.log(this.user);
     const album: Album = {
       name: this.nome,
       description: this.descricao,
