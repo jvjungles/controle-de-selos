@@ -3,6 +3,7 @@ import { Router } from '@angular/router';
 import { User } from '../../model/user';
 import { LoginService } from '../../services/login.service';
 import { Constants } from '../../util/constants';
+import { UserService } from '../../services/user.service';
 
 @Component({
   selector: 'app-login-page',
@@ -11,7 +12,7 @@ import { Constants } from '../../util/constants';
 })
 export class LoginPageComponent {
 
-  constructor(private router: Router, private service: LoginService) { }
+  constructor(private userService: UserService, private router: Router, private service: LoginService) { }
 
   username: string = '';
   password: string = '';
@@ -33,6 +34,7 @@ export class LoginPageComponent {
       if (user) {
         if (user.password === this.password) {
           localStorage.setItem(Constants.USER, this.username);
+          this.userService.setUser(user);
           this.router.navigate(['/album-list']);
         } else {
           this.senhaValida = false; 
