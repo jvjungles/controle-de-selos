@@ -25,11 +25,11 @@ export class LoginPageComponent {
     localStorage.setItem(Constants.ALBUNS_SIZE, '');    
   }  
 
-  logar() {   
+  async logar() {   
     this.usuarioEncontrado = true;
     this.senhaValida = true;
-
-    this.service.getByName(this.username).subscribe((user: User) => {
+    try {
+      const user: User = await this.service.getByName(this.username);      
       if (user) {
         if (user.password === this.password) {
           localStorage.setItem(Constants.USER, this.username);
@@ -39,8 +39,9 @@ export class LoginPageComponent {
         }
       } else {
         this.usuarioEncontrado = false; 
-      }      
-    });
+      }
+    } catch (error) {
+      this.usuarioEncontrado = false; 
+    }
   }
-
 }
