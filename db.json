@@ -357,7 +357,7 @@
       "selos": [
         {
           "id": 1,
-          "name": "10. O Penny Black",
+          "name": "O Penny Black",
           "description": "O Penny Black - 3000 €",
           "type": "Especial",
           "year": "1840",
@@ -367,8 +367,8 @@
         },
         {
           "id": 2,
-          "name": "9. Inverted Swan",
-          "description": "9. Inverted Swan - 35 000 €",
+          "name": "Inverted Swan",
+          "description": "Inverted Swan - 35 000 €",
           "type": "Especial",
           "year": "1855",
           "country": "Suecia",
@@ -377,8 +377,8 @@
         },
         {
           "id": 3,
-          "name": "8. Red Mercury",
-          "description": "8. Red Mercury - 37 000 €",
+          "name": "Red Mercury",
+          "description": "Red Mercury - 37 000 €",
           "type": "Especial",
           "year": "1956",
           "country": "Roma"
@@ -388,47 +388,47 @@
       "id": 9
     },
     {
-      "name": "sasas",
-      "description": "asasasas",
+      "name": "Joana Dark 01",
+      "description": "Joana Dark 01",
       "selos": [],
       "userId": "2",
       "id": 10
     },
     {
-      "name": "bvbvbvb",
-      "description": "vbvbvbvb",
+      "name": "Joana Dark 02",
+      "description": "Joana Dark 02",
       "selos": [],
       "userId": "2",
       "id": 11
     },
     {
-      "name": "dsdsad",
-      "description": "sadasdsadasd",
+      "name": "Joana Dark 03",
+      "description": "Joana Dark 03",
       "selos": [],
       "userId": "2",
       "id": 12
     },
     {
-      "name": "ayrton.senna 01 ",
+      "name": "Ayrton Senna 01 ",
       "description": "ayrton.senna 02",
       "selos": [
         {
           "id": 1,
-          "name": "asas",
-          "description": "asasa",
+          "name": "Selo 01",
+          "description": "Selo 01",
           "type": "Ordinario",
           "year": "1999",
-          "country": "asa",
+          "country": "Brasil",
           "stamp": true,
           "filigram": "Sim"
         },
         {
           "id": 2,
-          "name": "asasa",
-          "description": "sasas",
+          "name": "Selo 02",
+          "description": "Selo 02",
           "type": "Ordinario",
           "year": "1988",
-          "country": "dsdsds",
+          "country": "Brasil",
           "stamp": true,
           "filigram": "Sim"
         }
@@ -437,14 +437,14 @@
       "id": 13
     },
     {
-      "name": "ayrton.senna 02",
+      "name": "Ayrton Senna 02",
       "description": "ayrton.senna 02",
       "selos": [],
       "userId": "3",
       "id": 14
     },
     {
-      "name": "ayrton.senna 03",
+      "name": "Ayrton Senna 03",
       "description": "ayrton.senna 03",
       "selos": [],
       "userId": "3",
