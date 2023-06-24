@@ -61,7 +61,7 @@ https://www.figma.com/proto/XarePPgeODdsLiyjL1r02e/controle-de-selos?type=design
 ## Informações tecnicas
 
 node v18.16.0  
-angular v16.0.0 
+angular v16.0.0  
 json-server v0.17.3 
 
 ## Manual de execução
