@@ -142,6 +142,12 @@
     color: white;
   }
 
+  .back-button {
+    float: right;
+    background-color: #395f83;
+    color: white;
+  }
+
   .excluir-button {
     float: right;
     background-color: #681a34;

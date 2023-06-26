@@ -1,7 +1,9 @@
 import { Component, Input, Output, EventEmitter } from '@angular/core';
 import { ActivatedRoute } from '@angular/router';
 import { AlbumService } from '../../services/album.service';
+import { UserService } from '../../services/user.service';
 import { Album } from '../../model/album';
+import { User } from '../../model/user';
 
 @Component({
   selector: 'app-album-add-modal',
@@ -11,7 +13,7 @@ import { Album } from '../../model/album';
 
 export class AlbumAddModalComponent {
 
-  constructor(private route: ActivatedRoute, private service: AlbumService) { }
+  constructor(private userService: UserService, private route: ActivatedRoute, private service: AlbumService) { }
 
   @Input() showModal: boolean = false;
   @Input() albumTitle: String = '';
@@ -21,9 +23,16 @@ export class AlbumAddModalComponent {
   nome: string = '';
   descricao: string = '';
   album: Album | undefined;
+  user: User | null | undefined;
   isNomeValid: boolean = false;
 
-  ngOnInit() {   
+  ngOnInit() {
+    const user = this.userService.getUser();
+    if (user) {
+      this.user = user;
+    } else {
+      this.user = null;
+    }   
     this.route.params.subscribe(params => {
       if (!isNaN(+params['id'])) {
         this.service.getById(+params['id']).subscribe(album => {
@@ -57,7 +66,8 @@ export class AlbumAddModalComponent {
     const album: Album = {
       name: this.nome,
       description: this.descricao,
-      selos: [] 
+      selos: [],
+      userId: this.user?.id || undefined 
     };
 
     this.service.save(album).subscribe(savedAlbum => {

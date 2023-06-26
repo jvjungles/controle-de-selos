@@ -18,9 +18,12 @@ export class AlbumListComponent {
   showModal = false;
   albumTitle: string = '';
   albumQtde: number = 0;
+  nomeUsuario: string = '';
 
   ngOnInit() {
-    this.findAlbumList();  
+    this.findAlbumList(); 
+    const userId = localStorage.getItem(Constants.USER);
+    this.nomeUsuario = userId ? String(userId) : ''; 
     this.albumQtde = +localStorage.getItem(Constants.ALBUNS_SIZE)!;   
   }
 
@@ -45,4 +48,9 @@ export class AlbumListComponent {
       this.albumQtde = +localStorage.getItem(Constants.ALBUNS_SIZE)!; 
     });    
   }  
+
+  sair() {
+    localStorage.setItem(Constants.USER, '');
+    this.router.navigate(['/']);
+  }
 }

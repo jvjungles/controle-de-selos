@@ -17,8 +17,11 @@ import { AlbumPageComponent } from './components/album-page/album-page.component
 import { AlbumAddModalComponent } from './components/album-add-modal/album-add-modal.component';
 import { SeloAddModalComponent } from './components/selo-add-modal/selo-add-modal.component';
 import { ConfirmationModalComponent } from './components/confirmation-modal/confirmation-modal.component';
+import { LoginPageComponent } from './components/login-page/login-page.component';
 
+import { LoginService } from './services/login.service';
 import { AlbumService } from './services/album.service';
+
 
 @NgModule({
   imports: [
@@ -31,7 +34,8 @@ import { AlbumService } from './services/album.service';
     MatTooltipModule,
     HttpClientModule,
     RouterModule.forRoot([
-      { path: '', component: AlbumListComponent },                // pagina inicial - lista de albuns
+      { path: '', component: LoginPageComponent },                // pagina login
+      { path: 'album-list', component: AlbumListComponent },      // pagina inicial - lista de albuns
       { path: 'album-page', component: AlbumPageComponent },      // pagina do album - lista de selos
     ])
   ],
@@ -43,9 +47,11 @@ import { AlbumService } from './services/album.service';
     AlbumPageComponent,
     AlbumAddModalComponent,
     SeloAddModalComponent,
-    ConfirmationModalComponent
+    ConfirmationModalComponent,
+    LoginPageComponent
   ],
   providers: [
+    LoginService,
     AlbumService
   ],
   bootstrap: [

@@ -5,6 +5,7 @@ export class Album {
   public name?: string;
   public description?: string;
   public selos?: Selo[];
+  public userId?: number;
 
   constructor() {} 
 }

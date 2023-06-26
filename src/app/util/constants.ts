@@ -1,4 +1,5 @@
 export class Constants {
+  public static readonly USER = 'USER';
   public static readonly ALBUNS_SIZE = 'ALBUNS.SIZE';
   public static readonly ALBUNS = 'ALBUNS';
   public static readonly NOVO = 'Novo';

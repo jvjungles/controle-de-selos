@@ -49,18 +49,19 @@ https://www.figma.com/proto/XarePPgeODdsLiyjL1r02e/controle-de-selos?type=design
 - [X] Validar campos do formulário com REGEX e apresentar os erros.
 - [X] Desabilitar o botão de submit enquanto o formulário está inválido.
 - [X] Cadastrar uma entidade no Web Storage.
-- [ ] Fazer requisições a API com tratamento da resposta com Promises ou Observables.
-- [ ] Cadastrar uma entidade no JSON Server.
+- [X] Fazer requisições a API com tratamento da resposta com Promises (pode usar Fetch API, async/await ou lastValueFrom do RXJS).
+- [X] Cadastrar uma entidade no JSON Server.
 - [ ] Apresentar uma lista de dados com a diretiva estrutural ngFor.
 - [ ] Usar a diretiva ngIf
 - [ ] Formatar a apresentação de dados com Pipes.
+- [ ] Fazer requisições a API com tratamento da resposta com Observables.
 - [ ] Build e deploy da aplicação.
 
 
 ## Informações tecnicas
 
 node v18.16.0  
-angular v16.0.0 
+angular v16.0.0  
 json-server v0.17.3 
 
 ## Manual de execução
