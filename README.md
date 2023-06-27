@@ -28,7 +28,7 @@ O frontend da aplicação desenvolvida com Angular e o backend foi simulado pela
 
 ## Endereço de Deploy - GitHub Pages
 
-*add url do GitHub Pages
+https://jvjungles.github.io/controle-de-selos/
 
 ## Protótipo
 
@@ -55,7 +55,7 @@ https://www.figma.com/proto/XarePPgeODdsLiyjL1r02e/controle-de-selos?type=design
 - [X] Usar a diretiva ngIf
 - [X] Formatar a apresentação de dados com Pipes.
 - [X] Fazer requisições a API com tratamento da resposta com Observables.
-- [ ] Build e deploy da aplicação.
+- [X] Build e deploy da aplicação.
 
 
 ## Informações tecnicas
