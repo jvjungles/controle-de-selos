@@ -37,7 +37,7 @@
       <mat-card *ngFor="let selo of album?.selos" class="clickable-card card-item" (click)="onCardClick(selo)">        
         <mat-card-header>
           <br> 
-          <mat-card-title>{{ selo?.name }}</mat-card-title>
+          <mat-card-title>{{ selo?.name | uppercase}}</mat-card-title>
           <mat-card-subtitle>Descrição: {{ selo?.description }}</mat-card-subtitle>
           <mat-card-subtitle>&nbsp;</mat-card-subtitle>
           <mat-card-subtitle>Ano de Fabricação: {{ selo?.year }}</mat-card-subtitle>
