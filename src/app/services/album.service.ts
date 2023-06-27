@@ -1,6 +1,7 @@
 import { HttpClient, HttpHeaders, HttpParams } from '@angular/common/http';
 import { Injectable } from '@angular/core';
 import { Observable, of } from 'rxjs';
+import { catchError } from 'rxjs/operators';
 import { RoutesAPI } from '../util/routes-api';
 import { Album } from '../model/album';
 import { UserService } from '../services/user.service';
@@ -15,15 +16,21 @@ export class AlbumService {
 
   constructor(private userService: UserService, private httpClient: HttpClient) {}   
 
-  listalbuns(): Observable<Album[]> {
+  listAlbuns(): Observable<Album[]> {
     const userId = this.userService.getUser()?.id;
-
     if (userId) {
       const params = new HttpParams().set('userId', userId.toString());
-
-      return this.httpClient.get<Album[]>(`${this.URL}`, { params });
+      return this.httpClient.get<Album[]>(`${this.URL}`, { params }).pipe(
+        catchError((error) => {
+          console.error('Erro ao obter a lista de álbuns:', error);
+          return of([]);
+        }));
     } else {
-      return this.httpClient.get<Album[]>(`${this.URL}`);
+      return this.httpClient.get<Album[]>(`${this.URL}`).pipe(
+        catchError((error) => {
+          console.error('Erro ao obter a lista de álbuns:', error);
+          return of([]);
+        }));
     }
   }
 
@@ -32,19 +39,31 @@ export class AlbumService {
   }
 
   save(album: Album): Observable<Album> {
-    return this.httpClient.post<Album>(this.URL, album, this.httpOptions);
+    return this.httpClient.post<Album>(this.URL, album, this.httpOptions).pipe(
+      catchError((error) => {
+        console.error('Erro ao salvar o álbum:', error);
+        throw error;
+      })
+    );
   }
 
   update(album: Album): Observable<Album> {
     return this.httpClient.put<Album>(
-      `${this.URL}/${album.id}`,
-      album,
-      this.httpOptions
+      `${this.URL}/${album.id}`, album, this.httpOptions).pipe(
+      catchError((error) => {
+        console.error(`Erro ao atualizar o álbum com o ID ${album.id}:`, error);
+        throw error;
+      })
     );
   }
 
   delete(id: number): Observable<void> {
     const url = `${this.URL}/${id}`;
-    return this.httpClient.delete<void>(url, this.httpOptions);
+    return this.httpClient.delete<void>(url, this.httpOptions).pipe(
+      catchError((error) => {
+        console.error(`Erro ao excluir o álbum com o ID ${id}:`, error);
+        throw error;
+      })
+    );
   }  
 }

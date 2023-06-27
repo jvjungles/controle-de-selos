@@ -78,8 +78,7 @@ export class AlbumAddModalComponent {
     }); 
   }
 
-  update() {   
-
+  update() {
     this.service.getById(this.albumid).subscribe(album => {
       this.album = album;
       this.album.name = this.nome;

@@ -51,10 +51,10 @@ https://www.figma.com/proto/XarePPgeODdsLiyjL1r02e/controle-de-selos?type=design
 - [X] Cadastrar uma entidade no Web Storage.
 - [X] Fazer requisições a API com tratamento da resposta com Promises (pode usar Fetch API, async/await ou lastValueFrom do RXJS).
 - [X] Cadastrar uma entidade no JSON Server.
-- [ ] Apresentar uma lista de dados com a diretiva estrutural ngFor.
-- [ ] Usar a diretiva ngIf
-- [ ] Formatar a apresentação de dados com Pipes.
-- [ ] Fazer requisições a API com tratamento da resposta com Observables.
+- [X] Apresentar uma lista de dados com a diretiva estrutural ngFor.
+- [X] Usar a diretiva ngIf
+- [X] Formatar a apresentação de dados com Pipes.
+- [X] Fazer requisições a API com tratamento da resposta com Observables.
 - [ ] Build e deploy da aplicação.
 
 

@@ -1,9 +1,9 @@
 import { Component } from '@angular/core';
 import { Router } from '@angular/router';
+import { Subscription } from 'rxjs';
 import { AlbumService } from '../../services/album.service';
 import { Shared } from '../../util/shared';
 import { Constants } from '../../util/constants';
-
 
 @Component({
   selector: 'app-album-list',
@@ -39,15 +39,23 @@ export class AlbumListComponent {
   closeModal() {
     this.findAlbumList();
     this.showModal = false;
-  }
-
-  findAlbumList() {
-    this.albumService.listalbuns().subscribe(albums => {
-      this.albuns = albums;
-      Shared.initializeWebStorage(this.albuns); 
-      this.albumQtde = +localStorage.getItem(Constants.ALBUNS_SIZE)!; 
-    });    
   }  
+  
+  findAlbumList() {
+    this.albumService.listAlbuns().subscribe({
+      next: albums => {
+        this.albuns = albums;
+        Shared.initializeWebStorage(this.albuns);
+        this.albumQtde = +localStorage.getItem(Constants.ALBUNS_SIZE)!;
+      },
+      error: error => {
+        console.error('Erro ao obter a lista de álbuns:', error);
+        this.albuns = [];
+        Shared.initializeWebStorage(this.albuns);
+        this.albumQtde = 0;
+      }
+    });
+  }
 
   sair() {
     localStorage.setItem(Constants.USER, '');
