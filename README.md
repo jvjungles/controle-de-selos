@@ -28,7 +28,7 @@ O frontend da aplicação desenvolvida com Angular e o backend foi simulado pela
 
 ## Endereço de Deploy - GitHub Pages
 
-*add url do GitHub Pages
+https://jvjungles.github.io/controle-de-selos/
 
 ## Protótipo
 
