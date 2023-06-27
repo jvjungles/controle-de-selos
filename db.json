@@ -1,0 +1,454 @@
+{
+  "users": [
+    {
+      "id": "1",
+      "username": "joao.silva",
+      "password": "123456"
+    },
+    {
+      "id": "2",
+      "username": "joana.dark",
+      "password": "abcdef"
+    },
+    {
+      "id": "3",
+      "username": "ayrton.senna",
+      "password": "ferrari"
+    }
+  ],
+  "albuns": [
+    {
+      "name": "Raros",
+      "description": "Album de Selos Raros",
+      "selos": [
+        {
+          "id": 5,
+          "name": "Selo 01",
+          "description": "DESCRIÇÃO selo 01 ",
+          "type": "Outros",
+          "year": "1988",
+          "country": "Brasil",
+          "stamp": true,
+          "filigram": "Não"
+        },
+        {
+          "id": 6,
+          "name": "Selo 02",
+          "description": "DESCRIÇÃO selo 02",
+          "type": "Comemorativo",
+          "year": "2020",
+          "country": "Brasil",
+          "stamp": true,
+          "filigram": "Sim"
+        },
+        {
+          "id": 7,
+          "name": "Selo 03",
+          "description": "DESCRIÇÃO selo 03",
+          "type": "Comemorativo",
+          "year": "1999",
+          "country": "Brasil",
+          "stamp": true,
+          "filigram": "Não"
+        },
+        {
+          "id": 8,
+          "name": "Selo 04",
+          "description": "DESCRIÇÃO selo 04",
+          "type": "Comemorativo",
+          "year": "2020",
+          "country": "Brasil",
+          "stamp": true,
+          "filigram": "Sim"
+        },
+        {
+          "id": 14,
+          "name": "Selo 05",
+          "year": "2020",
+          "description": "DESCRIÇÃO Selo 05",
+          "type": "Comemorativo",
+          "country": "Brasil",
+          "stamp": true,
+          "filigram": "Sim"
+        },
+        {
+          "id": 15,
+          "name": "Selo 06",
+          "description": "DESCRIÇÃO Selo 06 ",
+          "type": "Especial",
+          "year": "2020",
+          "country": "Brasil",
+          "stamp": false,
+          "filigram": "Não"
+        },
+        {
+          "id": 16,
+          "name": "Selo 07",
+          "description": "DESCRIÇÃO Selo 07",
+          "type": "Comemorativo",
+          "year": "1999",
+          "country": "Brasil",
+          "filigram": "Não"
+        },
+        {
+          "id": 17,
+          "name": "Selo 08",
+          "description": "DESCRIÇÃO Selo 08",
+          "type": "Comemorativo",
+          "year": "1999",
+          "country": "Brasil",
+          "filigram": "Não"
+        },
+        {
+          "id": 18,
+          "name": "Selo 09",
+          "description": "DESCRIÇÃO Selo 09",
+          "type": "Comemorativo",
+          "year": "1999",
+          "country": "Brasil",
+          "filigram": "Não"
+        },
+        {
+          "id": 19,
+          "name": "Selo 10",
+          "description": "DESCRIÇÃO Selo 10",
+          "type": "Comemorativo",
+          "year": "1999",
+          "country": "Brasil",
+          "filigram": "Não"
+        },
+        {
+          "id": 20,
+          "name": "Selo 11",
+          "description": "DESCRIÇÃO Selo 11",
+          "type": "Comemorativo",
+          "year": "1999",
+          "country": "Brasil",
+          "filigram": "Não"
+        },
+        {
+          "id": 21,
+          "name": "Selo 12",
+          "description": "DESCRIÇÃO Selo 12",
+          "type": "Comemorativo",
+          "year": "1999",
+          "country": "Brasil",
+          "filigram": "Não"
+        },
+        {
+          "id": 22,
+          "name": "Selo 13",
+          "description": "DESCRIÇÃO Selo 13",
+          "type": "Comemorativo",
+          "year": "1999",
+          "country": "Brasil",
+          "filigram": "Não"
+        }
+      ],
+      "userId": "1",
+      "id": 1
+    },
+    {
+      "name": " Selos Ingleses",
+      "description": "Album de Selos Ingleses",
+      "selos": [
+        {
+          "id": 1,
+          "name": "Selo de Londres",
+          "description": "Selo de Londres",
+          "type": "Beneficente",
+          "year": "1923",
+          "country": "Inglaterra",
+          "filigram": "Sim"
+        },
+        {
+          "id": 2,
+          "name": "Selo de Liverpool",
+          "description": "Selo de Liverpool",
+          "year": "1988",
+          "country": "Inglaterra",
+          "stamp": true,
+          "filigram": "Sim",
+          "type": "Promocional"
+        },
+        {
+          "id": 3,
+          "name": "Selo de Manchester",
+          "description": "Selo de Manchester",
+          "type": "Comemorativo",
+          "year": "2020",
+          "country": "Inglaterra",
+          "stamp": true,
+          "filigram": "Sim"
+        }
+      ],
+      "userId": "1",
+      "id": 3
+    },
+    {
+      "name": "ALBUM 04",
+      "description": "DESCRIÇÃO 04",
+      "selos": [
+        {
+          "id": 1,
+          "name": "Nome do Selo 04 - 01",
+          "description": "Descrição do Selo 04 - 01",
+          "type": "Ordinario",
+          "year": "1999",
+          "country": "Argentina",
+          "stamp": true,
+          "filigram": "Sim"
+        },
+        {
+          "id": 2,
+          "name": "Nome do Selo 04 - 02",
+          "description": "Descrição do Selo 04 - 02",
+          "type": "Promocional",
+          "year": "1988",
+          "country": "Argentina",
+          "filigram": "Sim"
+        }
+      ],
+      "userId": "1",
+      "id": 4
+    },
+    {
+      "name": "ALBUM 05",
+      "description": "DESCRIÇÃO 05",
+      "selos": [
+        {
+          "id": 4,
+          "name": "Comemorativo",
+          "description": "Descrição do Selo Comemorativo",
+          "type": "Comemorativo",
+          "year": "1988",
+          "country": "Brasil",
+          "stamp": true,
+          "filigram": "Sim"
+        },
+        {
+          "id": 5,
+          "name": "Selo",
+          "description": "selo",
+          "type": "Beneficente",
+          "year": "1988",
+          "country": "Brasil",
+          "stamp": true,
+          "filigram": "Sim"
+        },
+        {
+          "id": 6,
+          "name": "Ordinario",
+          "description": "Selo Ordinario",
+          "type": "Ordinario",
+          "year": "1988",
+          "country": "Brasil",
+          "stamp": true,
+          "filigram": "Sim"
+        },
+        {
+          "id": 7,
+          "name": "Especial",
+          "description": "Especial",
+          "type": "Especial",
+          "year": "9999",
+          "country": "Brasil",
+          "stamp": true,
+          "filigram": "Sim"
+        }
+      ],
+      "userId": "1",
+      "id": 5
+    },
+    {
+      "name": "Album 06",
+      "description": "DESCRIÇÃO Album 06",
+      "selos": [],
+      "userId": "1",
+      "id": 6
+    },
+    {
+      "name": "Album 07",
+      "description": "DESCRIÇÃO Album 07",
+      "selos": [],
+      "userId": "1",
+      "id": 7
+    },
+    {
+      "name": "Comemorativos",
+      "description": "Album de Selos Comemorativos",
+      "selos": [
+        {
+          "id": 1,
+          "name": "Selos Comemorativo 01",
+          "description": "Descrição de Selos Comemorativo 01",
+          "type": "Comemorativo",
+          "year": "1889",
+          "country": "Espanha",
+          "stamp": false,
+          "filigram": "Sim"
+        },
+        {
+          "id": 2,
+          "name": "Selo Comemorativo 02",
+          "description": "Descrição de Selos Comemorativo 02",
+          "type": "Comemorativo",
+          "year": "1988",
+          "country": "Espanha",
+          "stamp": true,
+          "filigram": "Não"
+        },
+        {
+          "id": 3,
+          "name": "Selo Comemorativo 03",
+          "description": "Descrição de Selos Comemorativo 03",
+          "type": "Comemorativo",
+          "year": "1999",
+          "country": "Espanha",
+          "stamp": true,
+          "filigram": "Sim"
+        },
+        {
+          "id": 4,
+          "name": "Selo Comemorativo 04",
+          "description": "Descrição de Selos Comemorativo 04",
+          "type": "Comemorativo",
+          "year": "1956",
+          "country": "Inglaterra",
+          "filigram": "Não"
+        },
+        {
+          "id": 5,
+          "name": "Selo Comemorativo 05",
+          "description": "Descrição de Selos Comemorativo 05",
+          "type": "Comemorativo",
+          "year": "1900",
+          "country": "Inglaterra",
+          "stamp": true,
+          "filigram": "Sim"
+        },
+        {
+          "id": 6,
+          "name": "Selo Comemorativo 06",
+          "description": "Descrição de Selos Comemorativo 06",
+          "type": "Comemorativo",
+          "year": "1900",
+          "country": "Inglaterra",
+          "stamp": true,
+          "filigram": "Sim"
+        },
+        {
+          "id": 7,
+          "name": "Selo Comemorativo 07",
+          "description": "Descrição de Selos Comemorativo 07",
+          "type": "Comemorativo",
+          "year": "1900",
+          "country": "Inglaterra",
+          "stamp": true,
+          "filigram": "Sim"
+        }
+      ],
+      "userId": "1",
+      "id": 8
+    },
+    {
+      "name": "Caros",
+      "description": "Selos mais caros do mundo",
+      "selos": [
+        {
+          "id": 1,
+          "name": "O Penny Black",
+          "description": "O Penny Black - 3000 €",
+          "type": "Especial",
+          "year": "1840",
+          "country": "Reino Unido",
+          "stamp": true,
+          "filigram": "Sim"
+        },
+        {
+          "id": 2,
+          "name": "Inverted Swan",
+          "description": "Inverted Swan - 35 000 €",
+          "type": "Especial",
+          "year": "1855",
+          "country": "Suecia",
+          "stamp": true,
+          "filigram": "Sim"
+        },
+        {
+          "id": 3,
+          "name": "Red Mercury",
+          "description": "Red Mercury - 37 000 €",
+          "type": "Especial",
+          "year": "1956",
+          "country": "Roma"
+        }
+      ],
+      "userId": "2",
+      "id": 9
+    },
+    {
+      "name": "Joana Dark 01",
+      "description": "Joana Dark 01",
+      "selos": [],
+      "userId": "2",
+      "id": 10
+    },
+    {
+      "name": "Joana Dark 02",
+      "description": "Joana Dark 02",
+      "selos": [],
+      "userId": "2",
+      "id": 11
+    },
+    {
+      "name": "Joana Dark 03",
+      "description": "Joana Dark 03",
+      "selos": [],
+      "userId": "2",
+      "id": 12
+    },
+    {
+      "name": "Ayrton Senna 01 ",
+      "description": "ayrton.senna 02",
+      "selos": [
+        {
+          "id": 1,
+          "name": "Selo 01",
+          "description": "Selo 01",
+          "type": "Ordinario",
+          "year": "1999",
+          "country": "Brasil",
+          "stamp": true,
+          "filigram": "Sim"
+        },
+        {
+          "id": 2,
+          "name": "Selo 02",
+          "description": "Selo 02",
+          "type": "Ordinario",
+          "year": "1988",
+          "country": "Brasil",
+          "stamp": true,
+          "filigram": "Sim"
+        }
+      ],
+      "userId": "3",
+      "id": 13
+    },
+    {
+      "name": "Ayrton Senna 02",
+      "description": "ayrton.senna 02",
+      "selos": [],
+      "userId": "3",
+      "id": 14
+    },
+    {
+      "name": "Ayrton Senna 03",
+      "description": "ayrton.senna 03",
+      "selos": [],
+      "userId": "3",
+      "id": 15
+    }
+  ]
+}

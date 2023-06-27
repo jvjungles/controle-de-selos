@@ -1,0 +1,63 @@
+<div>
+  <div class="header">
+     <div class="header">
+      <button title="Voltar" class="back-button" (click)="back()"><</button>
+    </div>
+</div>
+    <div class="header">
+        <b>ALBUM: {{ album?.name }}&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</b>
+        <div class="header">
+          <button title="Editar Álbum" class="add-button" (click)="openModal()">Editar</button>
+          <button title="Excluir Álbum" class="excluir-button" (click)="openConfirmationModal()">Excluir</button>
+        </div>
+    </div>
+    <app-album-add-modal
+      [showModal]="showModal"
+      [albumTitle]="albumTitle"
+      [albumid]="albumid"
+      (closeModalEvent)="closeModal()">
+    </app-album-add-modal>
+    <app-selo-add-modal
+      [showSeloModal]="showSeloModal"
+      [seloTitle]="seloTitle"
+      [albumid]="albumid"      
+      [selo]="selo"
+      (closeModalEvent)="closeSeloModal()">
+    </app-selo-add-modal>
+    <br>
+</div>
+
+<div>
+  <div class="header">
+    <b>SELOS:</b>
+    <button title="Adicionar Selo" class="add-button" (click)="openSeloModal()">Adicionar</button>        
+  </div>
+  <ng-container *ngIf="album && album.selos && album.selos.length > 0; else noSelos">
+    <div class="card-container">
+      <mat-card *ngFor="let selo of album?.selos" class="clickable-card card-item" (click)="onCardClick(selo)">        
+        <mat-card-header>
+          <br> 
+          <mat-card-title>{{ selo?.name | uppercase}}</mat-card-title>
+          <mat-card-subtitle>Descrição: {{ selo?.description }}</mat-card-subtitle>
+          <mat-card-subtitle>&nbsp;</mat-card-subtitle>
+          <mat-card-subtitle>Ano de Fabricação: {{ selo?.year }}</mat-card-subtitle>
+          <mat-card-subtitle>País de Origem: {{ selo?.country }}</mat-card-subtitle>
+          <mat-card-subtitle>Carimbo: {{ selo?.stamp ? 'Sim' : 'Não' }}</mat-card-subtitle>
+          <mat-card-subtitle>Filigrama: {{ selo?.filigram }}</mat-card-subtitle>
+          <br> 
+        </mat-card-header>  
+        <mat-card-content>                
+        </mat-card-content>
+      </mat-card>
+    </div>
+  </ng-container>
+  <ng-template #noSelos>
+    <br><br>
+    <p class="text-center">Nenhum Selo disponível.</p>
+  </ng-template>  
+</div>
+<div class="header">
+  <br><br><br><br><br><br>
+</div>
+
+  

@@ -1,0 +1,51 @@
+<div>
+  <div class="login-container">
+    <h1></h1>
+    <h1></h1>
+    <div>
+      <label for="username">Usuário:</label>
+      <input class="custom-text" type="text" id="username" [(ngModel)]="username" />      
+    </div>
+    <div>
+      <label for="password">Senha:</label>
+      <input class="custom-text" type="password" id="password" [(ngModel)]="password" />      
+    </div>
+    <div *ngIf="!usuarioEncontrado" class="error-message error-message-small error-red text-center">Usuário não encontrado</div>
+    <div *ngIf="!senhaValida" class="error-message error-message-small error-red text-center">Senha inválida</div>
+    <div class="button-container">
+      <button class="save-button" (click)="logar()">Acessar</button>
+    </div>    
+  </div>  
+  <div class="wiki">
+    <h1><br></h1>
+    <h1><br></h1>
+    <h1><br></h1>
+    <h1>
+      <br>    
+      <div>
+        <a href="https://pt.wikipedia.org/wiki/Filatelia" 
+          style="display: flex; align-items: baseline;">
+          <img width="85" 
+                alt="Filatelia Logo" 
+                src="assets/wikipedia_logo.svg" 
+                title="Wikipedia"/>
+        </a>  
+    </div>
+    </h1>       
+  </div>
+  <div class="wiki">
+    <h1><br></h1>
+    <h1><br></h1>
+    <h1><br></h1>
+    <h1>
+      <br>    
+      <div>
+        <a href="https://news.google.com/topics/CAAqJQgKIh9DQkFTRVFvSUwyMHZNRFY0T1Y4U0JYQjBMVUpTS0FBUAE?hl=pt-BR&gl=BR&ceid=BR%3Apt-419" 
+          style="display: flex; align-items: baseline; font-size: 22px;"
+          title="Noticias Filatelia">
+          Tudo sobre Filatelia          
+        </a>  
+      </div>
+    </h1>       
+  </div>
+</div>

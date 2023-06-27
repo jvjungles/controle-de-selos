@@ -1,0 +1,79 @@
+.modal-overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: rgba(0, 0, 0, 0.5); 
+    z-index: 33; 
+    display: none;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .modal-auto-height {
+    height: auto;
+    max-height: 90vh;
+  }  
+  
+  .modal-content {
+    background-color: white;
+    padding: 40px;
+    font-size: 24px;
+    font-weight: bold;
+    margin-bottom: 20px;
+  }
+    
+  .show.modal-overlay {
+    display: flex;
+  }
+  
+  .button-container {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 20px;
+  }
+  
+  .close-button {
+    float: right;
+    background-color: #395f83;
+    color: white;
+  }
+  
+  .save-button {
+    float: right;
+    background-color: #395f83;
+    color: white;
+  }
+
+  .excluir-button {
+    float: right;
+    background-color: #681a34;
+    color: white;
+  }
+  
+  .custom-text {
+    width: 210px;
+  }
+  
+  .custom-textarea {
+    width: 210px;
+    height: 150px;
+  }
+  
+  .radio-label {
+    display: inline-block;
+  }
+
+  .input-container {
+    margin-bottom: 10px;
+  }
+  
+  .error-message-small {
+    font-size: 12px;
+    color: red;
+  }
+  
+  
+   
+    

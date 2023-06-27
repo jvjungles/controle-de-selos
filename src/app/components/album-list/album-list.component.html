@@ -1,0 +1,37 @@
+<div class="header">
+  <b></b>
+  <button title="Sair" class="add-button" (click)="sair()">Usuario: {{ nomeUsuario }}  <br> Sair</button>
+</div>
+<div class="header">
+  <br><br><br><br>
+</div>
+<div class="header">
+  <b>ALBUNS: {{ albumQtde }}</b>
+  <button title="Adicionar Álbum" class="add-button" (click)="openModal()">Adicionar</button>
+</div>
+<app-album-add-modal
+  [showModal]="showModal"
+  [albumTitle]="albumTitle"
+  (closeModalEvent)="closeModal()">
+</app-album-add-modal>
+<ng-container *ngIf="albuns.length > 0; else noAlbums">
+  <div class="card-container">
+    <mat-card *ngFor="let album of albuns" class="clickable-card card-item" (click)="onCardClick(album)">
+      <mat-card-header>
+        <mat-card-title>{{ album?.name | uppercase }}</mat-card-title>
+        <mat-card-subtitle>{{ album?.description }}</mat-card-subtitle>
+      </mat-card-header>
+      <mat-card-content>
+        <h3>Selos: {{ album?.selos?.length }}</h3>
+      </mat-card-content>
+      <mat-icon matTooltip="Clique no card para ver o &nbsp; Album {{ album?.name }} e a lista de selos" 
+                matTooltipPosition="above">&nbsp;</mat-icon>
+    </mat-card>
+  </div>
+</ng-container>
+<ng-template #noAlbums>
+  <p>Nenhum álbum disponível.</p>
+</ng-template>
+<div class="header">
+  <br><br><br><br><br><br>
+</div>
