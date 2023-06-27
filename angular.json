@@ -12,7 +12,7 @@
         "build": {
           "builder": "@angular-devkit/build-angular:browser",
           "options": {
-            "outputPath": "dist",
+            "outputPath": "dist/controle-de-selos",
             "index": "src/index.html",
             "main": "src/main.ts",
             "polyfills": ["zone.js"],
@@ -23,7 +23,16 @@
             ],
             "styles": [
               "@angular/material/prebuilt-themes/indigo-pink.css",
-              "src/styles.css"
+              "src/styles.css",
+              "src/app/app.component.css",
+              "src/app/components/top-bar/top-bar.component.css",
+              "src/app/components/selo-add-modal/selo-add-modal.component.css",
+              "src/app/components/login-page/login-page.component.css",
+              "src/app/components/footer/footer.component.css",
+              "src/app/components/confirmation-modal/confirmation-modal.component.css",
+              "src/app/components/album-page/album-page.component.css",
+              "src/app/components/album-list/album-list.component.css",
+              "src/app/components/album-add-modal/album-add-modal.component.css"
             ],
             "scripts": []
           },
