@@ -1,0 +1,38 @@
+.validation-modal {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 300px;
+    padding: 20px;
+    z-index: 9999;
+    background-color: #fff;
+    border-radius: 4px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  }
+
+  .modal-overlay {    
+    z-index: 9999; 
+  }
+  
+  .validation-modal-title {
+    font-weight: bold;
+    font-size: 18px;
+    margin-bottom: 10px;
+  }
+  
+  .validation-modal-message {
+    margin-bottom: 20px;
+    color: red;
+  }
+  
+  .validation-modal-buttons {
+    display: flex;
+    justify-content: flex-end;
+  }
+  
+  .validation-modal-button {
+    margin-left: 10px;
+    background-color: #395f83;
+  }
+  

@@ -21,6 +21,7 @@ import { LoginPageComponent } from './components/login-page/login-page.component
 
 import { LoginService } from './services/login.service';
 import { AlbumService } from './services/album.service';
+import { ValidationModalComponent } from './components/validation-modal/validation-modal.component';
 
 
 @NgModule({
@@ -48,7 +49,8 @@ import { AlbumService } from './services/album.service';
     AlbumAddModalComponent,
     SeloAddModalComponent,
     ConfirmationModalComponent,
-    LoginPageComponent
+    LoginPageComponent,
+    ValidationModalComponent
   ],
   providers: [
     LoginService,

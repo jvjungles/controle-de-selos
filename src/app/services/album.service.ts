@@ -1,7 +1,7 @@
 import { HttpClient, HttpHeaders, HttpParams } from '@angular/common/http';
 import { Injectable } from '@angular/core';
-import { Observable, of } from 'rxjs';
-import { catchError } from 'rxjs/operators';
+import { Observable, of, throwError } from 'rxjs';
+import { catchError, switchMap } from 'rxjs/operators';
 import { RoutesAPI } from '../util/routes-api';
 import { Album } from '../model/album';
 import { UserService } from '../services/user.service';
@@ -34,6 +34,10 @@ export class AlbumService {
     }
   }
 
+  listlbuns(): Observable<Album[]> {
+    return this.httpClient.get<Album[]>(`${this.URL}`);
+  }  
+
   getById(id: number): Observable<Album> {
     return this.httpClient.get<Album>(`${this.URL}/${id}`);
   }
@@ -45,7 +49,37 @@ export class AlbumService {
         throw error;
       })
     );
+  } 
+  
+  saveWithValidation(album: Album): Observable<Album> {
+    return this.checkIfAlbumExists(album).pipe(
+      switchMap(albumExists => {
+        if (albumExists) {
+          return this.httpClient.post<Album>(this.URL, album, this.httpOptions).pipe(
+            catchError((error) => {
+              console.error('Erro ao salvar o álbum:', error);
+              throw error;
+            })
+          );
+        } else {
+          return throwError('Já existe um álbum com o mesmo nome');
+        }
+      })
+    );
   }
+
+  checkIfAlbumExists(album: Album): Observable<boolean> {
+    const userId = this.userService.getUser()?.id;    
+    return this.listlbuns().pipe(
+      switchMap(albums => {
+        if (albums) {
+          const filteredAlbums = albums.filter(item => item.userId === userId && item.name === album.name);
+          return of(filteredAlbums.length === 0);
+        } 
+        return of(true);
+      })
+    );
+  }   
 
   update(album: Album): Observable<Album> {
     return this.httpClient.put<Album>(

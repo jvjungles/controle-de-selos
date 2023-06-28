@@ -33,12 +33,19 @@
     </div>        
     <div class="input-container">
       <label>Filigrama:
-      <label class="radio-label"><input type="radio" name="filigrama" value="Sim" *ngIf="selo" [(ngModel)]="selo.filigram"> Sim</label>
+      <label class="radio-label"><input type="radio" name="filigrama" value="Sim" *ngIf="selo" [(ngModel)]="selo.filigram" required> Sim</label>
       <label class="radio-label"><input type="radio" name="filigrama" value="Não" *ngIf="selo" [(ngModel)]="selo.filigram"> Não</label>
     </label>
-    </div>    
+    </div>  
+    <div class="input-container">
+      <label for="nome">Link * :</label>
+      <input class="custom-text" type="text" id="link" *ngIf="selo" [(ngModel)]="selo.link" required />      
+    </div>  
+    <div class="error-message error-message-small" *ngIf="selo?.link && !isValidLink()">
+      Necessário formato de link - http://
+    </div>
     <div class="button-container">
-      <button class="save-button" (click)="saveModal()" [disabled]="!isYearValid() || !selo?.year || !selo?.name">Salvar</button>
+      <button class="save-button" (click)="saveModal()" [disabled]="!isYearValid() || !selo?.year || !selo?.name || isfiligramaValid()">Salvar</button>
       <button class="excluir-button" *ngIf="seloTitle === 'Editar'" (click)="openConfirmationModal()">Excluir</button>
       <button class="close-button" (click)="closeModal()">Fechar</button>
     </div>

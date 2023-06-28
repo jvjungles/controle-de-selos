@@ -6,6 +6,8 @@ export class Constants {
   public static readonly EDITAR = 'Editar';
   public static readonly CONFIRM_TITLE = 'Excluir';
   public static readonly CONFIRM_MESSAGE = 'Deseja realmente excluir?';
+  public static readonly ALBUM_SAVED = 'Album salvo com sucesso';
+  public static readonly ALBUM_NAME_VALIDATE = 'Já existe um album com esse nome';
   public static readonly FOO_TITLE = 'Sistema de Controle - Catálogo Filatélico - Selos';
   public static readonly FOO_WHO = 'Joao Valter Jungles Junior';
   public static readonly FOO_DIS = 'UTFPR - Frameworks Web';

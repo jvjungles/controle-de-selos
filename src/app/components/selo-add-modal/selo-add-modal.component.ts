@@ -49,6 +49,7 @@ export class SeloAddModalComponent {
           this.album.selos[index].country = this.selo?.country;
           this.album.selos[index].stamp = this.selo?.stamp;
           this.album.selos[index].filigram = this.selo?.filigram;
+          this.album.selos[index].link = this.selo?.link;
         }
 
       } else {
@@ -62,7 +63,8 @@ export class SeloAddModalComponent {
           year: this.selo?.year,
           country: this.selo?.country,
           stamp: this.selo?.stamp,
-          filigram: this.selo?.filigram
+          filigram: this.selo?.filigram,
+          link: this.selo?.link
         };
         this.album.selos.push(selo);
       }
@@ -110,4 +112,21 @@ export class SeloAddModalComponent {
     const pattern = /[0-9]{4}/;
     return this.selo?.year !== undefined && pattern.test(this.selo.year);
   }
+
+  isfiligramaValid(): boolean {
+    return this.selo?.filigram == undefined;
+  }
+
+  isValidLink(): boolean {
+    const regex = /^http(s)?:\/\/\S+$/;
+    return this.selo?.link !== undefined && regex.test(this.selo?.link);
+  }
+
+  isUniqueSelo(): boolean {
+    if (this.album?.selos) {
+      const index = this.album.selos.findIndex(item => item.id === this.selo?.id);
+      return index === -1;
+    }
+    return true;
+  }  
 }
