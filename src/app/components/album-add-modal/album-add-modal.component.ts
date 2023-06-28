@@ -86,8 +86,7 @@ export class AlbumAddModalComponent {
       complete: () => {
         this.openValidationModal(Constants.ALBUM_SAVED);
       },
-    });
-    
+    });    
   }  
 
   update() {
@@ -96,9 +95,17 @@ export class AlbumAddModalComponent {
       this.album.name = this.nome;
       this.album.description = this.descricao;
 
-      this.service.update(this.album).subscribe(savedAlbum => {
-        this.showModal = false;
-        this.closeModalEvent.emit(); 
+      this.service.updateWithValidation(album).subscribe({
+        next: (savedAlbum) => {
+          this.showModal = false;
+          this.closeModalEvent.emit();
+        },
+        error: (error: any) => {
+          this.openValidationModal(Constants.ALBUM_NAME_VALIDATE);
+        },
+        complete: () => {
+          this.openValidationModal(Constants.ALBUM_SAVED);
+        },
       });
     });     
   }
@@ -113,6 +120,5 @@ export class AlbumAddModalComponent {
       data: { message }
     });  
     dialogRef.afterClosed().subscribe(result => {});
-  }
-      
+  }      
 }

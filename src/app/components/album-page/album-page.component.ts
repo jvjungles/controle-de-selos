@@ -2,6 +2,7 @@ import { Component } from '@angular/core';
 import { ActivatedRoute, Router } from '@angular/router';
 import { MatDialog } from '@angular/material/dialog';
 import { ConfirmationModalComponent } from '../confirmation-modal/confirmation-modal.component';
+import { ValidationModalComponent } from '../validation-modal/validation-modal.component';
 import { Constants } from '../../util/constants';
 import { AlbumService } from '../../services/album.service';
 import { Album } from '../../model/album';
@@ -80,7 +81,7 @@ export class AlbumPageComponent {
       dialogRef.afterClosed().subscribe(result => {
         if (result) {
           this.service.delete(this.album?.id || -1).subscribe(() => {
-            this.redirectToHome()
+            this.openValidationModal(Constants.ALBUM_EXCLUDED);            
           });
         }
       });
@@ -103,5 +104,15 @@ export class AlbumPageComponent {
     back() {
       this.router.navigate(['/album-list']);
     } 
+
+    openValidationModal(message: string): void {
+      const dialogRef = this.dialog.open(ValidationModalComponent, {
+        width: '300px',
+        data: { message }
+      });  
+      dialogRef.afterClosed().subscribe(result => {
+        this.redirectToHome();
+      });
+    }
 }
 
