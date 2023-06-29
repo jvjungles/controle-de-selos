@@ -5,7 +5,17 @@
     </div>
 </div>
     <div class="header">
-        <b>ALBUM: {{ album?.name }}&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</b>
+        <div class="header1">
+          <div class="header1" style="display: block;">
+            <b>ALBUM: {{ album?.name }}&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</b>          
+          </div>
+          <div class="header1" style="display: block;">
+            <b>&nbsp;</b>
+          </div>
+          <div class="header1" style="display: block;">
+            <b>{{ album?.description }}</b>
+          </div>
+        </div>
         <div class="header">
           <button title="Editar Álbum" class="add-button" (click)="openModal()">Editar</button>
           <button title="Excluir Álbum" class="excluir-button" (click)="openConfirmationModal()">Excluir</button>
@@ -40,10 +50,14 @@
           <mat-card-title>{{ selo?.name | uppercase}}</mat-card-title>
           <mat-card-subtitle>Descrição: {{ selo?.description }}</mat-card-subtitle>
           <mat-card-subtitle>&nbsp;</mat-card-subtitle>
+          <mat-card-subtitle>Tipo: {{ selo?.type }}</mat-card-subtitle>
           <mat-card-subtitle>Ano de Fabricação: {{ selo?.year }}</mat-card-subtitle>
           <mat-card-subtitle>País de Origem: {{ selo?.country }}</mat-card-subtitle>
           <mat-card-subtitle>Carimbo: {{ selo?.stamp ? 'Sim' : 'Não' }}</mat-card-subtitle>
           <mat-card-subtitle>Filigrama: {{ selo?.filigram }}</mat-card-subtitle>
+          <mat-card-subtitle>
+            <a [href]="selo?.link" target="_blank" (click)="$event.stopPropagation()">{{ selo?.link }}</a>
+          </mat-card-subtitle>
           <br> 
         </mat-card-header>  
         <mat-card-content>                

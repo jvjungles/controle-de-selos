@@ -1,9 +1,12 @@
 import { Component, Input, Output, EventEmitter } from '@angular/core';
 import { ActivatedRoute } from '@angular/router';
+import { MatDialog } from '@angular/material/dialog';
 import { AlbumService } from '../../services/album.service';
 import { UserService } from '../../services/user.service';
+import { ValidationModalComponent } from '../validation-modal/validation-modal.component';
 import { Album } from '../../model/album';
 import { User } from '../../model/user';
+import { Constants } from '../../util/constants';
 
 @Component({
   selector: 'app-album-add-modal',
@@ -13,18 +16,18 @@ import { User } from '../../model/user';
 
 export class AlbumAddModalComponent {
 
-  constructor(private userService: UserService, private route: ActivatedRoute, private service: AlbumService) { }
+  constructor(private dialog: MatDialog, private userService: UserService, private route: ActivatedRoute, private service: AlbumService) { }
 
   @Input() showModal: boolean = false;
   @Input() albumTitle: String = '';
   @Input() albumid: number = -1;
   @Output() closeModalEvent = new EventEmitter<void>();
-   
+
   nome: string = '';
   descricao: string = '';
   album: Album | undefined;
   user: User | null | undefined;
-  isNomeValid: boolean = false;
+  showTooltip = false;
 
   ngOnInit() {
     const user = this.userService.getUser();
@@ -49,7 +52,6 @@ export class AlbumAddModalComponent {
       this.nome = '';
       this.descricao = '';
     }    
-    this.isNomeValid = false;
     this.showModal = false;
     this.closeModalEvent.emit(); 
   }
@@ -67,16 +69,24 @@ export class AlbumAddModalComponent {
       name: this.nome,
       description: this.descricao,
       selos: [],
-      userId: this.user?.id || undefined 
+      userId: this.user?.id || undefined
     };
-
-    this.service.save(album).subscribe(savedAlbum => {
-      this.nome = '';
-      this.descricao = '';
-      this.showModal = false;
-      this.closeModalEvent.emit(); 
-    }); 
-  }
+  
+    this.service.saveWithValidation(album).subscribe({
+      next: (savedAlbum) => {
+        this.nome = '';
+        this.descricao = '';
+        this.showModal = false;
+        this.closeModalEvent.emit();
+      },
+      error: (error: any) => {
+        this.openValidationModal(Constants.ALBUM_NAME_VALIDATE);
+      },
+      complete: () => {
+        this.openValidationModal(Constants.ALBUM_SAVED);
+      },
+    });    
+  }  
 
   update() {
     this.service.getById(this.albumid).subscribe(album => {
@@ -84,14 +94,30 @@ export class AlbumAddModalComponent {
       this.album.name = this.nome;
       this.album.description = this.descricao;
 
-      this.service.update(this.album).subscribe(savedAlbum => {
-        this.showModal = false;
-        this.closeModalEvent.emit(); 
+      this.service.updateWithValidation(album).subscribe({
+        next: (savedAlbum) => {
+          this.showModal = false;
+          this.closeModalEvent.emit();
+        },
+        error: (error: any) => {
+          this.openValidationModal(Constants.ALBUM_NAME_VALIDATE);
+        },
+        complete: () => {
+          this.openValidationModal(Constants.ALBUM_SAVED);
+        },
       });
     });     
   }
 
-  validateNome() {
-    this.isNomeValid = this.nome.trim().length > 0;
+  isNomeValid(): boolean {
+    return this.nome.trim().length > 0;
   }
+
+  openValidationModal(message: string): void {
+    const dialogRef = this.dialog.open(ValidationModalComponent, {
+      width: '300px',
+      data: { message }
+    });  
+    dialogRef.afterClosed().subscribe(result => {});
+  }      
 }

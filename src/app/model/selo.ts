@@ -7,4 +7,5 @@ export interface Selo {
   stamp?: boolean;
   filigram?: string;
   type?:string;
+  link?: string;
 }
