@@ -5,7 +5,7 @@
       <label for="nome">Nome * :</label>
       <input class="custom-text" type="text" id="nome" [(ngModel)]="nome" (input)="isNomeValid()" 
              (mouseenter)="showTooltip = true" (mouseleave)="showTooltip = false" />    
-      <span class="tooltip" *ngIf="!isNomeValid() && showTooltip" role="tooltip">Será salvo em letras maiúsculas</span>
+        <span class="tooltip" *ngIf="showTooltip" role="tooltip">Será salvo em letras maiúsculas</span>
     </div>
     <div class="input-container">
       <label for="descricao">Descrição:</label>

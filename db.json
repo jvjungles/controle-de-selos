@@ -17,18 +17,18 @@
     },
     {
       "id": "4",
-      "username": "fera",
-      "password": "fera"
+      "username": "admin",
+      "password": "admin"
     }
   ],
   "albuns": [
     {
-      "name": "Raros",
+      "name": "RAROS",
       "description": "Album de Selos Raros",
       "selos": [
         {
           "id": 5,
-          "name": "Selo 01",
+          "name": "SELO 01",
           "description": "DESCRIÇÃO selo 01 ",
           "type": "Outros",
           "year": "1988",
@@ -39,7 +39,7 @@
         },
         {
           "id": 6,
-          "name": "Selo 02",
+          "name": "SELO 02",
           "description": "DESCRIÇÃO selo 02",
           "type": "Comemorativo",
           "year": "2020",
@@ -49,7 +49,7 @@
         },
         {
           "id": 7,
-          "name": "Selo 03",
+          "name": "SELO 03",
           "description": "DESCRIÇÃO selo 03",
           "type": "Comemorativo",
           "year": "1999",
@@ -69,7 +69,7 @@
         },
         {
           "id": 14,
-          "name": "Selo 05",
+          "name": "SELO 05",
           "year": "2020",
           "description": "DESCRIÇÃO Selo 05",
           "type": "Comemorativo",
@@ -79,7 +79,7 @@
         },
         {
           "id": 15,
-          "name": "Selo 06",
+          "name": "SELO 06",
           "description": "DESCRIÇÃO Selo 06 ",
           "type": "Especial",
           "year": "2020",
@@ -89,7 +89,7 @@
         },
         {
           "id": 16,
-          "name": "Selo 07",
+          "name": "SELO 07",
           "description": "DESCRIÇÃO Selo 07",
           "type": "Comemorativo",
           "year": "1999",
@@ -98,7 +98,7 @@
         },
         {
           "id": 17,
-          "name": "Selo 08",
+          "name": "SELO 08",
           "description": "DESCRIÇÃO Selo 08",
           "type": "Comemorativo",
           "year": "1999",
@@ -107,7 +107,7 @@
         },
         {
           "id": 18,
-          "name": "Selo 09",
+          "name": "SELO 09",
           "description": "DESCRIÇÃO Selo 09",
           "type": "Comemorativo",
           "year": "1999",
@@ -116,7 +116,7 @@
         },
         {
           "id": 19,
-          "name": "Selo 10",
+          "name": "SELO 10",
           "description": "DESCRIÇÃO Selo 10",
           "type": "Comemorativo",
           "year": "1999",
@@ -125,7 +125,7 @@
         },
         {
           "id": 20,
-          "name": "Selo 11",
+          "name": "SELO 11",
           "description": "DESCRIÇÃO Selo 11",
           "type": "Comemorativo",
           "year": "1999",
@@ -134,7 +134,7 @@
         },
         {
           "id": 21,
-          "name": "Selo 12",
+          "name": "SELO 12",
           "description": "DESCRIÇÃO Selo 12",
           "type": "Comemorativo",
           "year": "1999",
@@ -143,46 +143,24 @@
         },
         {
           "id": 22,
-          "name": "Selo 13",
+          "name": "SELO 13",
           "description": "DESCRIÇÃO Selo 13",
           "type": "Comemorativo",
           "year": "1999",
           "country": "Brasil",
           "filigram": "Não"
-        },
-        {
-          "id": 23,
-          "name": "ghffhfgh",
-          "description": "hgfhgfhfg",
-          "type": "Comemorativo",
-          "year": "2020",
-          "country": "gfhgfh",
-          "stamp": true,
-          "filigram": "Não",
-          "link": ""
-        },
-        {
-          "id": 24,
-          "name": "asas",
-          "description": "asas",
-          "type": "Especial",
-          "year": "2020",
-          "country": "Inglaterra",
-          "stamp": true,
-          "filigram": "Sim",
-          "link": ""
         }
       ],
       "userId": "1",
       "id": 1
     },
     {
-      "name": " Selos Ingleses",
+      "name": " SELOS INGLESES",
       "description": "Album de Selos Ingleses",
       "selos": [
         {
           "id": 1,
-          "name": "Selo de Londres",
+          "name": "SELO DE LONDRES",
           "description": "Selo de Londres",
           "type": "Beneficente",
           "year": "1923",
@@ -191,7 +169,7 @@
         },
         {
           "id": 2,
-          "name": "Selo de Liverpool",
+          "name": "SELO DE LIVERPOOL",
           "description": "Selo de Liverpool",
           "year": "1988",
           "country": "Inglaterra",
@@ -201,7 +179,7 @@
         },
         {
           "id": 3,
-          "name": "Selo de Manchester",
+          "name": "SELO DE MANCHESTER",
           "description": "Selo de Manchester",
           "type": "Comemorativo",
           "year": "2020",
@@ -219,7 +197,7 @@
       "selos": [
         {
           "id": 1,
-          "name": "Nome do Selo 04 - 01",
+          "name": "NOME DO SELO 04 - 01",
           "description": "Descrição do Selo 04 - 01",
           "type": "Ordinario",
           "year": "1999",
@@ -229,7 +207,7 @@
         },
         {
           "id": 2,
-          "name": "Nome do Selo 04 - 02",
+          "name": "NOME DO SELO 04 - 02",
           "description": "Descrição do Selo 04 - 02",
           "type": "Promocional",
           "year": "1988",
@@ -246,7 +224,7 @@
       "selos": [
         {
           "id": 4,
-          "name": "Comemorativo",
+          "name": "COMEMORATIVO",
           "description": "Descrição do Selo Comemorativo",
           "type": "Comemorativo",
           "year": "1988",
@@ -256,7 +234,7 @@
         },
         {
           "id": 5,
-          "name": "Selo",
+          "name": "SELO",
           "description": "selo",
           "type": "Beneficente",
           "year": "1988",
@@ -266,7 +244,7 @@
         },
         {
           "id": 6,
-          "name": "Ordinario",
+          "name": "ORDINARIO",
           "description": "Selo Ordinario",
           "type": "Ordinario",
           "year": "1988",
@@ -276,10 +254,10 @@
         },
         {
           "id": 7,
-          "name": "Especial",
+          "name": "ESPECIAL",
           "description": "Especial",
           "type": "Especial",
-          "year": "9999",
+          "year": "1988",
           "country": "Brasil",
           "stamp": true,
           "filigram": "Sim"
@@ -289,54 +267,55 @@
       "id": 5
     },
     {
-      "name": "Album 06",
+      "name": "ALBUM 06",
       "description": "DESCRIÇÃO Album 06",
       "selos": [
         {
           "id": 1,
-          "name": "asa",
-          "description": "sasas",
+          "name": "06 01",
+          "description": "06 01",
           "type": "Comemorativo",
           "year": "1999",
-          "country": "asasas",
+          "country": "Brasil",
           "filigram": "Sim"
         },
         {
           "id": 2,
-          "name": "sasas",
-          "description": "asas",
+          "name": "06 02",
+          "description": "a06 02",
           "type": "Especial",
           "year": "2020",
-          "country": "asas",
+          "country": "Brasil",
           "stamp": true,
           "filigram": "Não"
         },
         {
           "id": 3,
-          "name": "sas",
-          "description": "asas",
+          "name": "06 03",
+          "description": "a06 03",
           "type": "Comemorativo",
           "year": "2020",
-          "filigram": "Não"
+          "filigram": "Não",
+          "country": "Brasil"
         }
       ],
       "userId": "1",
       "id": 6
     },
     {
-      "name": "Album 07",
-      "description": "DESCRIÇÃO Album 07",
+      "name": "ALBUM 07",
+      "description": "Album 07",
       "selos": [],
       "userId": "1",
       "id": 7
     },
     {
-      "name": "Comemorativos",
+      "name": "COMEMORATIVOS",
       "description": "Album de Selos Comemorativos",
       "selos": [
         {
           "id": 1,
-          "name": "Selos Comemorativo 01",
+          "name": "SELOS COMEMORATIVO 01",
           "description": "Descrição de Selos Comemorativo 01",
           "type": "Comemorativo",
           "year": "1889",
@@ -346,7 +325,7 @@
         },
         {
           "id": 2,
-          "name": "Selo Comemorativo 02",
+          "name": "SELO COMEMORATIVO 02",
           "description": "Descrição de Selos Comemorativo 02",
           "type": "Comemorativo",
           "year": "1988",
@@ -356,7 +335,7 @@
         },
         {
           "id": 3,
-          "name": "Selo Comemorativo 03",
+          "name": "SELO COMEMORATIVO 03",
           "description": "Descrição de Selos Comemorativo 03",
           "type": "Comemorativo",
           "year": "1999",
@@ -366,7 +345,7 @@
         },
         {
           "id": 4,
-          "name": "Selo Comemorativo 04",
+          "name": "SELO COMEMORATIVO 04",
           "description": "Descrição de Selos Comemorativo 04",
           "type": "Comemorativo",
           "year": "1956",
@@ -375,7 +354,7 @@
         },
         {
           "id": 5,
-          "name": "Selo Comemorativo 05",
+          "name": "SELO COMEMORATIVO 05",
           "description": "Descrição de Selos Comemorativo 05",
           "type": "Comemorativo",
           "year": "1900",
@@ -385,7 +364,7 @@
         },
         {
           "id": 6,
-          "name": "Selo Comemorativo 06",
+          "name": "SELO COMEMORATIVO 06",
           "description": "Descrição de Selos Comemorativo 06",
           "type": "Comemorativo",
           "year": "1900",
@@ -395,7 +374,7 @@
         },
         {
           "id": 7,
-          "name": "Selo Comemorativo 07",
+          "name": "SELO COMEMORATIVO 07",
           "description": "Descrição de Selos Comemorativo 07",
           "type": "Comemorativo",
           "year": "1900",
@@ -408,12 +387,12 @@
       "id": 8
     },
     {
-      "name": "The Bests",
+      "name": "THE BESTS",
       "description": "Os melhores Selos  do mundo",
       "selos": [
         {
           "id": 1,
-          "name": "O Penny Black",
+          "name": "O PENNY BLACK",
           "description": "O Penny Black\n",
           "type": "Especial",
           "year": "1840",
@@ -424,7 +403,7 @@
         },
         {
           "id": 2,
-          "name": "Inverted Swan",
+          "name": "INVERTED SWAN",
           "description": "Inverted Swan",
           "type": "Especial",
           "year": "1855",
@@ -435,7 +414,7 @@
         },
         {
           "id": 3,
-          "name": "Red Mercury",
+          "name": "RED MERCURY",
           "description": "Red Mercury",
           "type": "Especial",
           "year": "1956",
@@ -448,41 +427,42 @@
       "id": 9
     },
     {
-      "name": "Brasil Selos",
+      "name": "BRASIL SELOS",
       "description": "Selos do Brasil - Correrios",
       "selos": [
         {
           "id": 1,
-          "name": "Selo Papa Francisco",
+          "name": "SELO PAPA FRANCISCO",
           "description": "Selo em homenagem ao papa Francisco",
           "type": "Especial",
           "year": "2013",
           "country": "Brasil",
-          "filigram": "Não",
-          "link": "https://memoria.ebc.com.br/noticias/brasil/2013/07/selo-em-homenagem-ao-papa-francisco-e-lancado"
+          "filigram": "Sim",
+          "link": "https://memoria.ebc.com.br"
         },
         {
           "id": 2,
-          "name": "Bicentenário da Independência",
+          "name": "BICENTENÁRIO DA INDEPENDÊNCIA",
           "description": "Bicentenário da Independência\n\n",
           "type": "Especial",
           "year": "2022",
-          "country": "Brasil"
+          "country": "Brasil",
+          "filigram": "Sim"
         },
         {
           "id": 3,
-          "name": "Dom Pedro II ",
+          "name": "DOM PEDRO II ",
           "description": "Dom Pedro II ",
           "type": "Especial",
           "year": "1866",
           "country": "Brasil",
           "filigram": "Sim",
-          "link": "https://www.wikiwand.com/pt/Selos_e_hist%C3%B3ria_postal_do_Brasil#Media/Ficheiro:Denteado.jpg"
+          "link": "https://www.wikiwand.com/"
         },
         {
           "id": 4,
-          "name": "Olho de Boi",
-          "description": "Olho de boi de 90 Réis\n\nhttps://www.wikiwand.com/pt/Selo_Olho_de_boi",
+          "name": "OLHO DE BOI",
+          "description": "Olho de boi de 90 Réis",
           "type": "Especial",
           "year": "1843",
           "country": "Brasil",
@@ -494,47 +474,47 @@
       "id": 10
     },
     {
-      "name": "Antiguidades",
+      "name": "ANTIGUIDADES",
       "description": "Antiguidades",
       "selos": [],
       "userId": "2",
       "id": 11
     },
     {
-      "name": "Copa do Mundo 2014",
+      "name": "COPA DO MUNDO 2014",
       "description": "Copa do Mundo da FIFA Brasil 2014",
       "selos": [
         {
           "id": 1,
-          "name": "Sede Curitiba",
+          "name": "SEDE CURITIBA",
           "description": "Curitiba",
           "type": "Comemorativo",
           "year": "2014",
           "country": "Brasil",
           "filigram": "Não",
-          "link": "https://www.selosefilatelia.com.br/PastaLancamentos2014/001.html"
+          "link": "https://www.selosefilatelia.com.br"
         },
         {
           "id": 2,
-          "name": "Sede Porto Alegre",
+          "name": "SEDE PORTO ALEGRE",
           "description": "Porto Alegre",
           "type": "Comemorativo",
           "year": "2014",
           "country": "Brasil",
           "filigram": "Não",
-          "link": "https://www.selosefilatelia.com.br/PastaLancamentos2014/001.html"
+          "link": "https://www.selosefilatelia.com.br"
         }
       ],
       "userId": "2",
       "id": 12
     },
     {
-      "name": "Ayrton Senna",
+      "name": "AYRTON SENNA",
       "description": "Maior piloto ds Historia da Formula 1",
       "selos": [
         {
           "id": 2,
-          "name": "Ayrton Senna",
+          "name": "AYRTON SENNA",
           "description": "Ayrton Senna Campeão Mundial F1",
           "type": "Ordinario",
           "year": "1988",
@@ -545,7 +525,7 @@
         },
         {
           "id": 3,
-          "name": "Ayrton Senna TRÍPTICO",
+          "name": "AYRTON SENNA TRÍPTICO",
           "description": "Em 1994, os Correios do Brasil lançaram um lindo TRÍPTICO em homenagem ao nosso campeão.",
           "year": "1994",
           "country": "Brasil",
@@ -555,7 +535,7 @@
         },
         {
           "id": 4,
-          "name": "McLaren",
+          "name": "MCLAREN",
           "description": "A equipe campeã do mundial de pilotos e construtores, de 1990.\nIlustra Ayrton Senna e Alain Prost",
           "type": "Comemorativo",
           "year": "1990",
@@ -568,20 +548,21 @@
       "id": 13
     },
     {
-      "name": "Brasil F1",
+      "name": "BRASIL F1",
       "description": "Pilotos Brasileiros na F1",
       "selos": [
         {
           "id": 1,
-          "name": "Nelson Piquet",
+          "name": "NELSON PIQUET",
           "description": "Selo Nelson Piquet, campeão Mundial",
           "type": "Promocional",
           "year": "1984",
-          "country": "Brasil"
+          "country": "Brasil",
+          "filigram": "Não"
         },
         {
           "id": 2,
-          "name": "Ayrton Senna",
+          "name": "AYRTON SENNA",
           "description": "Primer Aniversario de su morte",
           "type": "Comemorativo",
           "year": "1994",
@@ -591,97 +572,88 @@
         },
         {
           "id": 3,
-          "name": "Emerson Fittipaldi",
+          "name": "EMERSON FITTIPALDI",
           "description": "Automobilismo homenageando a conquista dos títulos de Campeão da Formula 1 por Emerson Fittipaldi",
           "type": "Comemorativo",
           "year": "1983",
-          "country": "Brasil"
+          "country": "Brasil",
+          "filigram": "Não"
         }
       ],
       "userId": "3",
       "id": 14
     },
     {
-      "name": "Campeões Automobilísticos",
+      "name": "CAMPEÕES AUTOMOBILÍSTICOS",
       "description": "Em 1995, a Administração Postal da Guiné-Equatorial, emitiu uma série de 4 selos, com o tema Campeões Automobilísticos, homenageando Fangio, Senna, Jim Clark e Jochen Rindt.",
       "selos": [
         {
           "id": 1,
-          "name": "Fangio",
+          "name": "FANGIO",
           "description": "Fangio",
           "type": "Promocional",
           "year": "1995",
-          "country": "Guiné-Equatorial"
+          "country": "Guiné-Equatorial",
+          "filigram": "Não"
         },
         {
           "id": 2,
-          "name": "Senna",
+          "name": "SENNA",
           "description": "Senna",
           "type": "Promocional",
           "year": "1995",
-          "country": "Guiné-Equatorial"
+          "country": "Guiné-Equatorial",
+          "filigram": "Não"
         },
         {
           "id": 3,
-          "name": "Jim Clark",
+          "name": "JIM CLARK",
           "description": "Jim Clark",
           "type": "Promocional",
           "year": "1995",
-          "country": "Guiné-Equatorial"
+          "country": "Guiné-Equatorial",
+          "filigram": "Não"
         },
         {
           "id": 4,
-          "name": "Jochen Rindt",
+          "name": "JOCHEN RINDT",
           "description": "Jochen Rindt",
           "type": "Promocional",
           "year": "1995",
-          "country": "Guiné-Equatorial"
+          "country": "Guiné-Equatorial",
+          "filigram": "Não"
         }
       ],
       "userId": "3",
       "id": 15
     },
     {
-      "name": "01",
-      "description": "01",
-      "selos": [],
-      "userId": "2",
-      "id": 16
-    },
-    {
-      "name": "01",
-      "description": "sdsdsd",
-      "selos": [],
-      "userId": "1",
-      "id": 17
-    },
-    {
-      "name": "01",
-      "description": "01",
-      "selos": [],
-      "userId": "3",
-      "id": 18
-    },
-    {
-      "name": "01",
-      "description": "01",
+      "name": "Álbum 01",
+      "description": "",
       "selos": [],
       "userId": "4",
       "id": 19
     },
     {
-      "name": "02",
-      "description": "02",
+      "name": "Álbum 02",
+      "description": "",
       "selos": [],
       "userId": "4",
       "id": 20
     },
     {
-      "name": "03",
-      "description": "03",
+      "name": "Álbum 03",
+      "description": "",
       "selos": [],
       "userId": "4",
       "id": 21
+    },
+    {
+      "name": "Álbum 04",
+      "description": "",
+      "selos": [],
+      "userId": "4",
+      "id": 22
     }
   ]
 }
