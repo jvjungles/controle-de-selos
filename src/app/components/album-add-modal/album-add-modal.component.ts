@@ -27,7 +27,7 @@ export class AlbumAddModalComponent {
   descricao: string = '';
   album: Album | undefined;
   user: User | null | undefined;
-  isNomeValid: boolean = false;
+  showTooltip = false;
 
   ngOnInit() {
     const user = this.userService.getUser();
@@ -52,7 +52,6 @@ export class AlbumAddModalComponent {
       this.nome = '';
       this.descricao = '';
     }    
-    this.isNomeValid = false;
     this.showModal = false;
     this.closeModalEvent.emit(); 
   }
@@ -110,8 +109,8 @@ export class AlbumAddModalComponent {
     });     
   }
 
-  validateNome() {
-    this.isNomeValid = this.nome.trim().length > 0;
+  isNomeValid(): boolean {
+    return this.nome.trim().length > 0;
   }
 
   openValidationModal(message: string): void {

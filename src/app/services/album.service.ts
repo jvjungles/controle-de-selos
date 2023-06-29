@@ -52,6 +52,7 @@ export class AlbumService {
   } 
   
   saveWithValidation(album: Album): Observable<Album> {
+    album.name = album.name?.toUpperCase();
     return this.checkIfAlbumExists(album).pipe(
       switchMap(albumExists => {
         if (albumExists) {
@@ -94,17 +95,13 @@ export class AlbumService {
   updateWithValidation(album: Album): Observable<Album> {
     return this.checkIfAlbumExists(album).pipe(
       switchMap(albumExists => {
-        if (albumExists) {
-          return this.httpClient.put<Album>(
-            `${this.URL}/${album.id}`, album, this.httpOptions).pipe(
-            catchError((error) => {
-              console.error(`Erro ao atualizar o álbum com o ID ${album.id}:`, error);
-              throw error;
-            })
-          );
-        } else {
-          return throwError('Já existe um álbum com o mesmo nome');
-        }
+        return this.httpClient.put<Album>(
+          `${this.URL}/${album.id}`, album, this.httpOptions).pipe(
+          catchError((error) => {
+            console.error(`Erro ao atualizar o álbum com o ID ${album.id}:`, error);
+            throw error;
+          })
+        );        
       })
     );    
   }

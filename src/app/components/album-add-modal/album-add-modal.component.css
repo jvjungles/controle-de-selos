@@ -46,5 +46,38 @@
   width: 210px;
   height: 150px;
 }
+
+.tooltip {
+  display: inline-block;
+  position: absolute;
+  background-color: #333;
+  color: #fff;
+  padding: 5px;
+  border-radius: 4px;
+  font-size: 12px;
+  opacity: 0.8;
+  transition: opacity 0.3s;
+  font-weight: normal;
+}
+
+.tooltip::after {
+  content: "";
+  position: absolute;
+  top: 100%;
+  left: 50%;
+  margin-left: -5px;
+  border-width: 5px;
+  border-style: solid;
+  border-color: #333 transparent transparent transparent;
+}
+
+.tooltip[aria-hidden="true"] {
+  display: none;
+}
+
+.tooltip[aria-hidden="false"] {
+  display: inline-block;
+}
+
  
   
