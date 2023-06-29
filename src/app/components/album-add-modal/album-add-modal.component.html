@@ -3,7 +3,9 @@
     <h1>{{ albumTitle }} Álbum</h1>
     <div class="input-container">
       <label for="nome">Nome * :</label>
-      <input class="custom-text" type="text" id="nome" [(ngModel)]="nome" (input)="validateNome()" />      
+      <input class="custom-text" type="text" id="nome" [(ngModel)]="nome" (input)="isNomeValid()" 
+             (mouseenter)="showTooltip = true" (mouseleave)="showTooltip = false" />    
+      <span class="tooltip" *ngIf="!isNomeValid() && showTooltip" role="tooltip">Será salvo em letras maiúsculas</span>
     </div>
     <div class="input-container">
       <label for="descricao">Descrição:</label>
@@ -11,7 +13,7 @@
     </div>
     <div class="button-container">
       <button class="close-button" (click)="closeModal()">Fechar</button>
-      <button class="save-button" (click)="saveModal()" [disabled]="!isNomeValid">Salvar</button>
+      <button class="save-button" (click)="saveModal()" [disabled]="!isNomeValid()">Salvar</button>
     </div>
   </div>
 </div>

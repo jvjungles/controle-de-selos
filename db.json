@@ -1,19 +1,24 @@
 {
   "users": [
     {
-      "id": "1",
-      "username": "joao.silva",
-      "password": "123456"
-    },
-    {
       "id": "2",
-      "username": "joana.dark",
-      "password": "abcdef"
+      "username": "neymar.jr",
+      "password": "paris"
     },
     {
       "id": "3",
       "username": "ayrton.senna",
       "password": "ferrari"
+    },
+    {
+      "id": "1",
+      "username": "joao.silva",
+      "password": "123456"
+    },
+    {
+      "id": "4",
+      "username": "fera",
+      "password": "fera"
     }
   ],
   "albuns": [
@@ -29,7 +34,8 @@
           "year": "1988",
           "country": "Brasil",
           "stamp": true,
-          "filigram": "Não"
+          "filigram": "Não",
+          "link": ""
         },
         {
           "id": 6,
@@ -143,6 +149,28 @@
           "year": "1999",
           "country": "Brasil",
           "filigram": "Não"
+        },
+        {
+          "id": 23,
+          "name": "ghffhfgh",
+          "description": "hgfhgfhfg",
+          "type": "Comemorativo",
+          "year": "2020",
+          "country": "gfhgfh",
+          "stamp": true,
+          "filigram": "Não",
+          "link": ""
+        },
+        {
+          "id": 24,
+          "name": "asas",
+          "description": "asas",
+          "type": "Especial",
+          "year": "2020",
+          "country": "Inglaterra",
+          "stamp": true,
+          "filigram": "Sim",
+          "link": ""
         }
       ],
       "userId": "1",
@@ -263,7 +291,35 @@
     {
       "name": "Album 06",
       "description": "DESCRIÇÃO Album 06",
-      "selos": [],
+      "selos": [
+        {
+          "id": 1,
+          "name": "asa",
+          "description": "sasas",
+          "type": "Comemorativo",
+          "year": "1999",
+          "country": "asasas",
+          "filigram": "Sim"
+        },
+        {
+          "id": 2,
+          "name": "sasas",
+          "description": "asas",
+          "type": "Especial",
+          "year": "2020",
+          "country": "asas",
+          "stamp": true,
+          "filigram": "Não"
+        },
+        {
+          "id": 3,
+          "name": "sas",
+          "description": "asas",
+          "type": "Comemorativo",
+          "year": "2020",
+          "filigram": "Não"
+        }
+      ],
       "userId": "1",
       "id": 6
     },
@@ -352,103 +408,280 @@
       "id": 8
     },
     {
-      "name": "Caros",
-      "description": "Selos mais caros do mundo",
+      "name": "The Bests",
+      "description": "Os melhores Selos  do mundo",
       "selos": [
         {
           "id": 1,
           "name": "O Penny Black",
-          "description": "O Penny Black - 3000 €",
+          "description": "O Penny Black\n",
           "type": "Especial",
           "year": "1840",
           "country": "Reino Unido",
           "stamp": true,
-          "filigram": "Sim"
+          "filigram": "Sim",
+          "link": "https://pt.wikipedia.org/wiki/One_Penny_Black"
         },
         {
           "id": 2,
           "name": "Inverted Swan",
-          "description": "Inverted Swan - 35 000 €",
+          "description": "Inverted Swan",
           "type": "Especial",
           "year": "1855",
           "country": "Suecia",
           "stamp": true,
-          "filigram": "Sim"
+          "filigram": "Sim",
+          "link": "https://en.wikipedia.org/wiki/Inverted_Swan"
         },
         {
           "id": 3,
           "name": "Red Mercury",
-          "description": "Red Mercury - 37 000 €",
+          "description": "Red Mercury",
           "type": "Especial",
           "year": "1956",
-          "country": "Roma"
+          "country": "Roma",
+          "filigram": "Sim",
+          "link": "https://pt.wikipedia.org/wiki/Red_Mercury"
         }
       ],
       "userId": "2",
       "id": 9
     },
     {
-      "name": "Joana Dark 01",
-      "description": "Joana Dark 01",
-      "selos": [],
+      "name": "Brasil Selos",
+      "description": "Selos do Brasil - Correrios",
+      "selos": [
+        {
+          "id": 1,
+          "name": "Selo Papa Francisco",
+          "description": "Selo em homenagem ao papa Francisco",
+          "type": "Especial",
+          "year": "2013",
+          "country": "Brasil",
+          "filigram": "Não",
+          "link": "https://memoria.ebc.com.br/noticias/brasil/2013/07/selo-em-homenagem-ao-papa-francisco-e-lancado"
+        },
+        {
+          "id": 2,
+          "name": "Bicentenário da Independência",
+          "description": "Bicentenário da Independência\n\n",
+          "type": "Especial",
+          "year": "2022",
+          "country": "Brasil"
+        },
+        {
+          "id": 3,
+          "name": "Dom Pedro II ",
+          "description": "Dom Pedro II ",
+          "type": "Especial",
+          "year": "1866",
+          "country": "Brasil",
+          "filigram": "Sim",
+          "link": "https://www.wikiwand.com/pt/Selos_e_hist%C3%B3ria_postal_do_Brasil#Media/Ficheiro:Denteado.jpg"
+        },
+        {
+          "id": 4,
+          "name": "Olho de Boi",
+          "description": "Olho de boi de 90 Réis\n\nhttps://www.wikiwand.com/pt/Selo_Olho_de_boi",
+          "type": "Especial",
+          "year": "1843",
+          "country": "Brasil",
+          "filigram": "Não",
+          "link": "https://www.wikiwand.com/pt/Selo_Olho_de_boi"
+        }
+      ],
       "userId": "2",
       "id": 10
     },
     {
-      "name": "Joana Dark 02",
-      "description": "Joana Dark 02",
+      "name": "Antiguidades",
+      "description": "Antiguidades",
       "selos": [],
       "userId": "2",
       "id": 11
     },
     {
-      "name": "Joana Dark 03",
-      "description": "Joana Dark 03",
-      "selos": [],
+      "name": "Copa do Mundo 2014",
+      "description": "Copa do Mundo da FIFA Brasil 2014",
+      "selos": [
+        {
+          "id": 1,
+          "name": "Sede Curitiba",
+          "description": "Curitiba",
+          "type": "Comemorativo",
+          "year": "2014",
+          "country": "Brasil",
+          "filigram": "Não",
+          "link": "https://www.selosefilatelia.com.br/PastaLancamentos2014/001.html"
+        },
+        {
+          "id": 2,
+          "name": "Sede Porto Alegre",
+          "description": "Porto Alegre",
+          "type": "Comemorativo",
+          "year": "2014",
+          "country": "Brasil",
+          "filigram": "Não",
+          "link": "https://www.selosefilatelia.com.br/PastaLancamentos2014/001.html"
+        }
+      ],
       "userId": "2",
       "id": 12
     },
     {
-      "name": "Ayrton Senna 01 ",
-      "description": "ayrton.senna 02",
+      "name": "Ayrton Senna",
+      "description": "Maior piloto ds Historia da Formula 1",
       "selos": [
         {
-          "id": 1,
-          "name": "Selo 01",
-          "description": "Selo 01",
-          "type": "Ordinario",
-          "year": "1999",
-          "country": "Brasil",
-          "stamp": true,
-          "filigram": "Sim"
-        },
-        {
           "id": 2,
-          "name": "Selo 02",
-          "description": "Selo 02",
+          "name": "Ayrton Senna",
+          "description": "Ayrton Senna Campeão Mundial F1",
           "type": "Ordinario",
           "year": "1988",
           "country": "Brasil",
-          "stamp": true,
-          "filigram": "Sim"
+          "stamp": false,
+          "filigram": "Não",
+          "link": "https://www.filateliaananias.com.br/ayrton-senna-selos-ao-redor-do-mundo/"
+        },
+        {
+          "id": 3,
+          "name": "Ayrton Senna TRÍPTICO",
+          "description": "Em 1994, os Correios do Brasil lançaram um lindo TRÍPTICO em homenagem ao nosso campeão.",
+          "year": "1994",
+          "country": "Brasil",
+          "type": "Especial",
+          "filigram": "Sim",
+          "link": "https://www.filateliaananias.com.br/ayrton-senna-selos-ao-redor-do-mundo/"
+        },
+        {
+          "id": 4,
+          "name": "McLaren",
+          "description": "A equipe campeã do mundial de pilotos e construtores, de 1990.\nIlustra Ayrton Senna e Alain Prost",
+          "type": "Comemorativo",
+          "year": "1990",
+          "country": "Nigeria",
+          "filigram": "Não",
+          "link": "https://www.filateliaananias.com.br/ayrton-senna-selos-ao-redor-do-mundo/"
         }
       ],
       "userId": "3",
       "id": 13
     },
     {
-      "name": "Ayrton Senna 02",
-      "description": "ayrton.senna 02",
-      "selos": [],
+      "name": "Brasil F1",
+      "description": "Pilotos Brasileiros na F1",
+      "selos": [
+        {
+          "id": 1,
+          "name": "Nelson Piquet",
+          "description": "Selo Nelson Piquet, campeão Mundial",
+          "type": "Promocional",
+          "year": "1984",
+          "country": "Brasil"
+        },
+        {
+          "id": 2,
+          "name": "Ayrton Senna",
+          "description": "Primer Aniversario de su morte",
+          "type": "Comemorativo",
+          "year": "1994",
+          "country": "Bolivia",
+          "filigram": "Sim",
+          "link": "https://www.filateliaananias.com.br/ayrton-senna-selos-ao-redor-do-mundo/"
+        },
+        {
+          "id": 3,
+          "name": "Emerson Fittipaldi",
+          "description": "Automobilismo homenageando a conquista dos títulos de Campeão da Formula 1 por Emerson Fittipaldi",
+          "type": "Comemorativo",
+          "year": "1983",
+          "country": "Brasil"
+        }
+      ],
       "userId": "3",
       "id": 14
     },
     {
-      "name": "Ayrton Senna 03",
-      "description": "ayrton.senna 03",
-      "selos": [],
+      "name": "Campeões Automobilísticos",
+      "description": "Em 1995, a Administração Postal da Guiné-Equatorial, emitiu uma série de 4 selos, com o tema Campeões Automobilísticos, homenageando Fangio, Senna, Jim Clark e Jochen Rindt.",
+      "selos": [
+        {
+          "id": 1,
+          "name": "Fangio",
+          "description": "Fangio",
+          "type": "Promocional",
+          "year": "1995",
+          "country": "Guiné-Equatorial"
+        },
+        {
+          "id": 2,
+          "name": "Senna",
+          "description": "Senna",
+          "type": "Promocional",
+          "year": "1995",
+          "country": "Guiné-Equatorial"
+        },
+        {
+          "id": 3,
+          "name": "Jim Clark",
+          "description": "Jim Clark",
+          "type": "Promocional",
+          "year": "1995",
+          "country": "Guiné-Equatorial"
+        },
+        {
+          "id": 4,
+          "name": "Jochen Rindt",
+          "description": "Jochen Rindt",
+          "type": "Promocional",
+          "year": "1995",
+          "country": "Guiné-Equatorial"
+        }
+      ],
       "userId": "3",
       "id": 15
+    },
+    {
+      "name": "01",
+      "description": "01",
+      "selos": [],
+      "userId": "2",
+      "id": 16
+    },
+    {
+      "name": "01",
+      "description": "sdsdsd",
+      "selos": [],
+      "userId": "1",
+      "id": 17
+    },
+    {
+      "name": "01",
+      "description": "01",
+      "selos": [],
+      "userId": "3",
+      "id": 18
+    },
+    {
+      "name": "01",
+      "description": "01",
+      "selos": [],
+      "userId": "4",
+      "id": 19
+    },
+    {
+      "name": "02",
+      "description": "02",
+      "selos": [],
+      "userId": "4",
+      "id": 20
+    },
+    {
+      "name": "03",
+      "description": "03",
+      "selos": [],
+      "userId": "4",
+      "id": 21
     }
   ]
 }
