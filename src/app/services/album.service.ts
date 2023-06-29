@@ -93,6 +93,7 @@ export class AlbumService {
   }
 
   updateWithValidation(album: Album): Observable<Album> {
+    album.name = album.name?.toUpperCase();
     return this.checkIfAlbumExists(album).pipe(
       switchMap(albumExists => {
         return this.httpClient.put<Album>(

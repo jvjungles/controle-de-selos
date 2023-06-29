@@ -45,7 +45,7 @@ export class SeloAddModalComponent {
           if (this.selo?.id) {
             const index = this.album.selos.findIndex(item => item.id === this.selo?.id);
             if (this.album.selos.findIndex(item => item.id === this.selo?.id) !== -1) {
-              this.album.selos[index].name = this.selo?.name;
+              this.album.selos[index].name = this.selo?.name ? this.selo?.name.toUpperCase() : undefined;
               this.album.selos[index].description = this.selo?.description;
               this.album.selos[index].type = this.selo?.type;
               this.album.selos[index].year = this.selo?.year;
@@ -59,7 +59,7 @@ export class SeloAddModalComponent {
             const maiorId = this.album?.selos?.reduce((maxId, selo) => (selo.id && selo.id > maxId) ? selo.id : maxId, 0);            
             const selo: Selo = {
               id: maiorId + 1,
-              name: this.selo?.name,
+              name: this.selo?.name ? this.selo?.name.toUpperCase() : undefined,
               description: this.selo?.description,
               type: this.selo?.type,
               year: this.selo?.year,
