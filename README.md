@@ -64,13 +64,24 @@ node v18.16.0
 angular v16.0.0  
 json-server v0.17.3 
 
+
 ## Manual de execução
+<br>
 
-npm install
+- Clonar o repositório com `git clone`
+- Fazer checkout no branch `develop` que contém as modificações mais recentes
+- Abrir o projeto no editor Visual Studio Code (VS Code)
+- Abrir um terminal pelo VSCode ou qualquer terminal do seu Sistema Operacional apontando para o diretório raiz do projeto 
+- Instalar as dependências contidas no `package.json`
+  - Comando: `npm install`
+- Para rodar a aplicação, temos 2 opçoes:
+	- Opção 01 - rodar local:
+		- Executar o comando  `npm start` que automaticamente executa-ra os comandos `ng serve` e `npm run json:server` atraves do **concurrently**
+  			- Por padrão, a aplicação JSON Server executa no endereço `localhost:3000`
+  			- A aplicação executa na pasta `localhost:4200`
+	- Opção 02 - rodar pelo Github pages:
+		- Executar a API Fake (JSON Server) via um dos seguintes comandos: 
+			- Execução via script registrado no `package.json`: `npm run json:server` 
+			- Por padrão, a aplicação JSON Server executa no endereço `localhost:3000`
+			- Acessar o link https://jvjungles.github.io/controle-de-selos/    
 
-npm start 
-
-or
- 
-npm run json:server  
-ng serve  
