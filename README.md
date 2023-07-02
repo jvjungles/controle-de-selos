@@ -26,6 +26,10 @@ Além disso, os usuários podem facilmente excluir um álbum ou selo que não pr
 
 O frontend da aplicação desenvolvida com Angular e o backend foi simulado pela implementação de API Fake, usando o JSON Server.
 
+## Documentação (Projeto Completo)
+
+https://github.com/jvjungles/controle-de-selos/blob/main/docs/JoaoJungles-ProjetoCompleto.pdf
+
 ## Endereço de Deploy - GitHub Pages
 
 https://jvjungles.github.io/controle-de-selos/
